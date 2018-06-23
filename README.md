@@ -3,10 +3,6 @@
 ## SETUP
 
 - [ ] Google Analytics
-- Sharing
-  - [ ] Twitter
-  - [ ] Facebook
-  - [ ] Google+
 - SEO
   - [ ] Sitemap generation
   - [ ] robots.txt

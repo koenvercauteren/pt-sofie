@@ -19,5 +19,6 @@ module.exports = {
     'prefer-destructuring': [0],
     'no-restricted-globals': ['error', 'location'],
     'no-use-before-define': [0],
+    'react/jsx-one-expression-per-line': [0],
   },
 };
