@@ -6,11 +6,13 @@
 - SEO
   - [ ] Sitemap generation
   - [ ] robots.txt
-  - [ ] Schema.org JSONLD (Google Rich Snippets)
-  - [ ] OpenGraph Tags (Facebook/Google+/Pinterest)
-  - [ ] Twitter Tags (Twitter Cards)
+  - [x] Schema.org JSONLD (Google Rich Snippets)
+  - [x] OpenGraph Tags (Facebook/Google+/Pinterest)
+  - [x] Twitter Tags (Twitter Cards)
 - Development
   - [x] ESLint
   - [x] Prettier
 - [ ] Jest
 - [ ] Intl
+- [ ] Material Kit
+- [ ] Styled Components

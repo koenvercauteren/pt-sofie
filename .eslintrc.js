@@ -1,6 +1,9 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: ['airbnb', 'prettier'],
+  globals: {
+    graphql: true,
+  },
   plugins: ['react', 'jsx-a11y', 'import'],
   settings: {
     'import/core-modules': ['react', 'prop-types', 'react-helmet'],

@@ -2,7 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
-const SEO = ({ description, image, title, url }) => {
+const SeoTags = ({ data }) => {
+  const { description, image, title, url } = data;
   const schemaOrgJSONLD = {
     '@context': 'http://schema.org',
     '@type': 'WebSite',
@@ -14,6 +15,7 @@ const SEO = ({ description, image, title, url }) => {
   return (
     <Helmet>
       {/* General tags */}
+      <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="image" content={image} />
 
@@ -38,11 +40,22 @@ const SEO = ({ description, image, title, url }) => {
   );
 };
 
-SEO.propTypes = {
-  description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+SeoTags.propTypes = {
+  data: PropTypes.shape({
+    description: PropTypes.string,
+    image: PropTypes.string,
+    title: PropTypes.string,
+    url: PropTypes.string,
+  }),
 };
 
-export default SEO;
+SeoTags.defaultProps = {
+  data: {
+    description: 'Personal Training aangeboden in groep of individueel',
+    image: '',
+    title: 'Personal Trainer - Sofie de Backer',
+    url: 'https://github.com/koenvercauteren',
+  },
+};
+
+export default SeoTags;
