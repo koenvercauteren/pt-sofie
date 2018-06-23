@@ -14,5 +14,7 @@
   - [ ] OpenGraph Tags (Facebook/Google+/Pinterest)
   - [ ] Twitter Tags (Twitter Cards)
 - Development
-  - [ ] ESLint
+  - [x] ESLint
   - [x] Prettier
+- [ ] Jest
+- [ ] Intl
