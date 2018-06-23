@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Koen Vercauteren <knvercauteren@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^1.2.3",
+    "@material-ui/icons": "^1.1.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",

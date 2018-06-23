@@ -14,5 +14,6 @@
   - [x] Prettier
 - [ ] Jest
 - [ ] Intl
-- [ ] Material Kit
-- [ ] Styled Components
+- Material Design
+  - [ ] Material Kit
+  - [x] Material UI
