@@ -15,5 +15,5 @@
 - [ ] Jest
 - [ ] Intl
 - Material Design
-  - [ ] Material Kit
+  - [x] Material Kit
   - [x] Material UI
