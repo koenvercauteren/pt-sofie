@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    siteUrl: `http://localhost:5000`,
   },
-  plugins: ['gatsby-plugin-react-helmet'],
-}
+  plugins: ['gatsby-plugin-react-helmet', { resolve: 'gatsby-plugin-sitemap' }],
+};
