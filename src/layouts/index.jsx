@@ -31,4 +31,4 @@ Layout.propTypes = {
 
 export default Layout;
 
-export const query = graphql``;
+// export const query = graphql``;
