@@ -12,7 +12,7 @@
   - [x] ESLint
   - [x] Prettier
 - [x] Jest
-- [ ] Intl
+- [x] Intl
 - Material Design
   - [x] Material Kit
   - [x] Material UI
