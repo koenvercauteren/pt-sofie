@@ -24,5 +24,6 @@ module.exports = {
     'no-restricted-globals': ['error', 'location'],
     'no-use-before-define': [0],
     'react/jsx-one-expression-per-line': [0],
+    'react/no-danger': [0],
   },
 };
