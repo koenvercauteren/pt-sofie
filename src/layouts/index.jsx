@@ -8,7 +8,6 @@ import 'intl';
 
 import i18n from '../i18n';
 
-import Header from '../components/header';
 import SeoTags from '../components/seo-tags';
 
 addLocaleData([...nl, ...en]);
@@ -19,7 +18,6 @@ const Layout = ({ children }) => {
     <IntlProvider locale={locale} messages={i18n.messages[locale]}>
       <div>
         <SeoTags />
-        <Header />
         {children()}
       </div>
     </IntlProvider>

@@ -25,5 +25,6 @@ module.exports = {
     'no-use-before-define': [0],
     'react/jsx-one-expression-per-line': [0],
     'react/no-danger': [0],
+    'react/destructuring-assignment': [0],
   },
 };
