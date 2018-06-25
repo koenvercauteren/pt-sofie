@@ -3,6 +3,7 @@ module.exports = {
   extends: ['airbnb', 'prettier'],
   globals: {
     graphql: true,
+    localStorage: true,
   },
   plugins: ['react', 'jsx-a11y', 'import'],
   settings: {
