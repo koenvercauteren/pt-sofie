@@ -11,7 +11,7 @@
 - Development
   - [x] ESLint
   - [x] Prettier
-- [ ] Jest
+- [x] Jest
 - [ ] Intl
 - Material Design
   - [x] Material Kit

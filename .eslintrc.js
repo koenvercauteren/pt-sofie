@@ -9,6 +9,7 @@ module.exports = {
     'import/core-modules': ['react', 'prop-types', 'react-helmet'],
   },
   env: {
+    jest: true,
     browser: true,
   },
   rules: {

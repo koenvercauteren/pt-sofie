@@ -10,7 +10,9 @@
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sitemap": "^1.2.25",
-    "react-helmet": "^5.2.0"
+    "intl": "^1.2.5",
+    "react-helmet": "^5.2.0",
+    "react-intl": "^2.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.4",
