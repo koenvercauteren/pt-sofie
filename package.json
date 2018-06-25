@@ -14,28 +14,60 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.4",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-react-intl": "^2.0.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "^5.0.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.9.1",
-    "prettier": "^1.12.0"
+    "jest": "^23.2.0",
+    "prettier": "^1.12.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "svg-react-loader": "^0.4.5"
   },
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "UNLICENSED",
   "scripts": {
-    "serve": "gatsby serve",
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "serve": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint 'src/**/*.js' --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/koenvercauteren/pt-sofie"
+  },
+  "jest": {
+    "setupFiles": [
+      "./test/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy",
+      "^.+\\.(jpg|png)$": "identity-obj-proxy",
+      "^.+\\.(svg)$": "<rootDir>/test/svgImportMock.js"
+    },
+    "collectCoverageFrom": [
+      "**/src/**/*.{js,jsx}"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/templates/",
+      "/.cache"
+    ]
   }
 }
