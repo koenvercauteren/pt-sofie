@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import Header from '../components/header';
 import SeoTags from '../components/seo-tags';
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children }) => (
   <div>
     {/* <Helmet
       title={data.site.siteMetadata.title}
       meta={[{ name: 'description', content: 'Sample' }, { name: 'keywords', content: 'sample, something' }]}
     /> */}
     <SeoTags />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header />
     <div
       style={{
         margin: '0 auto',
@@ -31,12 +31,4 @@ Layout.propTypes = {
 
 export default Layout;
 
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
+export const query = graphql``;
