@@ -12,17 +12,32 @@ import SeoTags from '../components/seo-tags';
 
 addLocaleData([...nl, ...en]);
 
-const Layout = ({ children }) => {
-  const locale = i18n.getCurrentLangKey('en');
-  return (
-    <IntlProvider locale={locale} messages={i18n.messages[locale]}>
-      <div>
-        <SeoTags />
-        {children()}
-      </div>
-    </IntlProvider>
-  );
-};
+class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      locale: 'nl',
+    };
+  }
+
+  componentDidMount() {
+    this.setState({ locale: i18n.getCurrentLangKey('en') });
+  }
+
+  render() {
+    const { children } = this.props;
+    const { locale } = this.state;
+
+    return (
+      <IntlProvider locale={locale} messages={i18n.messages[locale]}>
+        <div>
+          <SeoTags />
+          {children()}
+        </div>
+      </IntlProvider>
+    );
+  }
+}
 
 Layout.propTypes = {
   children: PropTypes.func.isRequired,
