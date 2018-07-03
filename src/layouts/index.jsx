@@ -10,6 +10,8 @@ import i18n from '../i18n';
 
 import SeoTags from '../components/seo-tags';
 
+import '../styles/style.scss';
+
 addLocaleData([...nl, ...en]);
 
 class Layout extends React.Component {
@@ -44,5 +46,3 @@ Layout.propTypes = {
 };
 
 export default Layout;
-
-// export const query = graphql``;

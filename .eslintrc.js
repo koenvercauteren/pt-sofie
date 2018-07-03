@@ -21,6 +21,7 @@ module.exports = {
     'max-depth': [2, { max: 3 }],
 
     // diabled rules
+    'react/forbid-prop-types': [0],
     'prefer-destructuring': [0],
     'no-restricted-globals': ['error', 'location'],
     'no-use-before-define': [0],
