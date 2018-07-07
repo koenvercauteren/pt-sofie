@@ -5,11 +5,20 @@ import { injectIntl } from 'react-intl';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Parallax } from 'react-parallax';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-import Menu from '../components/menu';
+import HeaderMenu from '../components/header-menu';
 import backgroundImage from '../assets/img/background-image-landing-page.jpg';
+import { Typography } from '../../node_modules/@material-ui/core';
 
 const styles = {
+  title: {
+    paddingTop: '200px',
+    color: '#fff',
+    fontWeight: 300,
+    fontSize: '50px',
+    textAlign: 'center',
+  },
   approach: {
     backgroundColor: 'transparent',
     '&:before': {
@@ -33,21 +42,12 @@ const styles = {
   },
 };
 
-const insideStyles = {
-  background: 'white',
-  padding: 20,
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%,-50%)',
-};
-
 const IndexPage = props => {
   const { classes } = props;
 
   return (
     <div>
-      <Menu />
+      <HeaderMenu />
       <Grid container justify="center">
         <Grid item xs={12}>
           <Parallax
@@ -56,8 +56,13 @@ const IndexPage = props => {
             bgClassName={classes.background}
             strength={-100}
           >
-            <div style={{ height: 790 }}>
-              <div />
+            <div style={{ height: 690 }}>
+              <ScrollAnimation animateOut="fadeOut" duration=".5" initiallyVisible>
+                <Typography className={classes.title} variant="title">
+                  Mijn missie is het promoten <br />
+                  van een gezonde levensstijl
+                </Typography>
+              </ScrollAnimation>
             </div>
           </Parallax>
         </Grid>

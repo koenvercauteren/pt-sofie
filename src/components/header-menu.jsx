@@ -15,7 +15,7 @@ const styles = {
     flexGrow: 1,
   },
   header: {
-    // backgroundColor: '#9BFFF6',
+    // backgroundColor: 'transparent',
   },
   buttonGroup: {
     display: 'flex',
@@ -24,28 +24,35 @@ const styles = {
   },
 };
 
-function Menu(props) {
+function HeaderMenu(props) {
   const { classes } = props;
+
   return (
     <div className={classes.root}>
-      <AppBar className={classes.header} position="fixed" color="secondary">
+      <AppBar id="header-menu" className={classes.header} position="fixed" color="secondary">
         <Grid container justify="center">
           <Grid item xs={11} md={10}>
             <Toolbar disableGutters>
-              <Typography variant="title" color="inherit">
+              <Typography
+                variant="title"
+                color="inherit"
+                onScroll={() => {
+                  console.log(this.scrollTop());
+                }}
+              >
                 SDB
               </Typography>
 
               <div className={classes.buttonGroup}>
                 <Hidden xsDown>
-                  <Button color="inherit">Misie</Button>
+                  <Button color="inherit">Missie</Button>
                   <Button color="inherit">Aanpak</Button>
                   <Button color="inherit">Aanbod</Button>
                   <Button color="inherit">Contact</Button>
                 </Hidden>
 
                 <Hidden smUp>
-                  <Burger items={[{ name: 'Misie' }, { name: 'Aanpak' }, { name: 'Aanbod' }, { name: 'Contact' }]} />
+                  <Burger items={[{ name: 'Missie' }, { name: 'Aanpak' }, { name: 'Aanbod' }, { name: 'Contact' }]} />
                 </Hidden>
               </div>
             </Toolbar>
@@ -56,8 +63,8 @@ function Menu(props) {
   );
 }
 
-Menu.propTypes = {
+HeaderMenu.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Menu);
+export default withStyles(styles)(HeaderMenu);

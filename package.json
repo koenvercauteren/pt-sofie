@@ -6,6 +6,7 @@
   "dependencies": {
     "@material-ui/core": "^1.2.3",
     "@material-ui/icons": "^1.1.0",
+    "animate.css": "^3.6.1",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-netlify": "^1.0.21",
@@ -13,6 +14,7 @@
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-plugin-sitemap": "^1.2.25",
     "intl": "^1.2.5",
+    "react-animate-on-scroll": "^2.1.5",
     "react-helmet": "^5.2.0",
     "react-intl": "^2.4.0",
     "react-parallax": "^1.8.0"

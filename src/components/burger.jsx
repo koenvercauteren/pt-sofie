@@ -4,6 +4,13 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = {
+  menuItem: {
+    minWidth: '150px',
+  },
+};
 
 class Burger extends React.Component {
   state = {
@@ -20,7 +27,7 @@ class Burger extends React.Component {
 
   render() {
     const { anchorEl } = this.state;
-    const { items } = this.props;
+    const { items, classes } = this.props;
 
     return (
       <div>
@@ -33,16 +40,21 @@ class Burger extends React.Component {
         >
           <MenuIcon />
         </IconButton>
-        <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={this.handleClose}>
-          {items.map(item => <MenuItem onClick={this.handleClose}>{item.name}</MenuItem>)}
+        <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={this.handleClose}>
+          {items.map(item => (
+            <MenuItem onClick={this.handleClose} className={classes.menuItem}>
+              {item.name}
+            </MenuItem>
+          ))}
         </Menu>
       </div>
     );
   }
 }
 
-Menu.propTypes = {
+Burger.propTypes = {
   items: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
-export default Burger;
+export default withStyles(styles)(Burger);
