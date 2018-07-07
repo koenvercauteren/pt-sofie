@@ -4,37 +4,65 @@ import PropTypes from 'prop-types';
 import { injectIntl } from 'react-intl';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import { Parallax } from 'react-parallax';
 
-import Header from '../components/header';
+import Menu from '../components/menu';
 import backgroundImage from '../assets/img/background-image-landing-page.jpg';
 
 const styles = {
-  main: {
-    width: '100%',
-    height: '876px',
-    paddingTop: '80px',
+  approach: {
+    backgroundColor: 'transparent',
+    '&:before': {
+      content: '""',
+      position: 'absolute',
+      left: '0',
+      width: '100%',
+      height: '1000px',
+      transform: 'skewY(-8deg)',
+      background: '#fff',
+    },
   },
   background: {
-    minWidth: '1024px',
-    width: '100%',
-    height: 'auto',
-    position: 'fixed',
-    top: 0,
-    left: 0,
+    minHeight: '1100px',
+    width: '100% !important',
+    height: 'auto !important',
+    objectFit: 'cover',
   },
+  parallax: {
+    overflow: 'visible !important',
+  },
+};
+
+const insideStyles = {
+  background: 'white',
+  padding: 20,
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%,-50%)',
 };
 
 const IndexPage = props => {
   const { classes } = props;
+
   return (
     <div>
-      <Header />
-      <picture>
-        <img className={classes.background} src={backgroundImage} alt="background" />
-      </picture>
+      <Menu />
       <Grid container justify="center">
-        <Grid item xs={10}>
-          <div className={classes.main} />
+        <Grid item xs={12}>
+          <Parallax
+            className={classes.parallax}
+            bgImage={backgroundImage}
+            bgClassName={classes.background}
+            strength={-100}
+          >
+            <div style={{ height: 790 }}>
+              <div />
+            </div>
+          </Parallax>
+        </Grid>
+        <Grid item xs={11} md={10}>
+          <section className={classes.approach} />
         </Grid>
       </Grid>
     </div>

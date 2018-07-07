@@ -14,7 +14,8 @@
     "gatsby-plugin-sitemap": "^1.2.25",
     "intl": "^1.2.5",
     "react-helmet": "^5.2.0",
-    "react-intl": "^2.4.0"
+    "react-intl": "^2.4.0",
+    "react-parallax": "^1.8.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.4",
