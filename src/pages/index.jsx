@@ -5,7 +5,6 @@ import { injectIntl } from 'react-intl';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Parallax } from 'react-parallax';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import HeaderMenu from '../components/header-menu';
 import backgroundImage from '../assets/img/background-image-landing-page.jpg';
@@ -42,37 +41,50 @@ const styles = {
   },
 };
 
-const IndexPage = props => {
-  const { classes } = props;
-
-  return (
-    <div>
-      <HeaderMenu />
-      <Grid container justify="center">
-        <Grid item xs={12}>
-          <Parallax
-            className={classes.parallax}
-            bgImage={backgroundImage}
-            bgClassName={classes.background}
-            strength={-100}
-          >
-            <div style={{ height: 690 }}>
-              <ScrollAnimation animateOut="fadeOut" duration=".5" initiallyVisible>
-                <Typography className={classes.title} variant="title">
-                  Mijn missie is het promoten <br />
-                  van een gezonde levensstijl
-                </Typography>
-              </ScrollAnimation>
-            </div>
-          </Parallax>
-        </Grid>
-        <Grid item xs={11} md={10}>
-          <section className={classes.approach} />
-        </Grid>
-      </Grid>
-    </div>
-  );
+const fadeTitle = () => {
+  const title = window.document.getElementById('title');
+  if (title) title.style.opacity = 1 - window.scrollY / 250;
 };
+
+class IndexPage extends React.Component {
+  componentDidMount() {
+    window.addEventListener('scroll', fadeTitle);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', fadeTitle);
+  }
+
+  render() {
+    const { classes } = this.props;
+
+    return (
+      <div>
+        <HeaderMenu />
+        <Grid container justify="center">
+          <Grid item xs={12}>
+            <Parallax
+              className={classes.parallax}
+              bgImage={backgroundImage}
+              bgClassName={classes.background}
+              strength={-100}
+            >
+              <div style={{ height: 690 }}>
+                <Typography id="title" className={classes.title} variant="title">
+                  Lorem ipsum<br />
+                  dolor sit amet
+                </Typography>
+              </div>
+            </Parallax>
+          </Grid>
+          <Grid item xs={11} md={10}>
+            <section className={classes.approach} />
+          </Grid>
+        </Grid>
+      </div>
+    );
+  }
+}
 
 IndexPage.propTypes = {
   classes: PropTypes.object.isRequired,

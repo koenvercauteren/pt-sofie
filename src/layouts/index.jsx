@@ -11,7 +11,6 @@ import i18n from '../i18n';
 import SeoTags from '../components/seo-tags';
 
 import '../styles/style.scss';
-import 'animate.css/animate.min.css';
 
 addLocaleData([...nl, ...en]);
 
