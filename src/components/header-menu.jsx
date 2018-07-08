@@ -33,13 +33,7 @@ function HeaderMenu(props) {
         <Grid container justify="center">
           <Grid item xs={11} md={10}>
             <Toolbar disableGutters>
-              <Typography
-                variant="title"
-                color="inherit"
-                onScroll={() => {
-                  console.log(this.scrollTop());
-                }}
-              >
+              <Typography variant="title" color="inherit">
                 SDB
               </Typography>
 
