@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { injectIntl } from 'react-intl';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 import { Parallax } from 'react-parallax';
 
 import HeaderMenu from '../components/header-menu';
@@ -11,8 +12,24 @@ import backgroundImage from '../assets/img/background-image-landing-page.jpg';
 import { Typography } from '../../node_modules/@material-ui/core';
 
 const styles = {
+  titleContainer: {
+    height: 490,
+    justifyContent: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  button: {
+    background: 'linear-gradient(45deg, #48B6BF 30%, #4880E2 90%)',
+    borderRadius: 3,
+    border: 0,
+    color: 'white',
+    height: 55,
+    fontSize: '16px',
+    padding: '0 72px',
+    margin: '20px auto 0 auto',
+  },
   title: {
-    paddingTop: '200px',
+    paddingTop: '150px',
     color: '#fff',
     fontWeight: 300,
     fontSize: '50px',
@@ -69,11 +86,12 @@ class IndexPage extends React.Component {
               bgClassName={classes.background}
               strength={-50}
             >
-              <div style={{ height: 490 }}>
+              <div className={classes.titleContainer}>
                 <Typography id="title" className={classes.title} variant="title">
                   Lorem ipsum<br />
                   dolor sit amet
                 </Typography>
+                <Button className={classes.button}>BEKIJK HET AANBOD</Button>
               </div>
             </Parallax>
           </Grid>
