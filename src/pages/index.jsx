@@ -25,7 +25,7 @@ const styles = {
       position: 'absolute',
       left: '0',
       width: '100%',
-      height: '1000px',
+      height: '1100px',
       transform: 'skewY(-8deg)',
       background: '#fff',
     },
@@ -67,9 +67,9 @@ class IndexPage extends React.Component {
               className={classes.parallax}
               bgImage={backgroundImage}
               bgClassName={classes.background}
-              strength={-100}
+              strength={-50}
             >
-              <div style={{ height: 690 }}>
+              <div style={{ height: 490 }}>
                 <Typography id="title" className={classes.title} variant="title">
                   Lorem ipsum<br />
                   dolor sit amet

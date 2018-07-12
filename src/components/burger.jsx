@@ -42,7 +42,7 @@ class Burger extends React.Component {
         </IconButton>
         <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={this.handleClose}>
           {items.map(item => (
-            <MenuItem onClick={this.handleClose} className={classes.menuItem}>
+            <MenuItem key={item.name} onClick={this.handleClose} className={classes.menuItem}>
               {item.name}
             </MenuItem>
           ))}
@@ -53,7 +53,7 @@ class Burger extends React.Component {
 }
 
 Burger.propTypes = {
-  items: PropTypes.object.isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string })).isRequired,
   classes: PropTypes.object.isRequired,
 };
 

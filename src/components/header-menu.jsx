@@ -15,7 +15,7 @@ const styles = {
     flexGrow: 1,
   },
   header: {
-    // backgroundColor: 'transparent',
+    backgroundColor: '#252525 !important',
   },
   buttonGroup: {
     display: 'flex',
@@ -29,7 +29,7 @@ function HeaderMenu(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar id="header-menu" className={classes.header} position="fixed" color="secondary">
+      <AppBar id="header-menu" className={classes.header} position="fixed" color="primary">
         <Grid container justify="center">
           <Grid item xs={11} md={10}>
             <Toolbar disableGutters>
