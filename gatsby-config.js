@@ -4,12 +4,11 @@ module.exports = {
   },
   plugins: [
     // Sitemap
-    {
-      resolve: 'gatsby-plugin-sitemap',
-    },
+    { resolve: 'gatsby-plugin-sitemap' },
 
     // Style
     'gatsby-plugin-sass',
+    { resolve: 'gatsby-plugin-material-ui' },
 
     // other
     'gatsby-plugin-react-helmet',
