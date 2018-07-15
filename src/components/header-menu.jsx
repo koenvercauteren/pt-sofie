@@ -30,7 +30,7 @@ function HeaderMenu(props) {
   return (
     <div className={classes.root}>
       <AppBar id="header-menu" className={classes.header} position="fixed" color="primary">
-        <Grid container justify="center">
+        <Grid container justify="center" spacing={16}>
           <Grid item xs={11} md={10}>
             <Toolbar disableGutters>
               <Typography variant="title" color="inherit">
@@ -42,11 +42,20 @@ function HeaderMenu(props) {
                   <Button color="inherit">Missie</Button>
                   <Button color="inherit">Aanpak</Button>
                   <Button color="inherit">Aanbod</Button>
+                  <Button color="inherit">Locatie</Button>
                   <Button color="inherit">Contact</Button>
                 </Hidden>
 
                 <Hidden smUp>
-                  <Burger items={[{ name: 'Missie' }, { name: 'Aanpak' }, { name: 'Aanbod' }, { name: 'Contact' }]} />
+                  <Burger
+                    items={[
+                      { name: 'Missie' },
+                      { name: 'Aanpak' },
+                      { name: 'Aanbod' },
+                      { name: 'Locatie' },
+                      { name: 'Contact' },
+                    ]}
+                  />
                 </Hidden>
               </div>
             </Toolbar>
