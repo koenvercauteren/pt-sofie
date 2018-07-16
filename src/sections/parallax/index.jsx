@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
-import { Parallax } from 'react-parallax';
+import { Parallax as ReactParallax } from 'react-parallax';
 import { Typography } from '@material-ui/core';
 
 import backgroundImage from '../../assets/img/background-image-landing-page.jpg';
@@ -49,7 +49,7 @@ const fadeTitle = () => {
   if (title) title.style.opacity = 1 - window.scrollY / 250;
 };
 
-class ParallaxSection extends React.Component {
+class Parallax extends React.Component {
   componentDidMount() {
     window.addEventListener('scroll', fadeTitle);
   }
@@ -62,7 +62,12 @@ class ParallaxSection extends React.Component {
     const { classes } = this.props;
 
     return (
-      <Parallax className={classes.parallax} bgImage={backgroundImage} bgClassName={classes.background} strength={-50}>
+      <ReactParallax
+        className={classes.parallax}
+        bgImage={backgroundImage}
+        bgClassName={classes.background}
+        strength={-50}
+      >
         <div className={classes.titleContainer}>
           <Typography id="title" className={classes.title} variant="title">
             Fitheid en welzijn,<br />
@@ -70,13 +75,13 @@ class ParallaxSection extends React.Component {
           </Typography>
           <Button className={classes.button}>BEKIJK HET AANBOD</Button>
         </div>
-      </Parallax>
+      </ReactParallax>
     );
   }
 }
 
-ParallaxSection.propTypes = {
+Parallax.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ParallaxSection);
+export default withStyles(styles)(Parallax);

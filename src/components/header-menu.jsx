@@ -22,6 +22,11 @@ const styles = {
     justifyContent: 'flex-end',
     width: '100%',
   },
+  grid: {
+    maxWidth: '1040px',
+    paddingLeft: '8px',
+    paddingRight: '8px',
+  },
 };
 
 function HeaderMenu(props) {
@@ -30,8 +35,8 @@ function HeaderMenu(props) {
   return (
     <div className={classes.root}>
       <AppBar id="header-menu" className={classes.header} position="fixed" color="primary">
-        <Grid container justify="center" spacing={16}>
-          <Grid item xs={11} md={10}>
+        <Grid container justify="center">
+          <Grid item xs={11} md={10} className={classes.grid}>
             <Toolbar disableGutters>
               <Typography variant="title" color="inherit">
                 SDB

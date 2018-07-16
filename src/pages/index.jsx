@@ -5,34 +5,51 @@ import { injectIntl } from 'react-intl';
 import { withStyles } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
-import { Typography } from '@material-ui/core';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Zoom from 'react-reveal/Zoom';
+// import { Typography } from '@material-ui/core';
+// import Card from '@material-ui/core/Card';
+// import CardContent from '@material-ui/core/CardContent';
+// import CardMedia from '@material-ui/core/CardMedia';
+// import Zoom from 'react-reveal/Zoom';
 // import Button from '@material-ui/core/Button';
 
 import HeaderMenu from '../components/header-menu';
-import ParallaxSection from '../sections/parallax';
-
-import missionImage from '../assets/img/girl-stretching.jpeg';
-import missionImage2 from '../assets/img/guy-running-city.jpg';
-import missionImage3 from '../assets/img/guy-running-track.jpg';
-import missionImage4 from '../assets/img/girl-preparing-food.jpg';
+import Parallax from '../sections/parallax';
+import Mission from '../sections/mission';
+import Approach from '../sections/approach';
 
 const styles = {
-  mission: {
+  page: {
     color: '#1D345C',
+  },
+  mission: {
+    maxWidth: '1040px',
     zIndex: 1,
     '&:before': {
       content: '""',
       position: 'absolute',
       left: 0,
       width: '100%',
-      height: '1100px',
+      height: '1400px',
+      webkitTransform: 'skewY(-8deg)',
       transform: 'skewY(-8deg)',
       background: '#fff',
       zIndex: -1,
+    },
+  },
+  approach: {
+    maxWidth: '1040px',
+    zIndex: 1,
+    '&:before': {
+      content: '""',
+      position: 'absolute',
+      right: 0,
+      height: '400px',
+      webkitTransform: 'skewY(-8deg)',
+      transform: 'skewY(-8deg)',
+      webkitTransformOrigin: '100% 0',
+      transformOrigin: '100% 0',
+      width: '50%',
+      background: '#1D345C',
     },
   },
   title: {
@@ -68,85 +85,17 @@ class IndexPage extends React.Component {
     return (
       <div>
         <HeaderMenu />
-        <Grid container justify="center">
+        <Grid container justify="center" className={classes.page}>
           <Grid item xs={12}>
-            <ParallaxSection />
+            <Parallax />
           </Grid>
 
           <Grid item xs={11} md={10} className={classes.mission}>
-            <Typography variant="display2" color="inherit" className={classes.title}>
-              Mijn missie
-            </Typography>
+            <Mission />
+          </Grid>
 
-            <Grid container justify="space-between">
-              <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
-                <Zoom duration={500}>
-                  <Card className={classes.card}>
-                    <CardMedia className={classes.media} image={missionImage} title="Girl Stretching" />
-                    <CardContent className={classes.content}>
-                      <Typography gutterBottom variant="headline" color="inherit">
-                        Levensstijl
-                      </Typography>
-                      <Typography variant="body1" color="inherit">
-                        Als personal trainer ben ik er voor jou om samen te werken aan een gezonde geest in een gezond
-                        lichaam of je nu 16 of 116 bent.
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Zoom>
-              </Grid>
-
-              <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
-                <Zoom duration={500}>
-                  <Card className={classes.card}>
-                    <CardMedia className={classes.media} image={missionImage2} title="Girl Stretching" />
-                    <CardContent className={classes.content}>
-                      <Typography gutterBottom variant="headline" color="inherit">
-                        Begeleiding
-                      </Typography>
-                      <Typography variant="body1" color="inherit">
-                        Ben je reeds vertrouwd met trainen of weet je niet hoe je moet beginnen? Er is begeleiding voor
-                        beginners én gevorderden.
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Zoom>
-              </Grid>
-
-              <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
-                <Zoom duration={500}>
-                  <Card className={classes.card}>
-                    <CardMedia className={classes.media} image={missionImage3} title="Girl Stretching" />
-                    <CardContent className={classes.content}>
-                      <Typography gutterBottom variant="headline" color="inherit">
-                        Planning
-                      </Typography>
-                      <Typography variant="body1" color="inherit">
-                        Door op maat gemaakte schema’s zorgen we ervoor dat je op een efficiënte en doeltreffende manier
-                        je resultaten behaalt.
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Zoom>
-              </Grid>
-
-              <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
-                <Zoom duration={500}>
-                  <Card className={classes.card}>
-                    <CardMedia className={classes.media} image={missionImage4} title="Girl Stretching" />
-                    <CardContent className={classes.content}>
-                      <Typography gutterBottom variant="headline" color="inherit">
-                        Toewijding
-                      </Typography>
-                      <Typography variant="body1" color="inherit">
-                        Alles hangt af van jouw motivatie en toewijding, maar dankzij persoonlijke begeleiding sta je er
-                        allesbehalve alleen voor.
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Zoom>
-              </Grid>
-            </Grid>
+          <Grid item xs={11} md={10} className={classes.approach}>
+            <Approach />
           </Grid>
         </Grid>
       </div>
