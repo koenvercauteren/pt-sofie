@@ -15,21 +15,6 @@ import missionImage3 from '../../assets/img/guy-running-track.jpg';
 import missionImage4 from '../../assets/img/girl-preparing-food.jpg';
 
 const styles = {
-  mission: {
-    color: '#1D345C',
-    maxWidth: '1040px',
-    zIndex: 1,
-    '&:before': {
-      content: '""',
-      position: 'absolute',
-      left: 0,
-      width: '100%',
-      height: '1400px',
-      transform: 'skewY(-8deg)',
-      background: '#fff',
-      zIndex: -1,
-    },
-  },
   title: {
     textAlign: 'center',
     marginTop: '150px',

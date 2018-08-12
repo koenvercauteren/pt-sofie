@@ -17,6 +17,8 @@ import Parallax from '../sections/parallax';
 import Mission from '../sections/mission';
 import Approach from '../sections/approach';
 
+import approachImage from '../assets/img/multiple-girls-stretching.jpeg';
+
 const styles = {
   page: {
     color: '#1D345C',
@@ -37,19 +39,40 @@ const styles = {
     },
   },
   approach: {
-    maxWidth: '1040px',
+    position: 'relative',
     zIndex: 1,
+    webkitTransform: 'skewY(-8deg)',
+    transform: 'skewY(-8deg)',
     '&:before': {
       content: '""',
       position: 'absolute',
+      top: '150px',
       right: 0,
       height: '400px',
-      webkitTransform: 'skewY(-8deg)',
-      transform: 'skewY(-8deg)',
       webkitTransformOrigin: '100% 0',
       transformOrigin: '100% 0',
       width: '50%',
-      background: '#1D345C',
+      background: '#4880E2',
+    },
+  },
+  approachImage: {
+    position: 'absolute',
+    top: '150px',
+    left: 0,
+    height: '400px',
+    width: '50%',
+    overflow: 'hidden',
+    '&:before': {
+      width: '100%',
+      minHeight: '600px',
+      content: '""',
+      position: 'absolute',
+      webkitTransform: 'skewY(8deg)',
+      transform: 'skewY(8deg)',
+      webkitTransformOrigin: '100% 0',
+      transformOrigin: '100% 0',
+      background: `url('${approachImage}') no-repeat`,
+      backgroundSize: 'cover',
     },
   },
   title: {
@@ -83,18 +106,23 @@ class IndexPage extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div>
+      <div className={classes.page}>
         <HeaderMenu />
-        <Grid container justify="center" className={classes.page}>
+        <Grid container justify="center">
           <Grid item xs={12}>
             <Parallax />
           </Grid>
+        </Grid>
 
+        <Grid container justify="center">
           <Grid item xs={11} md={10} className={classes.mission}>
             <Mission />
           </Grid>
+        </Grid>
 
-          <Grid item xs={11} md={10} className={classes.approach}>
+        <Grid container justify="center" className={classes.approach}>
+          <div className={classes.approachImage} />
+          <Grid item xs={11} md={10}>
             <Approach />
           </Grid>
         </Grid>
