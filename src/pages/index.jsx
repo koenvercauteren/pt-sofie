@@ -9,7 +9,7 @@ import Parallax from '../sections/parallax';
 import Mission from '../sections/mission';
 import Approach from '../sections/approach';
 
-import styles from './index.styles';
+import styles from '../styles/pages/index.styles';
 
 class IndexPage extends React.Component {
   constructor(props) {

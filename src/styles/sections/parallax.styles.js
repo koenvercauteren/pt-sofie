@@ -1,4 +1,4 @@
-const styles = {
+const styles = () => ({
   titleContainer: {
     height: 590,
     justifyContent: 'center',
@@ -12,7 +12,7 @@ const styles = {
     color: 'white',
     height: 55,
     fontSize: '16px',
-    padding: '0 106px',
+    padding: '0 50px',
     margin: '20px auto 0 auto',
   },
   title: {
@@ -32,6 +32,6 @@ const styles = {
   parallax: {
     overflow: 'visible !important',
   },
-};
+});
 
 export default styles;

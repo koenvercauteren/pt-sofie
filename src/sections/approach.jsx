@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 
-import styles from './approach.styles';
+import styles from '../styles/sections/approach.styles';
 
 const Approach = props => {
   const { classes } = props;

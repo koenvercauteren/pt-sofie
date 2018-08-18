@@ -8,7 +8,7 @@ import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 
 import backgroundImage from '../assets/img/background-image-landing-page.jpg';
-import styles from './parallax.styles';
+import styles from '../styles/sections/parallax.styles';
 
 const fadeTitle = () => {
   const title = window.document.getElementById('title');

@@ -1,4 +1,4 @@
-const styles = {
+const styles = () => ({
   mission: {
     maxWidth: '1040px',
     zIndex: 1,
@@ -33,6 +33,6 @@ const styles = {
     paddingRight: '8px',
     paddingBottom: '16px',
   },
-};
+});
 
 export default styles;

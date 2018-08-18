@@ -14,7 +14,7 @@ import missionImage2 from '../assets/img/guy-running-city.jpg';
 import missionImage3 from '../assets/img/guy-running-track.jpg';
 import missionImage4 from '../assets/img/girl-preparing-food.jpg';
 
-import styles from './mission.styles';
+import styles from '../styles/sections/mission.styles';
 
 const Mission = props => {
   const { classes } = props;

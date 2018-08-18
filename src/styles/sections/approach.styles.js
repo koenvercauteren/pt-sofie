@@ -1,4 +1,4 @@
-import approachImage from '../assets/img/multiple-girls-stretching.jpeg';
+import approachImage from '../../assets/img/multiple-girls-stretching.jpeg';
 
 const styles = theme => ({
   wrapper: {
