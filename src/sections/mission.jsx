@@ -28,7 +28,7 @@ const Mission = props => {
 
         <Grid container justify="space-between">
           <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
-            <Zoom duration={600}>
+            <Zoom duration={600} timeout={300}>
               <Card className={classes.card}>
                 <CardMedia className={classes.media} image={missionImage} title="Girl Stretching" />
                 <CardContent className={classes.content}>
@@ -45,7 +45,7 @@ const Mission = props => {
           </Grid>
 
           <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
-            <Zoom duration={600}>
+            <Zoom duration={600} timeout={600}>
               <Card className={classes.card}>
                 <CardMedia className={classes.media} image={missionImage2} title="Girl Stretching" />
                 <CardContent className={classes.content}>
@@ -62,7 +62,7 @@ const Mission = props => {
           </Grid>
 
           <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
-            <Zoom duration={600}>
+            <Zoom duration={600} timeout={900}>
               <Card className={classes.card}>
                 <CardMedia className={classes.media} image={missionImage3} title="Girl Stretching" />
                 <CardContent className={classes.content}>
@@ -79,7 +79,7 @@ const Mission = props => {
           </Grid>
 
           <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
-            <Zoom duration={600}>
+            <Zoom duration={600} timeout={1200}>
               <Card className={classes.card}>
                 <CardMedia className={classes.media} image={missionImage4} title="Girl Stretching" />
                 <CardContent className={classes.content}>

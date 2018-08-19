@@ -24,12 +24,19 @@ class IndexPage extends React.Component {
     return (
       <div className={classes.page}>
         <HeaderMenu />
-
         <Parallax />
-
         <Mission />
-
         <Approach />
+
+        {/* <iframe
+          className={classes.location}
+          title="location"
+          width="600"
+          height="450"
+          frameBorder="0"
+          src={'https://www.google.com/maps/embed/v1/place?q=place_id:ChIJlYenpvD2w0cRRzw256FqexY&key=1675606539207665'}
+          allowFullScreen
+        /> */}
       </div>
     );
   }

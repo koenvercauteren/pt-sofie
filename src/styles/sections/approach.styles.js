@@ -25,6 +25,11 @@ const styles = theme => ({
       width: '100%',
     },
   },
+  title: {
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '30px',
+    },
+  },
   approachContainer: {
     position: 'relative',
     zIndex: 1,
@@ -44,7 +49,7 @@ const styles = theme => ({
         width: '100%',
       },
       [theme.breakpoints.down('sm')]: {
-        height: '450px',
+        height: '500px',
       },
       [theme.breakpoints.up('md')]: {
         height: '400px',
@@ -67,7 +72,7 @@ const styles = theme => ({
       display: 'none',
     },
     [theme.breakpoints.down('sm')]: {
-      height: '450px',
+      height: '500px',
     },
     [theme.breakpoints.up('md')]: {
       height: '400px',

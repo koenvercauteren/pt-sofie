@@ -1,4 +1,4 @@
-const styles = () => ({
+const styles = theme => ({
   titleContainer: {
     height: 590,
     justifyContent: 'center',
@@ -22,6 +22,9 @@ const styles = () => ({
     fontWeight: 300,
     fontSize: '40px',
     textAlign: 'center',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '30px',
+    },
   },
   background: {
     minHeight: '1100px',

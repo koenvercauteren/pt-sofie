@@ -16,7 +16,7 @@ const Approach = props => {
       <Grid item xs={11} md={10} className={classes.approachGridItem}>
         <div className={classes.wrapper}>
           <div className={classes.container}>
-            <Typography gutterBottom variant="display1" color="inherit">
+            <Typography gutterBottom variant="display1" color="inherit" className={classes.title}>
               Aanpak
             </Typography>
 

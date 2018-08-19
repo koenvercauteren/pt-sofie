@@ -1,4 +1,4 @@
-const styles = () => ({
+const styles = theme => ({
   mission: {
     maxWidth: '1040px',
     zIndex: 1,
@@ -19,6 +19,12 @@ const styles = () => ({
     marginTop: '150px',
     marginBottom: '50px',
     color: 'rgba(0, 0, 0, 0.75)',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '30px',
+    },
+  },
+  icon: {
+    fontSize: '37.5px',
   },
   card: {
     zIndex: 1,
