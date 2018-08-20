@@ -8,6 +8,7 @@ import HeaderMenu from '../components/header-menu';
 import Parallax from '../sections/parallax';
 import Mission from '../sections/mission';
 import Approach from '../sections/approach';
+import Offer from '../sections/offer';
 
 import styles from '../styles/pages/index.styles';
 
@@ -27,6 +28,7 @@ class IndexPage extends React.Component {
         <Parallax />
         <Mission />
         <Approach />
+        <Offer />
 
         {/* <iframe
           className={classes.location}

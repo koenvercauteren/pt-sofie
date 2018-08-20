@@ -6,14 +6,9 @@ const styles = theme => ({
     flexDirection: 'column',
   },
   button: {
-    background: 'linear-gradient(45deg, #48B6BF 30%, #4880E2 90%)',
-    borderRadius: 3,
-    border: 0,
-    color: 'white',
     height: 55,
     fontSize: '16px',
     padding: '0 50px',
-    margin: '20px auto 0 auto',
   },
   title: {
     paddingTop: '100px',

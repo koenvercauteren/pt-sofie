@@ -4,13 +4,12 @@ const styles = theme => ({
   wrapper: {
     display: 'flex',
     justifyContent: 'flex-end',
-    marginTop: '150px',
     paddingLeft: '130px',
     webkitTransform: 'skewY(8deg)',
     transform: 'skewY(8deg)',
     [theme.breakpoints.down('xs')]: {
       paddingLeft: '24px',
-      marginTop: '195px',
+      marginTop: '50px',
     },
   },
   footer: {
@@ -31,6 +30,16 @@ const styles = theme => ({
     },
   },
   approachContainer: {
+    [theme.breakpoints.down('sm')]: {
+      height: '500px',
+    },
+    [theme.breakpoints.up('md')]: {
+      height: '400px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      height: '350px',
+    },
+    marginTop: '150px',
     position: 'relative',
     zIndex: 1,
     webkitTransform: 'skewY(-8deg)',
@@ -38,7 +47,6 @@ const styles = theme => ({
     '&:before': {
       content: '""',
       position: 'absolute',
-      top: '150px',
       right: 0,
       webkitTransformOrigin: '100% 0',
       transformOrigin: '100% 0',
@@ -64,7 +72,6 @@ const styles = theme => ({
   },
   approachImage: {
     position: 'absolute',
-    top: '150px',
     left: 0,
     width: '50%',
     overflow: 'hidden',

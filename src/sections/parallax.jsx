@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import { Parallax as ReactParallax } from 'react-parallax';
 import { Typography } from '@material-ui/core';
@@ -9,6 +8,7 @@ import Grid from '@material-ui/core/Grid';
 
 import backgroundImage from '../assets/img/background-image-landing-page.jpg';
 import styles from '../styles/sections/parallax.styles';
+import Button from '../components/button';
 
 const fadeTitle = () => {
   const title = window.document.getElementById('title');
@@ -41,7 +41,7 @@ class Parallax extends React.Component {
                 Een gezonde geest in<br />
                 een gezond lichaam
               </Typography>
-              <Button className={classes.button}>BEKIJK HET AANBOD</Button>
+              <Button className={classes.button} text="BEKIJK HET AANBOD" />
             </div>
           </ReactParallax>
         </Grid>

@@ -23,9 +23,6 @@ const styles = theme => ({
       fontSize: '30px',
     },
   },
-  icon: {
-    fontSize: '37.5px',
-  },
   card: {
     zIndex: 1,
   },
