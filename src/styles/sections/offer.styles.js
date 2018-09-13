@@ -50,6 +50,23 @@ const styles = theme => ({
     color: 'rgba(0, 0, 0, 0.60)',
     textDecoration: 'line-through',
   },
+  listContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    [theme.breakpoints.down('xs')]: {
+      height: '215px',
+    },
+    [theme.breakpoints.up('sm')]: {
+      height: '315px',
+    },
+    [theme.breakpoints.up('md')]: {
+      height: '280px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      height: '220px',
+    },
+  },
 });
 
 export default styles;

@@ -36,6 +36,17 @@ const styles = theme => ({
     paddingRight: '8px',
     paddingBottom: '16px',
   },
+  content: {
+    [theme.breakpoints.up('sm')]: {
+      height: '160px',
+    },
+    [theme.breakpoints.up('md')]: {
+      height: '140px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      height: '180px',
+    },
+  },
 });
 
 export default styles;

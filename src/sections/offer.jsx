@@ -33,39 +33,31 @@ const Offer = ({ classes }) => (
                 <PersonIcon className={classes.cardIcon} />
               </Typography>
               <Typography gutterBottom variant="headline">
-                € 99,95
+                € 50
               </Typography>
 
               <Divider />
 
-              <div className={classes.cardBulletList}>
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+              <div className={classes.listContainer}>
+                <div className={classes.cardBulletList}>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>75 minuten</span>
+                  </Typography>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Persoonlijke begeleiding</span>
+                  </Typography>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Werk aan jezelf</span>
+                  </Typography>
+                </div>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
-
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                <Button className={classes.button} text="ONTDEK MEER" />
               </div>
-
-              <Button className={classes.button} text="ONTDEK MEER" />
             </CardContent>
           </Card>
         </Grid>
@@ -80,43 +72,45 @@ const Offer = ({ classes }) => (
 
               <div className={classes.pricing}>
                 <Typography gutterBottom variant="headline">
-                  € 75,95
+                  € 80
                 </Typography>
                 <Typography className={classes.normalPrice} variant="subheading">
-                  € 99,95
+                  € 100
                 </Typography>
               </div>
 
               <Divider />
 
-              <div className={classes.cardBulletList}>
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+              <div className={classes.listContainer}>
+                <div className={classes.cardBulletList}>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>75 minuten</span>
+                  </Typography>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Bespaar tot €15 per training</span>
+                  </Typography>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Sporten met vrienden</span>
+                  </Typography>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Afwisselende trainingsmethode</span>
+                  </Typography>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Binnen of buiten trainen</span>
+                  </Typography>
+                </div>
+
+                <Button className={classes.button} text="ONTDEK MEER" />
               </div>
-
-              <Button className={classes.button} text="ONTDEK MEER" />
             </CardContent>
           </Card>
         </Grid>
@@ -125,49 +119,43 @@ const Offer = ({ classes }) => (
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>Bootcamp</span>
+                <span>Bootycamp</span>
                 <GroupAddIcon className={classes.cardIcon} />
               </Typography>
 
               <div className={classes.pricing}>
                 <Typography gutterBottom variant="headline">
-                  € 25,00
-                </Typography>
-                <Typography className={classes.normalPrice} variant="subheading">
-                  € 99,95
+                  € 12
                 </Typography>
               </div>
 
               <Divider />
 
-              <div className={classes.cardBulletList}>
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+              <div className={classes.listContainer}>
+                <div className={classes.cardBulletList}>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>1 uur 30 minuten</span>
+                  </Typography>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Ladies only</span>
+                  </Typography>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Bikini body</span>
+                  </Typography>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Focus op onderlichaam</span>
+                  </Typography>
+                </div>
 
-                <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                  <StarIcon className={classes.cardBulletIcon} />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </Typography>
+                <Button className={classes.button} text="ONTDEK MEER" />
               </div>
-
-              <Button className={classes.button} text="ONTDEK MEER" />
             </CardContent>
           </Card>
         </Grid>

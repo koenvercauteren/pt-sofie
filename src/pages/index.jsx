@@ -9,6 +9,7 @@ import Parallax from '../sections/parallax';
 import Mission from '../sections/mission';
 import Approach from '../sections/approach';
 import Offer from '../sections/offer';
+import Location from '../sections/location';
 
 import styles from '../styles/pages/index.styles';
 
@@ -29,16 +30,7 @@ class IndexPage extends React.Component {
         <Mission />
         <Approach />
         <Offer />
-
-        {/* <iframe
-          className={classes.location}
-          title="location"
-          width="600"
-          height="450"
-          frameBorder="0"
-          src={'https://www.google.com/maps/embed/v1/place?q=place_id:ChIJlYenpvD2w0cRRzw256FqexY&key=1675606539207665'}
-          allowFullScreen
-        /> */}
+        <Location />
       </div>
     );
   }

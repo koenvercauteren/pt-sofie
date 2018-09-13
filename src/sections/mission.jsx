@@ -33,7 +33,7 @@ const Mission = props => {
                 <Typography gutterBottom variant="headline">
                   Levensstijl
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="subheading">
                   Als personal trainer ben ik er voor jou om samen te werken aan een gezonde geest in een gezond lichaam
                   of je nu 16 of 116 bent.
                 </Typography>
@@ -48,7 +48,7 @@ const Mission = props => {
                 <Typography gutterBottom variant="headline">
                   Begeleiding
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="subheading">
                   Ben je reeds vertrouwd met trainen of weet je niet hoe je moet beginnen? Er is begeleiding voor
                   beginners én gevorderden.
                 </Typography>
@@ -63,7 +63,7 @@ const Mission = props => {
                 <Typography gutterBottom variant="headline">
                   Planning
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="subheading">
                   Door op maat gemaakte schema’s zorgen we ervoor dat je op een efficiënte en doeltreffende manier jouw
                   resultaten behaalt.
                 </Typography>
@@ -78,7 +78,7 @@ const Mission = props => {
                 <Typography gutterBottom variant="headline">
                   Toewijding
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="subheading">
                   Alles hangt af van jouw motivatie en toewijding, maar dankzij persoonlijke begeleiding sta je er
                   allesbehalve alleen voor.
                 </Typography>

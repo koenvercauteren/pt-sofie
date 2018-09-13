@@ -31,13 +31,13 @@ const styles = theme => ({
   },
   approachContainer: {
     [theme.breakpoints.down('sm')]: {
-      height: '500px',
+      height: '600px',
     },
     [theme.breakpoints.up('md')]: {
-      height: '400px',
+      height: '500px',
     },
     [theme.breakpoints.up('lg')]: {
-      height: '350px',
+      height: '450px',
     },
     marginTop: '150px',
     position: 'relative',
@@ -57,13 +57,13 @@ const styles = theme => ({
         width: '100%',
       },
       [theme.breakpoints.down('sm')]: {
-        height: '500px',
+        height: '600px',
       },
       [theme.breakpoints.up('md')]: {
-        height: '400px',
+        height: '500px',
       },
       [theme.breakpoints.up('lg')]: {
-        height: '350px',
+        height: '450px',
       },
     },
   },
@@ -79,13 +79,13 @@ const styles = theme => ({
       display: 'none',
     },
     [theme.breakpoints.down('sm')]: {
-      height: '500px',
+      height: '600px',
     },
     [theme.breakpoints.up('md')]: {
-      height: '400px',
+      height: '500px',
     },
     [theme.breakpoints.up('lg')]: {
-      height: '350px',
+      height: '450px',
     },
     '&:before': {
       width: '100%',
