@@ -53,8 +53,8 @@ const styles = theme => ({
     width: '500px',
   },
   content: {
-    paddingTop: '100px',
-    paddingBottom: '100px',
+    paddingTop: '100px !important',
+    paddingBottom: '100px !important',
   },
 });
 

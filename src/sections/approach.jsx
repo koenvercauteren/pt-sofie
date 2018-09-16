@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 import styles from '../styles/sections/approach.styles';
 
@@ -12,7 +13,10 @@ const Approach = props => {
 
   return (
     <Grid container justify="center" className={classes.approachContainer}>
-      <div className={classes.approachImage} />
+      <ScrollableAnchor id="approach">
+        <div className={classes.approachImage} />
+      </ScrollableAnchor>
+
       <Grid item xs={11} md={10} className={classes.approachGridItem}>
         <div className={classes.wrapper}>
           <div className={classes.container}>

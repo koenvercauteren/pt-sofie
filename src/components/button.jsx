@@ -14,18 +14,22 @@ const styles = {
   },
 };
 
-const Button = ({ classes, text, className }) => (
-  <BaseButton className={`${classes.button} ${className}`}>{text}</BaseButton>
+const Button = ({ classes, text, className, onClick }) => (
+  <BaseButton className={`${classes.button} ${className}`} onClick={onClick}>
+    {text}
+  </BaseButton>
 );
 
 Button.propTypes = {
   classes: PropTypes.object.isRequired,
   text: PropTypes.string.isRequired,
   className: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
   className: '',
+  onClick: undefined,
 };
 
 export default withStyles(styles)(Button);

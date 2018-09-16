@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 import missionImage from '../assets/img/girl-stretching.jpeg';
 import missionImage2 from '../assets/img/guy-running-city.jpg';
@@ -21,9 +22,11 @@ const Mission = props => {
   return (
     <Grid container justify="center">
       <Grid item xs={11} md={10} className={classes.mission}>
-        <Typography variant="display2" className={classes.title}>
-          Sleutels tot succes
-        </Typography>
+        <ScrollableAnchor id="mission">
+          <Typography variant="display2" className={classes.title}>
+            Sleutels tot succes
+          </Typography>
+        </ScrollableAnchor>
 
         <Grid container justify="space-between">
           <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>

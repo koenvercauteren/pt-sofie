@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { Parallax as ReactParallax } from 'react-parallax';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 import backgroundImage from '../assets/img/background-image-landing-page.jpg';
 import styles from '../styles/sections/parallax.styles';

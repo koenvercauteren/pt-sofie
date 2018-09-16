@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
+import { goToTop, goToAnchor } from 'react-scrollable-anchor';
 
 import Burger from './burger';
 
@@ -29,7 +30,7 @@ const styles = {
   },
 };
 
-function HeaderMenu(props) {
+const HeaderMenu = props => {
   const { classes } = props;
 
   return (
@@ -38,17 +39,29 @@ function HeaderMenu(props) {
         <Grid container justify="center">
           <Grid item xs={11} md={10} className={classes.grid}>
             <Toolbar disableGutters>
-              <Typography variant="title" color="inherit">
-                SDB
-              </Typography>
+              <Button color="inherit" onClick={() => goToTop()}>
+                <Typography variant="title" color="inherit">
+                  SDB
+                </Typography>
+              </Button>
 
               <div className={classes.buttonGroup}>
                 <Hidden xsDown>
-                  <Button color="inherit">Missie</Button>
-                  <Button color="inherit">Aanpak</Button>
-                  <Button color="inherit">Aanbod</Button>
-                  <Button color="inherit">Locatie</Button>
-                  <Button color="inherit">Contact</Button>
+                  <Button color="inherit" onClick={() => goToAnchor('mission')}>
+                    Missie
+                  </Button>
+                  <Button color="inherit" onClick={() => goToAnchor('approach')}>
+                    Aanpak
+                  </Button>
+                  <Button color="inherit" onClick={() => goToAnchor('offer')}>
+                    Aanbod
+                  </Button>
+                  <Button color="inherit" onClick={() => goToAnchor('location')}>
+                    Locatie
+                  </Button>
+                  <Button color="inherit" onClick={() => goToAnchor('contact')}>
+                    Contact
+                  </Button>
                 </Hidden>
 
                 <Hidden smUp>
@@ -69,7 +82,7 @@ function HeaderMenu(props) {
       </AppBar>
     </div>
   );
-}
+};
 
 HeaderMenu.propTypes = {
   classes: PropTypes.object.isRequired,

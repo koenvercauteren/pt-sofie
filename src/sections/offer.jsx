@@ -8,6 +8,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 import StarIcon from '@material-ui/icons/Star';
 import GroupIcon from '@material-ui/icons/Group';
@@ -20,9 +21,11 @@ import Button from '../components/button';
 const Offer = ({ classes }) => (
   <Grid container justify="center">
     <Grid item xs={11} md={10} className={classes.offer}>
-      <Typography variant="display2" className={classes.title}>
-        Aanbod
-      </Typography>
+      <ScrollableAnchor id="offer">
+        <Typography variant="display2" className={classes.title}>
+          Aanbod
+        </Typography>
+      </ScrollableAnchor>
 
       <Grid container justify="space-between">
         <Grid className={classes.gridItem} item xs={12} sm={4}>
