@@ -17,6 +17,7 @@ const styles = {
   },
   header: {
     backgroundColor: '#252525 !important',
+    color: '#fff',
   },
   buttonGroup: {
     display: 'flex',
