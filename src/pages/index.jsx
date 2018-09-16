@@ -10,6 +10,7 @@ import Mission from '../sections/mission';
 import Approach from '../sections/approach';
 import Offer from '../sections/offer';
 import Location from '../sections/location';
+import Contact from '../sections/contact';
 
 import styles from '../styles/pages/index.styles';
 
@@ -31,6 +32,7 @@ class IndexPage extends React.Component {
         <Approach />
         <Offer />
         <Location />
+        <Contact />
       </div>
     );
   }
