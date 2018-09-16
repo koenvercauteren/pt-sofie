@@ -51,6 +51,9 @@ const styles = theme => ({
   },
   card: {
     width: '500px',
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+    },
   },
   content: {
     paddingTop: '100px !important',

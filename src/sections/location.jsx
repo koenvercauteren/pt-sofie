@@ -24,7 +24,7 @@ class Location extends React.Component {
 
   render() {
     const { classes } = this.props;
-    console.log(this.state.window && this.state.window.location);
+
     return (
       <Grid container justify="center" className={classes.container}>
         <Grid item xs={11} md={10} className={classes.location}>
