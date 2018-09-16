@@ -14,8 +14,8 @@ const styles = {
   },
 };
 
-const Button = ({ classes, text, className, onClick }) => (
-  <BaseButton className={`${classes.button} ${className}`} onClick={onClick}>
+const Button = ({ classes, text, className, onClick, type }) => (
+  <BaseButton type={type} className={`${classes.button} ${className}`} onClick={onClick}>
     {text}
   </BaseButton>
 );
@@ -25,10 +25,12 @@ Button.propTypes = {
   text: PropTypes.string.isRequired,
   className: PropTypes.string,
   onClick: PropTypes.func,
+  type: PropTypes.string,
 };
 
 Button.defaultProps = {
   className: '',
+  type: '',
   onClick: undefined,
 };
 

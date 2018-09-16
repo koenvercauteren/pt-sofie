@@ -33,7 +33,7 @@ const Contact = props => {
                 className={classes.textField}
                 margin="normal"
               />
-              <Button className={classes.button} text="VERZEND" />
+              <Button type="submit" className={classes.button} text="VERZEND" />
             </form>
           </CardContent>
         </Card>
