@@ -21,7 +21,7 @@ const Contact = props => {
                 Contact
               </Typography>
             </ScrollableAnchor>
-            <form className={classes.form} name="contact" method="POST" data-netlify="true">
+            <form className={classes.form} name="contact" method="POST" data-netlify="true" s>
               <TextField required id="name" label="Naam" className={classes.textField} margin="normal" />
               <TextField required id="email" label="E-mail" className={classes.textField} margin="normal" />
               <TextField
