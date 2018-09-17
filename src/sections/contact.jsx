@@ -47,6 +47,14 @@ class Contact extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    this.setState({ submitState: null });
+  };
+
   render() {
     const { classes } = this.props;
 
@@ -98,7 +106,7 @@ class Contact extends React.Component {
                   margin="normal"
                   onChange={this.handleChange}
                 />
-                <Button type="submit" className={classes.button} text="VERZEND" />
+                <Button disabled={this.state.submitState} type="submit" className={classes.button} text="VERZEND" />
               </form>
             </CardContent>
           </Card>
@@ -111,12 +119,9 @@ class Contact extends React.Component {
           open={this.state.submitState}
           autoHideDuration={3000}
           onClose={this.handleClose}
-          ContentProps={{
-            'aria-describedby': 'message-id',
-          }}
           message={
             // eslint-disable-next-line react/jsx-wrap-multilines
-            <span id="message-id">
+            <span>
               {this.state.submitState === 'success' && 'Bericht verzonden'}
               {this.state.submitState === 'failed' && 'Er is iets misgelopen'}
             </span>
