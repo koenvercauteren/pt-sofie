@@ -7,6 +7,8 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
+import SendIcon from '@material-ui/icons/Send';
+
 import styles from '../styles/sections/contact.styles';
 import Button from '../components/button';
 
@@ -106,7 +108,9 @@ class Contact extends React.Component {
                   margin="normal"
                   onChange={this.handleChange}
                 />
-                <Button disabled={this.state.submitState} type="submit" className={classes.button} text="VERZEND" />
+                <Button disabled={this.state.submitState} type="submit" className={classes.button} text="VERZEND">
+                  <SendIcon className={classes.leftIcon} />
+                </Button>
               </form>
             </CardContent>
           </Card>

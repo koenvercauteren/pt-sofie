@@ -59,6 +59,9 @@ const styles = theme => ({
     paddingTop: '100px !important',
     paddingBottom: '100px !important',
   },
+  leftIcon: {
+    marginRight: theme.spacing.unit,
+  },
 });
 
 export default styles;

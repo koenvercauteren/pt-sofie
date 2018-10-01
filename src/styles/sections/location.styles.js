@@ -41,6 +41,9 @@ const styles = theme => ({
       background: '#fe7000',
     },
   },
+  leftIcon: {
+    marginRight: theme.spacing.unit,
+  },
 });
 
 export default styles;

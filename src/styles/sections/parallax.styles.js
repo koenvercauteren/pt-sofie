@@ -30,6 +30,9 @@ const styles = theme => ({
   parallax: {
     overflow: 'visible !important',
   },
+  leftIcon: {
+    marginRight: theme.spacing.unit,
+  },
 });
 
 export default styles;
