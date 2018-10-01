@@ -6,10 +6,12 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import StepContent from '@material-ui/core/StepContent';
 import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Link from 'gatsby-link';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import ArrowBackIcon from '@material-ui/icons/KeyboardArrowLeft';
+import ArrowForwardIcon from '@material-ui/icons/KeyboardArrowRight';
 
 const styles = theme => ({
   button: {
@@ -35,8 +37,21 @@ const styles = theme => ({
       fontSize: '30px',
     },
   },
-  leftIcon: {
-    marginRight: theme.spacing.unit,
+  rightIcon: {
+    marginLeft: theme.spacing.unit,
+  },
+  step: {
+    position: 'relative',
+  },
+  stepClick: {
+    position: 'absolute',
+    width: '100%',
+    height: '25px',
+    cursor: 'pointer',
+    zIndex: 50,
+    '&:focus': {
+      outline: 'none',
+    },
   },
 });
 
@@ -59,9 +74,9 @@ class OfferDetail extends React.Component {
     }));
   };
 
-  handleReset = () => {
+  handleClick = activeStep => {
     this.setState({
-      activeStep: 0,
+      activeStep,
     });
   };
 
@@ -78,21 +93,31 @@ class OfferDetail extends React.Component {
 
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((label, index) => (
-            <Step key={label}>
-              <StepLabel active>{label}</StepLabel>
+            <Step key={label} className={classes.step}>
+              <div
+                className={classes.stepClick}
+                onKeyDown={() => this.handleClick(index)}
+                tabIndex={0}
+                role="button"
+                onClick={() => this.handleClick(index)}
+              />
+              <StepLabel active onClick={() => this.handleClick(index)}>
+                {label}
+              </StepLabel>
               <StepContent>
                 <Typography>{getStepContent(index)}</Typography>
                 <div className={classes.actionsContainer}>
                   <div>
-                    <Button
+                    <IconButton
                       disabled={activeStep === 0}
                       onClick={this.handleBack}
                       className={`${classes.button} ${classes.uncontained}`}
                     >
-                      Terug
-                    </Button>
+                      <ArrowBackIcon />
+                    </IconButton>
                     <Button variant="contained" color="primary" onClick={this.handleNext} className={classes.button}>
                       {activeStep === steps.length - 1 ? 'Einde' : 'Volgende'}
+                      <ArrowForwardIcon className={classes.rightIcon} />
                     </Button>
                   </div>
                 </div>
