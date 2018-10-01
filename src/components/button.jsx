@@ -14,8 +14,14 @@ const styles = {
   },
 };
 
-const Button = ({ children, classes, text, className, onClick, type, disabled }) => (
-  <BaseButton disabled={disabled} type={type} className={`${classes.button} ${className}`} onClick={onClick}>
+const Button = ({ children, classes, text, className, onClick, type, disabled, component }) => (
+  <BaseButton
+    component={component}
+    disabled={disabled}
+    type={type}
+    className={`${classes.button} ${className}`}
+    onClick={onClick}
+  >
     {children}
     {text}
   </BaseButton>
@@ -28,6 +34,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
   type: PropTypes.string,
   children: PropTypes.object,
+  component: PropTypes.object,
   disabled: PropTypes.bool,
 };
 
@@ -35,6 +42,7 @@ Button.defaultProps = {
   className: '',
   type: '',
   children: undefined,
+  component: undefined,
   disabled: false,
   onClick: undefined,
 };

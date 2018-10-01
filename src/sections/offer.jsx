@@ -9,6 +9,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import Link from 'gatsby-link';
 
 import StarIcon from '@material-ui/icons/Star';
 import GroupIcon from '@material-ui/icons/Group';
@@ -17,6 +18,8 @@ import PersonIcon from '@material-ui/icons/Person';
 
 import styles from '../styles/sections/offer.styles';
 import Button from '../components/button';
+
+const LinkToIndividual = props => <Link to="/individual" {...props} />;
 
 const Offer = ({ classes }) => (
   <Grid container justify="center">
@@ -59,7 +62,7 @@ const Offer = ({ classes }) => (
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="ONTDEK MEER" />
+                <Button className={classes.button} text="ONTDEK MEER" component={LinkToIndividual} />
               </div>
             </CardContent>
           </Card>
