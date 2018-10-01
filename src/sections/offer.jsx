@@ -21,6 +21,10 @@ import Button from '../components/button';
 
 const LinkToIndividual = props => <Link to="/individual" {...props} />;
 
+const LinkToSmallGroup = props => <Link to="/small-group" {...props} />;
+
+const LinkToBootycamp = props => <Link to="/bootycamp" {...props} />;
+
 const Offer = ({ classes }) => (
   <Grid container justify="center">
     <Grid item xs={11} md={10} className={classes.offer}>
@@ -115,7 +119,7 @@ const Offer = ({ classes }) => (
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="ONTDEK MEER" />
+                <Button className={classes.button} text="ONTDEK MEER" component={LinkToSmallGroup} />
               </div>
             </CardContent>
           </Card>
@@ -151,7 +155,7 @@ const Offer = ({ classes }) => (
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Bikini body</span>
+                    <span>Borst, buik, billen</span>
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
@@ -160,7 +164,7 @@ const Offer = ({ classes }) => (
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="ONTDEK MEER" />
+                <Button className={classes.button} text="ONTDEK MEER" component={LinkToBootycamp} />
               </div>
             </CardContent>
           </Card>

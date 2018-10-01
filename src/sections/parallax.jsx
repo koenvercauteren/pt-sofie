@@ -6,7 +6,7 @@ import { Parallax as ReactParallax } from 'react-parallax';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import { goToAnchor } from 'react-scrollable-anchor';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDownward';
+import ArrowDownardIcon from '@material-ui/icons/ArrowDownward';
 
 import ANCHORS from '../globals/anchors';
 import backgroundImage from '../assets/img/background-image-landing-page.jpg';
@@ -45,7 +45,7 @@ class Parallax extends React.Component {
                 een gezond lichaam
               </Typography>
               <Button onClick={() => goToAnchor(ANCHORS.OFFER)} className={classes.button} text="BEKIJK HET AANBOD">
-                <ArrowDropDownIcon className={classes.leftIcon} />
+                <ArrowDownardIcon className={classes.leftIcon} />
               </Button>
             </div>
           </ReactParallax>
