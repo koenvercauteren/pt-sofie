@@ -13,35 +13,34 @@ const Approach = props => {
 
   return (
     <Grid container justify="center" className={classes.approachContainer}>
+      <div className={classes.approachImage} />
       <ScrollableAnchor id="approach">
-        <div className={classes.approachImage} />
-      </ScrollableAnchor>
+        <Grid item xs={11} md={10} className={classes.approachGridItem}>
+          <div className={classes.wrapper}>
+            <div className={classes.container}>
+              <Typography gutterBottom variant="display2" color="inherit" className={classes.title}>
+                Aanpak
+              </Typography>
 
-      <Grid item xs={11} md={10} className={classes.approachGridItem}>
-        <div className={classes.wrapper}>
-          <div className={classes.container}>
-            <Typography gutterBottom variant="display2" color="inherit" className={classes.title}>
-              Aanpak
-            </Typography>
+              <Typography gutterBottom variant="subheading" color="inherit">
+                Je weg vinden binnen een fitness is niet gemakkelijk. Voor je aan je gezonde levensstijl begint moet je
+                jezelf enkele vragen stellen: Waarom doe ik dit en welke doelen wil ik behalen. Zodra jij de antwoorden
+                weet kunnen we aan de slag met een voedingsschema en trainingsschema.
+              </Typography>
 
-            <Typography gutterBottom variant="subheading" color="inherit">
-              Je weg vinden binnen een fitness is niet gemakkelijk. Voor je aan je gezonde levensstijl begint moet je
-              jezelf enkele vragen stellen: Waarom doe ik dit en welke doelen wil ik behalen. Zodra jij de antwoorden
-              weet kunnen we aan de slag met een voedingsschema en trainingsschema.
-            </Typography>
+              <Typography gutterBottom variant="subheading" color="inherit">
+                Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te
+                bereiken. Of je nu aan je zelfvertrouwen wil werken, wil afvallen of bijkomen, conditie wil verbeteren
+                of spiermassa opbouwen, alles kan.
+              </Typography>
 
-            <Typography gutterBottom variant="subheading" color="inherit">
-              Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te
-              bereiken. Of je nu aan je zelfvertrouwen wil werken, wil afvallen of bijkomen, conditie wil verbeteren of
-              spiermassa opbouwen, alles kan.
-            </Typography>
-
-            <Typography className={classes.footer} variant="subheading" color="inherit">
-              Why start tomorrow when you can start today?
-            </Typography>
+              <Typography className={classes.footer} variant="subheading" color="inherit">
+                Why start tomorrow when you can start today?
+              </Typography>
+            </div>
           </div>
-        </div>
-      </Grid>
+        </Grid>
+      </ScrollableAnchor>
     </Grid>
   );
 };

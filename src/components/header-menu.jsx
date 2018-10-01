@@ -9,6 +9,8 @@ import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import { goToTop, goToAnchor } from 'react-scrollable-anchor';
 
+import ANCHORS from '../globals/anchors';
+
 import Burger from './burger';
 
 const styles = {
@@ -48,19 +50,19 @@ const HeaderMenu = props => {
 
               <div className={classes.buttonGroup}>
                 <Hidden xsDown>
-                  <Button color="inherit" onClick={() => goToAnchor('mission')}>
+                  <Button color="inherit" onClick={() => goToAnchor(ANCHORS.MISSION)}>
                     Missie
                   </Button>
-                  <Button color="inherit" onClick={() => goToAnchor('approach')}>
+                  <Button color="inherit" onClick={() => goToAnchor(ANCHORS.APPROACH)}>
                     Aanpak
                   </Button>
-                  <Button color="inherit" onClick={() => goToAnchor('offer')}>
+                  <Button color="inherit" onClick={() => goToAnchor(ANCHORS.OFFER)}>
                     Aanbod
                   </Button>
-                  <Button color="inherit" onClick={() => goToAnchor('location')}>
+                  <Button color="inherit" onClick={() => goToAnchor(ANCHORS.LOCATION)}>
                     Locatie
                   </Button>
-                  <Button color="inherit" onClick={() => goToAnchor('contact')}>
+                  <Button color="inherit" onClick={() => goToAnchor(ANCHORS.CONTACT)}>
                     Contact
                   </Button>
                 </Hidden>
@@ -68,11 +70,11 @@ const HeaderMenu = props => {
                 <Hidden smUp>
                   <Burger
                     items={[
-                      { name: 'Missie' },
-                      { name: 'Aanpak' },
-                      { name: 'Aanbod' },
-                      { name: 'Locatie' },
-                      { name: 'Contact' },
+                      { name: 'Missie', anchor: ANCHORS.MISSION },
+                      { name: 'Aanpak', anchor: ANCHORS.APPROACH },
+                      { name: 'Aanbod', anchor: ANCHORS.OFFER },
+                      { name: 'Locatie', anchor: ANCHORS.LOCATION },
+                      { name: 'Contact', anchor: ANCHORS.CONTACT },
                     ]}
                   />
                 </Hidden>

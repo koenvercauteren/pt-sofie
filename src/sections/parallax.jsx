@@ -7,6 +7,7 @@ import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import { goToAnchor } from 'react-scrollable-anchor';
 
+import ANCHORS from '../globals/anchors';
 import backgroundImage from '../assets/img/background-image-landing-page.jpg';
 import styles from '../styles/sections/parallax.styles';
 import Button from '../components/button';
@@ -42,7 +43,7 @@ class Parallax extends React.Component {
                 Een gezonde geest in<br />
                 een gezond lichaam
               </Typography>
-              <Button onClick={() => goToAnchor('offer')} className={classes.button} text="BEKIJK HET AANBOD" />
+              <Button onClick={() => goToAnchor(ANCHORS.OFFER)} className={classes.button} text="BEKIJK HET AANBOD" />
             </div>
           </ReactParallax>
         </Grid>

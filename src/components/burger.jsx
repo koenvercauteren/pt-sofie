@@ -5,6 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
+import { goToAnchor } from 'react-scrollable-anchor';
 
 const styles = {
   menuItem: {
@@ -21,7 +22,8 @@ class Burger extends React.Component {
     this.setState({ anchorEl: event.currentTarget });
   };
 
-  handleClose = () => {
+  handleClose = goTo => {
+    goToAnchor(goTo);
     this.setState({ anchorEl: null });
   };
 
@@ -42,7 +44,7 @@ class Burger extends React.Component {
         </IconButton>
         <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={this.handleClose}>
           {items.map(item => (
-            <MenuItem key={item.name} onClick={this.handleClose} className={classes.menuItem}>
+            <MenuItem key={item.name} onClick={() => this.handleClose(item.anchor)} className={classes.menuItem}>
               {item.name}
             </MenuItem>
           ))}
