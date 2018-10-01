@@ -32,7 +32,7 @@ const getStepContent = step => {
                 stretching en sta je al één stap dichter bij je doel.`;
     case 2:
       return `Door middel van plyometrics, verandering van richting en creatieve conditionering, zullen
-                we je sprotiviteit naar een hoger niveau tillen.`;
+                we je sportiviteit naar een hoger niveau tillen.`;
     case 3:
       return `Ongeacht jouw doel, zal jouw plan zo opgebouwd zijn om je gezond en blessure vrij te houden.
                 We zullen streven naar een structurele balans zodat je altijd het beste uit jezelf kan halen.`;
