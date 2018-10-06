@@ -50,8 +50,8 @@ const HeaderMenu = props => {
 
               <div className={classes.buttonGroup}>
                 <Hidden xsDown>
-                  <Button color="inherit" onClick={() => goToAnchor(ANCHORS.MISSION)}>
-                    Missie
+                  <Button color="inherit" onClick={() => goToAnchor(ANCHORS.KEYSTOSUCCESS)}>
+                    Sleutels
                   </Button>
                   <Button color="inherit" onClick={() => goToAnchor(ANCHORS.APPROACH)}>
                     Aanpak
@@ -70,7 +70,7 @@ const HeaderMenu = props => {
                 <Hidden smUp>
                   <Burger
                     items={[
-                      { name: 'Missie', anchor: ANCHORS.MISSION },
+                      { name: 'Sleutels', anchor: ANCHORS.KEYSTOSUCCESS },
                       { name: 'Aanpak', anchor: ANCHORS.APPROACH },
                       { name: 'Aanbod', anchor: ANCHORS.OFFER },
                       { name: 'Locatie', anchor: ANCHORS.LOCATION },

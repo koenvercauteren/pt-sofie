@@ -1,5 +1,5 @@
 export default {
-  MISSION: 'mission',
+  KEYSTOSUCCESS: 'keys-to-success',
   APPROACH: 'approach',
   OFFER: 'offer',
   LOCATION: 'location',

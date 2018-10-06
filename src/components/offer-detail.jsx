@@ -43,6 +43,9 @@ const styles = theme => ({
   step: {
     position: 'relative',
   },
+  stepper: {
+    marginBottom: '50px',
+  },
   stepClick: {
     position: 'absolute',
     width: '100%',
@@ -91,7 +94,7 @@ class OfferDetail extends React.Component {
           {title}
         </Typography>
 
-        <Stepper activeStep={activeStep} orientation="vertical">
+        <Stepper activeStep={activeStep} orientation="vertical" className={classes.stepper}>
           {steps.map((label, index) => (
             <Step key={label} className={classes.step}>
               <div

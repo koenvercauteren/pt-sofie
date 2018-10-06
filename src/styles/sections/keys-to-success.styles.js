@@ -1,5 +1,5 @@
 const styles = theme => ({
-  mission: {
+  keysToSuccess: {
     maxWidth: '1040px',
     zIndex: 1,
     '&:before': {
@@ -38,13 +38,13 @@ const styles = theme => ({
   },
   content: {
     [theme.breakpoints.up('sm')]: {
-      height: '160px',
+      height: '180px',
     },
     [theme.breakpoints.up('md')]: {
-      height: '140px',
+      height: '150px',
     },
     [theme.breakpoints.up('lg')]: {
-      height: '180px',
+      height: '150px',
     },
   },
 });

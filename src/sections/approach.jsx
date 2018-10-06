@@ -25,7 +25,7 @@ const Approach = props => {
               <Typography gutterBottom variant="subheading" color="inherit">
                 Je weg vinden binnen een fitness is niet gemakkelijk. Voor je aan je gezonde levensstijl begint moet je
                 jezelf enkele vragen stellen: Waarom doe ik dit en welke doelen wil ik behalen. Zodra jij de antwoorden
-                weet kunnen we aan de slag met een voedingsschema en trainingsschema.
+                weet kunnen we aan de slag met voedingsadvies.
               </Typography>
 
               <Typography gutterBottom variant="subheading" color="inherit">

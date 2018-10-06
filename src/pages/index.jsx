@@ -6,7 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 import HeaderMenu from '../components/header-menu';
 import Parallax from '../sections/parallax';
-import Mission from '../sections/mission';
+import KeysToSuccess from '../sections/keys-to-success';
 import Approach from '../sections/approach';
 import Offer from '../sections/offer';
 import Location from '../sections/location';
@@ -28,7 +28,7 @@ class IndexPage extends React.Component {
       <div className={classes.page}>
         <HeaderMenu />
         <Parallax />
-        <Mission />
+        <KeysToSuccess />
         <Approach />
         <Offer />
         <Location />

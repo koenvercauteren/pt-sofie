@@ -9,81 +9,81 @@ import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
-import missionImage from '../assets/img/girl-stretching.jpeg';
-import missionImage2 from '../assets/img/guy-running-city.jpg';
-import missionImage3 from '../assets/img/guy-running-track.jpg';
-import missionImage4 from '../assets/img/girl-preparing-food.jpg';
+import keysToSuccessImage from '../assets/img/girl-stretching.jpeg';
+import keysToSuccessImage2 from '../assets/img/guy-running-city.jpg';
+import keysToSuccessImage3 from '../assets/img/guy-running-track.jpg';
+import keysToSuccessImage4 from '../assets/img/girl-preparing-food.jpg';
 
-import styles from '../styles/sections/mission.styles';
+import styles from '../styles/sections/keys-to-success.styles';
 
-const Mission = props => {
+const KeysToSuccess = props => {
   const { classes } = props;
 
   return (
     <Grid container justify="center">
-      <Grid item xs={11} md={10} className={classes.mission}>
-        <ScrollableAnchor id="mission">
+      <Grid item xs={11} md={10} className={classes.keysToSuccess}>
+        <ScrollableAnchor id="keys-to-success">
           <Typography variant="display2" className={classes.title}>
             Sleutels tot succes
           </Typography>
         </ScrollableAnchor>
 
         <Grid container justify="space-between">
-          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
+          <Grid className={classes.gridItem} item xs={12} sm={6}>
             <Card className={classes.card}>
-              <CardMedia className={classes.media} image={missionImage} title="Girl Stretching" />
+              <CardMedia className={classes.media} image={keysToSuccessImage} title="Girl Stretching" />
               <CardContent className={classes.content}>
                 <Typography gutterBottom variant="headline">
-                  Levensstijl
+                  Gezonde Levensstijl
                 </Typography>
                 <Typography variant="subheading">
-                  Als personal trainer ben ik er voor jou om samen te werken aan een gezonde geest in een gezond lichaam
-                  of je nu 16 of 116 bent.
+                  Als personal trainer ben ik er voor jou om samen te werken aan een gezonde geest in een gezond
+                  lichaam. We kijken welke kleine veranderingen je kan doorvoeren om je levensstijl te verbeteren.
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
 
-          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
+          <Grid className={classes.gridItem} item xs={12} sm={6}>
             <Card className={classes.card}>
-              <CardMedia className={classes.media} image={missionImage2} title="Girl Stretching" />
+              <CardMedia className={classes.media} image={keysToSuccessImage2} title="Girl Stretching" />
               <CardContent className={classes.content}>
                 <Typography gutterBottom variant="headline">
                   Begeleiding
                 </Typography>
                 <Typography variant="subheading">
-                  Ben je reeds vertrouwd met trainen of weet je niet hoe je moet beginnen? Er is begeleiding voor
-                  beginners én gevorderden.
+                  Ben je reeds vertrouwd met trainen of weet je niet hoe je moet beginnen? Er is professionele
+                  begeleiding voor beginners en gevorderden. Samen werken we aan je conditie en beach body.
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
 
-          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
+          <Grid className={classes.gridItem} item xs={12} sm={6}>
             <Card className={classes.card}>
-              <CardMedia className={classes.media} image={missionImage3} title="Girl Stretching" />
+              <CardMedia className={classes.media} image={keysToSuccessImage3} title="Girl Stretching" />
               <CardContent className={classes.content}>
                 <Typography gutterBottom variant="headline">
                   Planning
                 </Typography>
                 <Typography variant="subheading">
-                  Door op maat gemaakte schema’s zorgen we ervoor dat je op een efficiënte en doeltreffende manier jouw
-                  resultaten behaalt.
+                  Door op maat gemaakte schema’s zorgen we ervoor dat je op een efficiënte en doeltreffende manier je
+                  resultaten behaalt. Aan de hand van je resultaten kunnen we het plan ook dynamisch aanpassen.
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
 
-          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
+          <Grid className={classes.gridItem} item xs={12} sm={6}>
             <Card className={classes.card}>
-              <CardMedia className={classes.media} image={missionImage4} title="Girl Stretching" />
+              <CardMedia className={classes.media} image={keysToSuccessImage4} title="Girl Stretching" />
               <CardContent className={classes.content}>
                 <Typography gutterBottom variant="headline">
                   Toewijding
                 </Typography>
                 <Typography variant="subheading">
-                  Alles hangt af van jouw motivatie en toewijding, maar dankzij persoonlijke begeleiding sta je er
-                  allesbehalve alleen voor.
+                  Alles hangt af van je motivatie en toewijding maar dankzij persoonlijke begeleiding en tussentijds
+                  motiveren en telefonisch contact sta je er allesbehalve alleen voor.
                 </Typography>
               </CardContent>
             </Card>
@@ -94,8 +94,8 @@ const Mission = props => {
   );
 };
 
-Mission.propTypes = {
+KeysToSuccess.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Mission);
+export default withStyles(styles)(KeysToSuccess);
