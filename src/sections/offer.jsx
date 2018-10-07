@@ -12,8 +12,8 @@ import ScrollableAnchor, { goToAnchor } from 'react-scrollable-anchor';
 import Link from 'gatsby-link';
 
 import StarIcon from '@material-ui/icons/Star';
-import GroupIcon from '@material-ui/icons/Group';
-import GroupAddIcon from '@material-ui/icons/GroupAdd';
+import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
+import WhatsHotIcon from '@material-ui/icons/Whatshot';
 import PersonIcon from '@material-ui/icons/Person';
 
 import styles from '../styles/sections/offer.styles';
@@ -87,7 +87,7 @@ const Offer = ({ classes }) => (
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
                 <span>1 training</span>
-                <GroupIcon className={classes.cardIcon} />
+                <FitnessCenterIcon className={classes.cardIcon} />
               </Typography>
 
               <div className={classes.pricing}>
@@ -121,7 +121,7 @@ const Offer = ({ classes }) => (
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="ONTDEK MEER" component={LinkToSmallGroup} />
+                <Button className={classes.button} text="ONTDEK MEER" component={LinkToIndividual} />
               </div>
             </CardContent>
           </Card>
@@ -131,13 +131,13 @@ const Offer = ({ classes }) => (
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>6 weken</span>
-                <GroupAddIcon className={classes.cardIcon} />
+                <span>4 weken</span>
+                <WhatsHotIcon className={classes.cardIcon} />
               </Typography>
 
               <div className={classes.pricing}>
                 <Typography gutterBottom variant="headline">
-                  € 300
+                  € 350
                 </Typography>
                 <Typography className={classes.normalPrice} variant="subheading">
                   € 400
@@ -150,7 +150,58 @@ const Offer = ({ classes }) => (
                 <div className={classes.cardBulletList}>
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Één tot twee trainingen per week</span>
+                    <span>Twee trainingen per week</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Dynamisch trainingsplan</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Maaltijd begeleiding</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Opvolging</span>
+                  </Typography>
+                </div>
+                <Button
+                  className={classes.button}
+                  text="MAAK EEN AFSPRAAK"
+                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                />{' '}
+              </div>
+            </CardContent>
+          </Card>
+        </Grid>
+
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={3}>
+          <Card className={classes.card}>
+            <CardContent className={classes.content}>
+              <Typography className={classes.cardHeadline} gutterBottom variant="headline">
+                <span>12 weken</span>
+                <WhatsHotIcon className={classes.cardIcon} />
+              </Typography>
+
+              <div className={classes.pricing}>
+                <Typography gutterBottom variant="headline">
+                  € 1000
+                </Typography>
+                <Typography className={classes.normalPrice} variant="subheading">
+                  € 1200
+                </Typography>
+              </div>
+
+              <Divider />
+
+              <div className={classes.listContainer}>
+                <div className={classes.cardBulletList}>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Twee trainingen per week</span>
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
@@ -169,52 +220,11 @@ const Offer = ({ classes }) => (
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="ONTDEK MEER" component={LinkToBootycamp} />
-              </div>
-            </CardContent>
-          </Card>
-        </Grid>
-
-        <Grid className={classes.gridItem} item xs={12} sm={6} md={3}>
-          <Card className={classes.card}>
-            <CardContent className={classes.content}>
-              <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>Bootycamp</span>
-                <GroupAddIcon className={classes.cardIcon} />
-              </Typography>
-
-              <div className={classes.pricing}>
-                <Typography gutterBottom variant="headline">
-                  € 12
-                </Typography>
-              </div>
-
-              <Divider />
-
-              <div className={classes.listContainer}>
-                <div className={classes.cardBulletList}>
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>1 uur 30 minuten</span>
-                  </Typography>
-
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>Ladies only</span>
-                  </Typography>
-
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>Borst, buik, billen</span>
-                  </Typography>
-
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>Focus op onderlichaam</span>
-                  </Typography>
-                </div>
-
-                <Button className={classes.button} text="ONTDEK MEER" component={LinkToBootycamp} />
+                <Button
+                  className={classes.button}
+                  text="MAAK EEN AFSPRAAK"
+                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                />
               </div>
             </CardContent>
           </Card>

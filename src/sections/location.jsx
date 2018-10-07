@@ -36,9 +36,9 @@ class Location extends React.Component {
           </ScrollableAnchor>
 
           <Typography gutterBottom variant="subheading" className={classes.body}>
-            Alle binnensessies zullen doorgaan in Basic-Fit Oudaan in Antwerpen. Je zal hiervoor natuurlijk een
-            abonnement bij Basic-Fit moeten hebben. Moest dit nog niet het geval zijn kan je door op de onderstaande
-            knop te klikken je inschrijven.
+            Alle binnensessies zullen doorgaan in Basic-Fit Oudaan in Antwerpen. Hiervoor heb je een abonnement bij
+            Basic-Fit nodig. Moest dit nog niet het geval zijn kan je door op de onderstaande knop te klikken je
+            inschrijven.
           </Typography>
 
           <Button

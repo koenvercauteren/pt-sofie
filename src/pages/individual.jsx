@@ -14,6 +14,7 @@ const getSteps = () => [
   'Verbeter je sportiviteit',
   'Verstevig je lichaam',
   'Variëteit',
+  'Verdeel de kost',
   'Geavanceerde trainingstechnieken',
   'Voor wie is het?',
 ];
@@ -41,10 +42,12 @@ const getStepContent = step => {
                 We zullen het tempo aanpassen, werken aan spieruithoudingsvermogen en kracht. Je lichaam zal
                 er hard voor moeten werken maar het zal uiteindelijk je ware potentieel naar voren brengen.`;
     case 5:
+      return `Kies voor groep training en verdeel de kost met vrienden en familie.`;
+    case 6:
       return `Eens je er mee weg bent zullen we gecombineerd met de vorige stap geavanceerde technieken toevoegen.
                 Deze zullen je toelaten om aan een nog sneller niveau resultaten te halen.`;
-    case 6:
-      return `Individuele sessies zijn ideaal voor iedereen die op een serieuze maar leuke manier aan zichzelf
+    case 7:
+      return `Personal training is ideaal voor iedereen die op een serieuze maar leuke manier aan zichzelf
                 wil werken. Je krijgt persoonlijke begeleiding op jouw eigen tempo met een trainingschema op maat.`;
     default:
       return '';
@@ -64,7 +67,7 @@ class IndividualPage extends React.Component {
     return (
       <Grid container justify="center" className={classes.approachContainer}>
         <Grid item xs={11} md={6} className={classes.approachGridItem}>
-          <OfferDetail title="Individueel plan" getStepContent={getStepContent} getSteps={getSteps} />
+          <OfferDetail title="Personal training" getStepContent={getStepContent} getSteps={getSteps} />
         </Grid>
       </Grid>
     );
