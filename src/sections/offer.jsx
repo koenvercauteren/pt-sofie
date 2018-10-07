@@ -22,9 +22,9 @@ import ANCHORS from '../globals/anchors';
 
 const LinkToIndividual = props => <Link to="/individual" {...props} />;
 
-const LinkToSmallGroup = props => <Link to="/small-group" {...props} />;
+// const LinkToSmallGroup = props => <Link to="/small-group" {...props} />;
 
-const LinkToBootycamp = props => <Link to="/bootycamp" {...props} />;
+// const LinkToBootycamp = props => <Link to="/bootycamp" {...props} />;
 
 const Offer = ({ classes }) => (
   <Grid container justify="center">
