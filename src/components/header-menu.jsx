@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import { goToTop, goToAnchor } from 'react-scrollable-anchor';
 
 import ANCHORS from '../globals/anchors';
+import Logo from '../assets/img/logo.png';
 
 import Burger from './burger';
 
@@ -31,6 +31,9 @@ const styles = {
     paddingLeft: '8px',
     paddingRight: '8px',
   },
+  logo: {
+    width: '75px',
+  },
 };
 
 const HeaderMenu = props => {
@@ -43,9 +46,7 @@ const HeaderMenu = props => {
           <Grid item xs={11} md={10} className={classes.grid}>
             <Toolbar disableGutters>
               <Button color="inherit" onClick={() => goToTop()}>
-                <Typography variant="title" color="inherit">
-                  SDB
-                </Typography>
+                <img className={classes.logo} src={Logo} alt="logo" />
               </Button>
 
               <div className={classes.buttonGroup}>

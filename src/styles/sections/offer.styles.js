@@ -54,6 +54,7 @@ const styles = theme => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    marginTop: '0.35em',
     [theme.breakpoints.down('xs')]: {
       height: '215px',
     },

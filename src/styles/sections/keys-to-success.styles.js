@@ -44,7 +44,7 @@ const styles = theme => ({
       height: '150px',
     },
     [theme.breakpoints.up('lg')]: {
-      height: '150px',
+      height: '250px',
     },
   },
 });

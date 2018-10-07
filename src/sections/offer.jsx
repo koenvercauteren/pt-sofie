@@ -100,7 +100,7 @@ const Offer = ({ classes }) => (
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Bespaar tot €15 per training</span>
+                    <span>Verdeel de kost</span>
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">

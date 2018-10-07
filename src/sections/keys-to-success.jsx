@@ -29,7 +29,7 @@ const KeysToSuccess = props => {
         </ScrollableAnchor>
 
         <Grid container justify="space-between">
-          <Grid className={classes.gridItem} item xs={12} sm={6}>
+          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
             <Card className={classes.card}>
               <CardMedia className={classes.media} image={keysToSuccessImage} title="Girl Stretching" />
               <CardContent className={classes.content}>
@@ -37,14 +37,14 @@ const KeysToSuccess = props => {
                   Gezonde Levensstijl
                 </Typography>
                 <Typography variant="subheading">
-                  Als personal trainer ben ik er voor jou om samen te werken aan een gezonde geest in een gezond
-                  lichaam. We kijken welke kleine veranderingen je kan doorvoeren om je levensstijl te verbeteren.
+                  Als personal trainer werken we samen aan een gezonde geest in een gezond lichaam. We kijken welke
+                  kleine veranderingen je kan doorvoeren om je levensstijl te verbeteren.
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
 
-          <Grid className={classes.gridItem} item xs={12} sm={6}>
+          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
             <Card className={classes.card}>
               <CardMedia className={classes.media} image={keysToSuccessImage2} title="Girl Stretching" />
               <CardContent className={classes.content}>
@@ -59,7 +59,7 @@ const KeysToSuccess = props => {
             </Card>
           </Grid>
 
-          <Grid className={classes.gridItem} item xs={12} sm={6}>
+          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
             <Card className={classes.card}>
               <CardMedia className={classes.media} image={keysToSuccessImage3} title="Girl Stretching" />
               <CardContent className={classes.content}>
@@ -68,13 +68,13 @@ const KeysToSuccess = props => {
                 </Typography>
                 <Typography variant="subheading">
                   Door op maat gemaakte schema’s zorgen we ervoor dat je op een efficiënte en doeltreffende manier je
-                  resultaten behaalt. Aan de hand van je resultaten kunnen we het plan ook dynamisch aanpassen.
+                  resultaten behaalt. Op basis van je resultaten kunnen we het plan ook dynamisch aanpassen.
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
 
-          <Grid className={classes.gridItem} item xs={12} sm={6}>
+          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
             <Card className={classes.card}>
               <CardMedia className={classes.media} image={keysToSuccessImage4} title="Girl Stretching" />
               <CardContent className={classes.content}>
