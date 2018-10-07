@@ -29,22 +29,22 @@ const KeysToSuccess = props => {
         </ScrollableAnchor>
 
         <Grid container justify="space-between">
-          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
+          <Grid className={classes.gridItem} item xs={12} sm={6}>
             <Card className={classes.card}>
               <CardMedia className={classes.media} image={keysToSuccessImage} title="Girl Stretching" />
               <CardContent className={classes.content}>
                 <Typography gutterBottom variant="headline">
-                  Gezonde Levensstijl
+                  Levensstijl
                 </Typography>
                 <Typography variant="subheading">
-                  Als personal trainer werken we samen aan een gezonde geest in een gezond lichaam. We kijken welke
+                  Als personal trainer werken we samen aan een gezonde geest in een gezond lichaam. We kijken naar welke
                   kleine veranderingen je kan doorvoeren om je levensstijl te verbeteren.
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
 
-          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
+          <Grid className={classes.gridItem} item xs={12} sm={6}>
             <Card className={classes.card}>
               <CardMedia className={classes.media} image={keysToSuccessImage2} title="Girl Stretching" />
               <CardContent className={classes.content}>
@@ -59,7 +59,7 @@ const KeysToSuccess = props => {
             </Card>
           </Grid>
 
-          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
+          <Grid className={classes.gridItem} item xs={12} sm={6}>
             <Card className={classes.card}>
               <CardMedia className={classes.media} image={keysToSuccessImage3} title="Girl Stretching" />
               <CardContent className={classes.content}>
@@ -74,7 +74,7 @@ const KeysToSuccess = props => {
             </Card>
           </Grid>
 
-          <Grid className={classes.gridItem} item xs={12} sm={6} lg={3}>
+          <Grid className={classes.gridItem} item xs={12} sm={6}>
             <Card className={classes.card}>
               <CardMedia className={classes.media} image={keysToSuccessImage4} title="Girl Stretching" />
               <CardContent className={classes.content}>

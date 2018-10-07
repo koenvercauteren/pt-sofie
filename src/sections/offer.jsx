@@ -8,7 +8,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import ScrollableAnchor, { goToAnchor } from 'react-scrollable-anchor';
 import Link from 'gatsby-link';
 
 import StarIcon from '@material-ui/icons/Star';
@@ -18,6 +18,7 @@ import PersonIcon from '@material-ui/icons/Person';
 
 import styles from '../styles/sections/offer.styles';
 import Button from '../components/button';
+import ANCHORS from '../globals/anchors';
 
 const LinkToIndividual = props => <Link to="/individual" {...props} />;
 
@@ -35,16 +36,65 @@ const Offer = ({ classes }) => (
       </ScrollableAnchor>
 
       <Grid container justify="space-between">
-        <Grid className={classes.gridItem} item xs={12} sm={4}>
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={3}>
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>Individueel</span>
+                <span>Intake gesprek</span>
                 <PersonIcon className={classes.cardIcon} />
               </Typography>
               <Typography gutterBottom variant="headline">
-                € 50
+                € 0
               </Typography>
+
+              <Divider />
+
+              <div className={classes.listContainer}>
+                <div className={classes.cardBulletList}>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Kennismaking</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Concretiseren van doelstellingen</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Medisch en fysiek verleden bespreken</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Uitleg methodiek</span>
+                  </Typography>
+                </div>
+
+                <Button
+                  className={classes.button}
+                  text="MAAK EEN AFSPRAAK"
+                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                />
+              </div>
+            </CardContent>
+          </Card>
+        </Grid>
+
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={3}>
+          <Card className={classes.card}>
+            <CardContent className={classes.content}>
+              <Typography className={classes.cardHeadline} gutterBottom variant="headline">
+                <span>1 training</span>
+                <GroupIcon className={classes.cardIcon} />
+              </Typography>
+
+              <div className={classes.pricing}>
+                <Typography gutterBottom variant="headline">
+                  € 50
+                </Typography>
+              </div>
 
               <Divider />
 
@@ -64,58 +114,10 @@ const Offer = ({ classes }) => (
                     <StarIcon className={classes.cardBulletIcon} />
                     <span>Werk aan jezelf</span>
                   </Typography>
-                </div>
-
-                <Button className={classes.button} text="ONTDEK MEER" component={LinkToIndividual} />
-              </div>
-            </CardContent>
-          </Card>
-        </Grid>
-
-        <Grid className={classes.gridItem} item xs={12} sm={4}>
-          <Card className={classes.card}>
-            <CardContent className={classes.content}>
-              <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>Kleine groep</span>
-                <GroupIcon className={classes.cardIcon} />
-              </Typography>
-
-              <div className={classes.pricing}>
-                <Typography gutterBottom variant="headline">
-                  € 80
-                </Typography>
-                <Typography className={classes.normalPrice} variant="subheading">
-                  € 100
-                </Typography>
-              </div>
-
-              <Divider />
-
-              <div className={classes.listContainer}>
-                <div className={classes.cardBulletList}>
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>75 minuten</span>
-                  </Typography>
-
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>Verdeel de kost</span>
-                  </Typography>
-
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>Sporten met vrienden</span>
-                  </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
                     <span>Afwisselende trainingsmethode</span>
-                  </Typography>
-
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>Binnen of buiten trainen</span>
                   </Typography>
                 </div>
 
@@ -125,7 +127,55 @@ const Offer = ({ classes }) => (
           </Card>
         </Grid>
 
-        <Grid className={classes.gridItem} item xs={12} sm={4}>
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={3}>
+          <Card className={classes.card}>
+            <CardContent className={classes.content}>
+              <Typography className={classes.cardHeadline} gutterBottom variant="headline">
+                <span>6 weken</span>
+                <GroupAddIcon className={classes.cardIcon} />
+              </Typography>
+
+              <div className={classes.pricing}>
+                <Typography gutterBottom variant="headline">
+                  € 300
+                </Typography>
+                <Typography className={classes.normalPrice} variant="subheading">
+                  € 400
+                </Typography>
+              </div>
+
+              <Divider />
+
+              <div className={classes.listContainer}>
+                <div className={classes.cardBulletList}>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Één tot twee trainingen per week</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Dynamisch trainingsplan</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Maaltijd begeleiding</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Opvolging</span>
+                  </Typography>
+                </div>
+
+                <Button className={classes.button} text="ONTDEK MEER" component={LinkToBootycamp} />
+              </div>
+            </CardContent>
+          </Card>
+        </Grid>
+
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={3}>
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
