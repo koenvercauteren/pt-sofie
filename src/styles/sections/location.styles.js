@@ -1,3 +1,5 @@
+import gplaypattern from '../../assets/img/gplaypattern.png';
+
 const styles = theme => ({
   container: {
     position: 'relative',
@@ -6,7 +8,8 @@ const styles = theme => ({
       position: 'absolute',
       right: 0,
       top: '75px',
-      backgroundColor: '#fff',
+      backgroundImage: `url(${gplaypattern})`,
+      backgroundRepeat: 'repeat',
       width: '100%',
       height: '600px',
     },
