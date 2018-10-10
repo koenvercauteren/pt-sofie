@@ -32,6 +32,7 @@ const styles = theme => ({
     textAlign: 'center',
     marginTop: '50px',
     marginBottom: '50px',
+    position: 'relative',
     color: 'rgba(0, 0, 0, 0.75)',
     [theme.breakpoints.down('xs')]: {
       fontSize: '30px',
@@ -56,9 +57,20 @@ const styles = theme => ({
       outline: 'none',
     },
   },
+  buttonBack: {
+    position: 'absolute',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    left: '11px',
+    backgroundColor: 'rgba(72, 182, 191, 0.08)',
+    [theme.breakpoints.down('xs')]: {
+      backgroundColor: 'transparent',
+    },
+  },
 });
 
 const LinkToContact = props => <Link to="/#contact" {...props} />;
+const LinkToHome = props => <Link to="/" {...props} />;
 
 class OfferDetail extends React.Component {
   state = {
@@ -91,6 +103,10 @@ class OfferDetail extends React.Component {
     return (
       <div>
         <Typography variant="display2" className={classes.title}>
+          <IconButton color="primary" className={classes.buttonBack} component={LinkToHome}>
+            <ArrowBackIcon />
+          </IconButton>
+
           {title}
         </Typography>
 
