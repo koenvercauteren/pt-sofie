@@ -11,6 +11,7 @@ const styles = theme => ({
       webkitTransform: 'skewY(-8deg)',
       transform: 'skewY(-8deg)',
       background: '#fafafa',
+      borderTop: '3px solid #48B6BF',
       zIndex: -1,
     },
   },

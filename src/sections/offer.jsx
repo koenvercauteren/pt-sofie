@@ -10,6 +10,8 @@ import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
 import ScrollableAnchor, { goToAnchor } from 'react-scrollable-anchor';
 import Link from 'gatsby-link';
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css/animate.min.css';
 
 import StarIcon from '@material-ui/icons/Star';
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
@@ -40,10 +42,10 @@ const Offer = ({ classes }) => (
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>Intake gesprek</span>
+                <span>Intake</span>
                 <PersonIcon className={classes.cardIcon} />
               </Typography>
-              <Typography gutterBottom variant="headline">
+              <Typography gutterBottom variant="subheading">
                 € 0
               </Typography>
 
@@ -72,11 +74,7 @@ const Offer = ({ classes }) => (
                   </Typography>
                 </div>
 
-                <Button
-                  className={classes.button}
-                  text="MAAK EEN AFSPRAAK"
-                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
-                />
+                <Button className={classes.button} text="AFSPRAAK" onClick={() => goToAnchor(ANCHORS.CONTACT)} />
               </div>
             </CardContent>
           </Card>
@@ -91,7 +89,7 @@ const Offer = ({ classes }) => (
               </Typography>
 
               <div className={classes.pricing}>
-                <Typography gutterBottom variant="headline">
+                <Typography gutterBottom variant="subheading">
                   € 50
                 </Typography>
               </div>
@@ -112,12 +110,12 @@ const Offer = ({ classes }) => (
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Werk aan jezelf</span>
+                    <span>Full body workout</span>
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Afwisselende trainingsmethode</span>
+                    <span>Tips &amp; Tricks</span>
                   </Typography>
                 </div>
 
@@ -132,11 +130,13 @@ const Offer = ({ classes }) => (
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
                 <span>4 weken</span>
-                <WhatsHotIcon className={classes.cardIcon} />
+                <ScrollAnimation animateIn="wobble" initiallyVisible>
+                  <WhatsHotIcon className={classes.cardIcon} />
+                </ScrollAnimation>
               </Typography>
 
               <div className={classes.pricing}>
-                <Typography gutterBottom variant="headline">
+                <Typography gutterBottom variant="subheading">
                   € 350
                 </Typography>
                 <Typography className={classes.normalPrice} variant="subheading">
@@ -168,11 +168,7 @@ const Offer = ({ classes }) => (
                     <span>Opvolging</span>
                   </Typography>
                 </div>
-                <Button
-                  className={classes.button}
-                  text="MAAK EEN AFSPRAAK"
-                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
-                />{' '}
+                <Button className={classes.button} text="AFSPRAAK" onClick={() => goToAnchor(ANCHORS.CONTACT)} />
               </div>
             </CardContent>
           </Card>
@@ -183,11 +179,13 @@ const Offer = ({ classes }) => (
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
                 <span>12 weken</span>
-                <WhatsHotIcon className={classes.cardIcon} />
+                <ScrollAnimation animateIn="wobble" initiallyVisible>
+                  <WhatsHotIcon className={classes.cardIcon} />
+                </ScrollAnimation>
               </Typography>
 
               <div className={classes.pricing}>
-                <Typography gutterBottom variant="headline">
+                <Typography gutterBottom variant="subheading">
                   € 1000
                 </Typography>
                 <Typography className={classes.normalPrice} variant="subheading">
@@ -220,11 +218,7 @@ const Offer = ({ classes }) => (
                   </Typography>
                 </div>
 
-                <Button
-                  className={classes.button}
-                  text="MAAK EEN AFSPRAAK"
-                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
-                />
+                <Button className={classes.button} text="AFSPRAAK" onClick={() => goToAnchor(ANCHORS.CONTACT)} />
               </div>
             </CardContent>
           </Card>

@@ -55,17 +55,14 @@ const styles = theme => ({
     flexDirection: 'column',
     justifyContent: 'space-between',
     marginTop: '0.35em',
-    [theme.breakpoints.down('xs')]: {
-      height: '215px',
-    },
     [theme.breakpoints.up('sm')]: {
-      height: '315px',
+      height: '230px',
     },
     [theme.breakpoints.up('md')]: {
-      height: '280px',
+      height: '330px',
     },
     [theme.breakpoints.up('lg')]: {
-      height: '220px',
+      height: '260px',
     },
   },
 });

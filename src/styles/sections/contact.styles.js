@@ -50,14 +50,14 @@ const styles = theme => ({
     width: '250px',
   },
   card: {
-    width: '500px',
+    width: '400px',
     [theme.breakpoints.down('xs')]: {
       width: '100%',
     },
   },
   content: {
-    paddingTop: '100px !important',
-    paddingBottom: '100px !important',
+    paddingTop: '50px !important',
+    paddingBottom: '50px !important',
   },
   leftIcon: {
     marginRight: theme.spacing.unit,
