@@ -11,6 +11,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Link from 'gatsby-link';
 import ArrowBackIcon from '@material-ui/icons/KeyboardArrowLeft';
+import ArrowBackIcon2 from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/KeyboardArrowRight';
 
 const styles = theme => ({
@@ -61,11 +62,8 @@ const styles = theme => ({
     position: 'absolute',
     top: '50%',
     transform: 'translateY(-50%)',
-    left: '11px',
-    backgroundColor: 'rgba(72, 182, 191, 0.08)',
-    [theme.breakpoints.down('xs')]: {
-      backgroundColor: 'transparent',
-    },
+    left: '12px',
+    color: 'rgba(0, 0, 0, 0.75)',
   },
 });
 
@@ -104,7 +102,7 @@ class OfferDetail extends React.Component {
       <div>
         <Typography variant="display2" className={classes.title}>
           <IconButton color="primary" className={classes.buttonBack} component={LinkToHome}>
-            <ArrowBackIcon />
+            <ArrowBackIcon2 />
           </IconButton>
 
           {title}

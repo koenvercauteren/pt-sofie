@@ -32,9 +32,6 @@ const styles = theme => ({
     paddingLeft: '8px',
     paddingRight: '8px',
   },
-  logo: {
-    width: '75px',
-  },
   instagram: {
     cursor: 'pointer',
     [theme.breakpoints.down('sm')]: {
@@ -74,7 +71,7 @@ class HeaderMenu extends React.Component {
             <Grid item xs={11} md={10} className={classes.grid}>
               <Toolbar disableGutters>
                 <Button color="inherit" onClick={() => goToTop()}>
-                  <img className={classes.logo} src={Logo} alt="logo" />
+                  <img src={Logo} alt="logo-sdb" />
                 </Button>
 
                 <div className={classes.buttonGroup}>
