@@ -37,7 +37,7 @@ class Parallax extends React.Component {
             className={classes.parallax}
             bgImage={backgroundImage}
             bgClassName={classes.background}
-            strength={-50}
+            strength={200}
           >
             <div className={classes.titleContainer}>
               <Typography id="title" className={classes.title} variant="title">
