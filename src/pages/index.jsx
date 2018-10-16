@@ -9,6 +9,7 @@ import Parallax from '../sections/parallax';
 import KeysToSuccess from '../sections/keys-to-success';
 import Approach from '../sections/approach';
 import Offer from '../sections/offer';
+import Sofie from '../sections/sofie';
 import Location from '../sections/location';
 import Contact from '../sections/contact';
 
@@ -31,6 +32,7 @@ class IndexPage extends React.Component {
         <KeysToSuccess />
         <Approach />
         <Offer />
+        <Sofie />
         <Location />
         <Contact />
       </div>

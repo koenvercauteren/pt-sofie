@@ -84,13 +84,13 @@ const Offer = ({ classes }) => (
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>1 training</span>
+                <span>Kickstarter</span>
                 <FitnessCenterIcon className={classes.cardIcon} />
               </Typography>
 
               <div className={classes.pricing}>
                 <Typography gutterBottom variant="subheading">
-                  € 50
+                  € 14.99
                 </Typography>
               </div>
 
@@ -100,12 +100,17 @@ const Offer = ({ classes }) => (
                 <div className={classes.cardBulletList}>
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>75 minuten</span>
+                    <span>60 minuten</span>
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Persoonlijke begeleiding</span>
+                    <span>Kennismaking</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <span>Introductie sessie</span>
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
@@ -119,7 +124,7 @@ const Offer = ({ classes }) => (
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="ONTDEK MEER" component={LinkToIndividual} />
+                <Button className={classes.button} text="AFSPRAAK" onClick={() => goToAnchor(ANCHORS.CONTACT)} />
               </div>
             </CardContent>
           </Card>
@@ -150,6 +155,11 @@ const Offer = ({ classes }) => (
                 <div className={classes.cardBulletList}>
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
+                    <span>75 minuten</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
                     <span>Twee trainingen per week</span>
                   </Typography>
 
@@ -162,13 +172,9 @@ const Offer = ({ classes }) => (
                     <StarIcon className={classes.cardBulletIcon} />
                     <span>Maaltijd begeleiding</span>
                   </Typography>
-
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>Opvolging</span>
-                  </Typography>
                 </div>
-                <Button className={classes.button} text="AFSPRAAK" onClick={() => goToAnchor(ANCHORS.CONTACT)} />
+
+                <Button className={classes.button} text="ONTDEK MEER" component={LinkToIndividual} />
               </div>
             </CardContent>
           </Card>
@@ -199,6 +205,11 @@ const Offer = ({ classes }) => (
                 <div className={classes.cardBulletList}>
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
+                    <span>75 minuten</span>
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
                     <span>Twee trainingen per week</span>
                   </Typography>
 
@@ -210,11 +221,6 @@ const Offer = ({ classes }) => (
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
                     <span>Maaltijd begeleiding</span>
-                  </Typography>
-
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>Opvolging</span>
                   </Typography>
                 </div>
 

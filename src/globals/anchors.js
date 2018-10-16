@@ -3,5 +3,6 @@ export default {
   APPROACH: 'approach',
   OFFER: 'offer',
   LOCATION: 'location',
+  SOFIE: 'sofie',
   CONTACT: 'contact',
 };
