@@ -2,6 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
+import favicon from '../assets/favicon.png';
+
 const SeoTags = ({ data }) => {
   const { description, image, title, url } = data;
   const schemaOrgJSONLD = {
@@ -39,6 +41,8 @@ const SeoTags = ({ data }) => {
 
       {/* Font Style */}
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+
+      <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
     </Helmet>
   );
 };
