@@ -133,7 +133,8 @@ class OfferDetail extends React.Component {
                       <ArrowBackIcon />
                     </IconButton>
                     <Button variant="contained" color="primary" onClick={this.handleNext} className={classes.button}>
-                      {activeStep === steps.length - 1 ? 'Einde' : 'Volgende'}
+                      {/* {activeStep === steps.length - 1 ? 'Volgende' : 'Volgende'} */}
+                      Volgende
                       <ArrowForwardIcon className={classes.rightIcon} />
                     </Button>
                   </div>
@@ -146,8 +147,8 @@ class OfferDetail extends React.Component {
         {activeStep === steps.length && (
           <Paper square elevation={0} className={classes.resetContainer}>
             <Typography>
-              Als je interesse hebt in dit plan en je wilt alle verdere informatie (zoals het volledige prijzenplaatje),
-              dan kan je me contacteren door op onderstaande knop te klikken.
+              Als je interesse hebt in dit plan en je wilt alle verdere informatie, klik dan op onderstaande knop om
+              contact op te nemen.
             </Typography>
             <Button variant="contained" color="primary" component={LinkToContact} className={classes.button}>
               <ArrowBackIcon className={classes.leftIcon} />

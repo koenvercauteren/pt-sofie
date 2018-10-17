@@ -14,7 +14,7 @@ const Sofie = ({ classes }) => (
     <Grid item xs={11} md={10} className={classes.sofie}>
       <ScrollableAnchor id="sofie">
         <Typography variant="display2" className={classes.title}>
-          Wie ben ik
+          Wie
         </Typography>
       </ScrollableAnchor>
 
@@ -26,8 +26,8 @@ const Sofie = ({ classes }) => (
           </Typography>
 
           <Typography variant="body2">INTERESSES</Typography>
-          <Typography variant="body1">Reizen</Typography>
-          <Typography variant="body1">Voeding</Typography>
+          <Typography variant="body1">Kitties</Typography>
+          <Typography variant="body1">Koken</Typography>
           <Typography gutterBottom variant="body1">
             Gezondheid
           </Typography>

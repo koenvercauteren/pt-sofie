@@ -22,11 +22,9 @@ import styles from '../styles/sections/offer.styles';
 import Button from '../components/button';
 import ANCHORS from '../globals/anchors';
 
-const LinkToIndividual = props => <Link to="/individual" {...props} />;
+const LinkToFourWeeks = props => <Link to="/4-weken" {...props} />;
 
-// const LinkToSmallGroup = props => <Link to="/small-group" {...props} />;
-
-// const LinkToBootycamp = props => <Link to="/bootycamp" {...props} />;
+const LinkToTwelveWeeks = props => <Link to="/12-weken" {...props} />;
 
 const Offer = ({ classes }) => (
   <Grid container justify="center">
@@ -46,18 +44,13 @@ const Offer = ({ classes }) => (
                 <PersonIcon className={classes.cardIcon} />
               </Typography>
               <Typography gutterBottom variant="subheading">
-                € 0
+                GRATIS
               </Typography>
 
               <Divider />
 
               <div className={classes.listContainer}>
                 <div className={classes.cardBulletList}>
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
-                    <span>Kennismaking</span>
-                  </Typography>
-
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
                     <span>Concretiseren van doelstellingen</span>
@@ -170,11 +163,11 @@ const Offer = ({ classes }) => (
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Maaltijd begeleiding</span>
+                    <span>Voedingsadvies</span>
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="ONTDEK MEER" component={LinkToIndividual} />
+                <Button className={classes.button} text="ONTDEK MEER" component={LinkToFourWeeks} />
               </div>
             </CardContent>
           </Card>
@@ -207,24 +200,21 @@ const Offer = ({ classes }) => (
                     <StarIcon className={classes.cardBulletIcon} />
                     <span>75 minuten</span>
                   </Typography>
-
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
                     <span>Twee trainingen per week</span>
                   </Typography>
-
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
                     <span>Dynamisch trainingsplan</span>
                   </Typography>
-
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Maaltijd begeleiding</span>
+                    <span>Voedingsadvies</span>
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="AFSPRAAK" onClick={() => goToAnchor(ANCHORS.CONTACT)} />
+                <Button className={classes.button} text="ONTDEK MEER" component={LinkToTwelveWeeks} />
               </div>
             </CardContent>
           </Card>
