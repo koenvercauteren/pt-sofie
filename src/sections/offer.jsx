@@ -84,7 +84,7 @@ const Offer = ({ classes }) => (
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>Kickstarter</span>
+                <span>Kickstart</span>
                 <FitnessCenterIcon className={classes.cardIcon} />
               </Typography>
 
