@@ -98,11 +98,6 @@ const Offer = ({ classes }) => (
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Kennismaking</span>
-                  </Typography>
-
-                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
-                    <StarIcon className={classes.cardBulletIcon} />
                     <span>Introductie sessie</span>
                   </Typography>
 

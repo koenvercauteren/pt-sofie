@@ -61,7 +61,7 @@ SeoTags.defaultProps = {
     description: 'Personal Training aangeboden in groep of individueel',
     image: '',
     title: 'Personal Trainer - Sofie de Backer',
-    url: 'https://sofiedebacker.be',
+    url: 'https://sofiedb.be',
   },
 };
 

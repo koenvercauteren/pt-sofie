@@ -9,10 +9,10 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import styles from '../styles/sections/sofie.styles';
 import sofieImage from '../assets/img/sofie.jpg';
 
-const Sofie = ({ classes }) => (
+const Who = ({ classes }) => (
   <Grid container justify="center" className={classes.container}>
     <Grid item xs={11} md={10} className={classes.sofie}>
-      <ScrollableAnchor id="sofie">
+      <ScrollableAnchor id="who">
         <Typography variant="display2" className={classes.title}>
           Wie
         </Typography>
@@ -26,7 +26,7 @@ const Sofie = ({ classes }) => (
           </Typography>
 
           <Typography variant="body2">INTERESSES</Typography>
-          <Typography variant="body1">Kitties</Typography>
+          <Typography variant="body1">Lezen</Typography>
           <Typography variant="body1">Koken</Typography>
           <Typography gutterBottom variant="body1">
             Gezondheid
@@ -47,8 +47,8 @@ const Sofie = ({ classes }) => (
   </Grid>
 );
 
-Sofie.propTypes = {
+Who.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Sofie);
+export default withStyles(styles)(Who);

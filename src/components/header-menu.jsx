@@ -85,8 +85,8 @@ class HeaderMenu extends React.Component {
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.OFFER)}>
                       Aanbod
                     </Button>
-                    <Button color="inherit" onClick={() => goToAnchor(ANCHORS.SOFIE)}>
-                      Sofie
+                    <Button color="inherit" onClick={() => goToAnchor(ANCHORS.WHO)}>
+                      Wie
                     </Button>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.LOCATION)}>
                       Locatie
@@ -113,7 +113,7 @@ class HeaderMenu extends React.Component {
                         { name: 'Sleutels', anchor: ANCHORS.KEYSTOSUCCESS },
                         { name: 'Aanpak', anchor: ANCHORS.APPROACH },
                         { name: 'Aanbod', anchor: ANCHORS.OFFER },
-                        { name: 'Sofie', anchor: ANCHORS.SOFIE },
+                        { name: 'Wie', anchor: ANCHORS.WHO },
                         { name: 'Locatie', anchor: ANCHORS.LOCATION },
                         { name: 'Contact', anchor: ANCHORS.CONTACT },
                       ]}

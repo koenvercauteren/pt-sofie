@@ -52,7 +52,7 @@ const KeysToSuccess = props => {
                   Begeleiding
                 </Typography>
                 <Typography variant="subheading">
-                  Ben je reeds vertrouwd met trainen of weet je niet hoe je moet beginnen? Er is professionele
+                  Ben je reeds vertrouwd met trainen en/of weet je niet hoe je moet beginnen? Er is professionele
                   begeleiding voor beginners en gevorderden. Samen werken we aan je conditie en beach body.
                 </Typography>
               </CardContent>
