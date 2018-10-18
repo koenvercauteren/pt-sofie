@@ -68,7 +68,7 @@ const KeysToSuccess = props => {
                 </Typography>
                 <Typography variant="subheading">
                   Door op maat gemaakte schema’s zorgen we ervoor dat je op een efficiënte en doeltreffende manier je
-                  resultaten behaalt. Op basis van je resultaten kunnen we het plan ook dynamisch aanpassen.
+                  resultaten behaalt en je grenzen verlegt. Op basis hiervan kunnen we het plan ook dynamisch aanpassen.
                 </Typography>
               </CardContent>
             </Card>
