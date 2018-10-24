@@ -10,8 +10,6 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import i18n from '../i18n';
 
-import SeoTags from '../components/seo-tags';
-
 import '../styles/style.scss';
 
 addLocaleData([...nl, ...en]);
@@ -55,10 +53,7 @@ class Layout extends React.Component {
 
     return (
       <IntlProvider locale={locale} messages={i18n.messages[locale]}>
-        <MuiThemeProvider theme={theme}>
-          <SeoTags />
-          {children()}
-        </MuiThemeProvider>
+        <MuiThemeProvider theme={theme}>{children()}</MuiThemeProvider>
       </IntlProvider>
     );
   }

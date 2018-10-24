@@ -133,7 +133,6 @@ class OfferDetail extends React.Component {
                       <ArrowBackIcon />
                     </IconButton>
                     <Button variant="contained" color="primary" onClick={this.handleNext} className={classes.button}>
-                      {/* {activeStep === steps.length - 1 ? 'Volgende' : 'Volgende'} */}
                       Volgende
                       <ArrowForwardIcon className={classes.rightIcon} />
                     </Button>

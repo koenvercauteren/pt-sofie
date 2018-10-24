@@ -14,6 +14,7 @@ import Location from '../sections/location';
 import Contact from '../sections/contact';
 
 import styles from '../styles/pages/index.styles';
+import SeoTags from '../components/seo-tags';
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class IndexPage extends React.Component {
 
     return (
       <div className={classes.page}>
+        <SeoTags />
         <HeaderMenu />
         <Parallax />
         <KeysToSuccess />

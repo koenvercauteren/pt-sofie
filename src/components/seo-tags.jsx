@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import favicon from '../assets/favicon.png';
 import sofie from '../assets/img/sofie.jpg';
 
-const SeoTags = ({ data }) => {
-  const { description, image, title, url } = data;
+const SeoTags = props => {
+  const { description, image, title, url } = props;
   const schemaOrgJSONLD = {
     '@context': 'http://schema.org',
     '@type': 'WebSite',
@@ -52,25 +52,18 @@ const SeoTags = ({ data }) => {
 };
 
 SeoTags.propTypes = {
-  data: PropTypes.shape({
-    description: PropTypes.string,
-    image: PropTypes.string,
-    title: PropTypes.string,
-    url: PropTypes.string,
-  }),
+  description: PropTypes.string,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  url: PropTypes.string,
 };
 
 SeoTags.defaultProps = {
-  data: {
-    description: `
-        Wil je aan je zelfvertrouwen werken, snel afvallen of spiermassa kweken?
-        Aan de hand van op maat gemaakte trainingsschema's en mijn favoriete dieet recepten help ik je je doelen bereiken.
-        Wat voor soort doel je wil bereiken, we zullen altijd de focus leggen op gezondheid en het op de juiste manier uitvoeren.
-    `,
-    image: `https://www.sofiedb.be${sofie}`,
-    title: 'Personal Trainer in Antwerpen - Sofie de Backer',
-    url: 'https://www.sofiedb.be',
-  },
+  description:
+    "Wil je aan je zelfvertrouwen werken, snel afvallen of spiermassa kweken? Aan de hand van op maat gemaakte trainingsschema's en mijn favoriete dieet recepten help ik je je doelen bereiken. Wat voor soort doel je wil bereiken, we zullen altijd de focus leggen op gezondheid en het op de juiste manier uitvoeren.",
+  image: `https://www.sofiedb.be${sofie}`,
+  title: 'Personal Trainer in Antwerpen - Sofie de Backer',
+  url: 'https://www.sofiedb.be',
 };
 
 export default SeoTags;
