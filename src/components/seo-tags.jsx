@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
 import favicon from '../assets/favicon.png';
+import sofie from '../assets/img/sofie.jpg';
 
 const SeoTags = ({ data }) => {
   const { description, image, title, url } = data;
@@ -61,10 +62,14 @@ SeoTags.propTypes = {
 
 SeoTags.defaultProps = {
   data: {
-    description: 'Personal Training aangeboden in groep of individueel',
-    image: '',
-    title: 'Personal Trainer - Sofie de Backer',
-    url: 'https://sofiedb.be',
+    description: `
+        Wil je aan je zelfvertrouwen werken, snel afvallen of spiermassa kweken?
+        Aan de hand van op maat gemaakte trainingsschema's en mijn favoriete dieet recepten help ik je je doelen bereiken.
+        Wat voor soort doel je wil bereiken, we zullen altijd de focus leggen op gezondheid en het op de juiste manier uitvoeren.
+    `,
+    image: sofie,
+    title: 'Personal Trainer in Antwerpen - Sofie de Backer',
+    url: 'https://www.sofiedb.be',
   },
 };
 

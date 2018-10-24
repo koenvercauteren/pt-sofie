@@ -30,8 +30,8 @@ const Approach = props => {
 
               <Typography gutterBottom variant="subheading" color="inherit">
                 Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te
-                bereiken. Of je nu aan je zelfvertrouwen wil werken, wil afvallen of bijkomen, conditie wil verbeteren
-                of spiermassa opbouwen, alles kan.
+                bereiken. Of je nu snel wil afvallen of spieren kweken, conditie wil verbeteren of spiermassa opbouwen,
+                alles kan.
               </Typography>
 
               <Typography className={classes.footer} variant="subheading" color="inherit">

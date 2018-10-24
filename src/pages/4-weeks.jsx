@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 
 import styles from '../styles/pages/index.styles';
 import OfferDetail from '../components/offer-detail';
+import SeoTags from '../components/seo-tags';
 
 const getSteps = () => [
   'Voor wie is het?',
@@ -60,6 +61,7 @@ class FourWeeksPage extends React.Component {
 
     return (
       <Grid container justify="center" className={classes.approachContainer}>
+        <SeoTags url="https://www.sofiedb.be/4-weeks" />
         <Grid item xs={11} md={6} className={classes.approachGridItem}>
           <OfferDetail title="Personal training" getStepContent={getStepContent} getSteps={getSteps} />
         </Grid>
