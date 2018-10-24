@@ -39,6 +39,9 @@ const SeoTags = ({ data }) => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
 
+      {/* Google Search Console */}
+      <meta name="google-site-verification" content="ML291WRN7vPy_tTLianVGdxTZGEpdjkThcjvxki5764" />
+
       {/* Font Style */}
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 

@@ -3,6 +3,15 @@ module.exports = {
     siteUrl: 'http://localhost:9000',
   },
   plugins: [
+    // Google Analytics
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-128097835-1',
+        head: false,
+      },
+    },
+
     // Sitemap
     { resolve: 'gatsby-plugin-sitemap' },
 
