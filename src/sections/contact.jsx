@@ -38,8 +38,7 @@ class Contact extends React.Component {
       .then(() => {
         this.setState({ submitState: 'success' });
       })
-      .catch(error => {
-        console.error('Failed to submit', error);
+      .catch(() => {
         this.setState({ submitState: 'failed' });
       });
     e.preventDefault();
