@@ -67,7 +67,7 @@ SeoTags.defaultProps = {
         Aan de hand van op maat gemaakte trainingsschema's en mijn favoriete dieet recepten help ik je je doelen bereiken.
         Wat voor soort doel je wil bereiken, we zullen altijd de focus leggen op gezondheid en het op de juiste manier uitvoeren.
     `,
-    image: sofie,
+    image: `https://www.sofiedb.be${sofie}`,
     title: 'Personal Trainer in Antwerpen - Sofie de Backer',
     url: 'https://www.sofiedb.be',
   },

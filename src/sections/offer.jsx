@@ -22,9 +22,9 @@ import styles from '../styles/sections/offer.styles';
 import Button from '../components/button';
 import ANCHORS from '../globals/anchors';
 
-const LinkToFourWeeks = props => <Link to="/4-weken" {...props} />;
+const LinkToFourWeeks = props => <Link to="/4-weeks" {...props} />;
 
-const LinkToTwelveWeeks = props => <Link to="/12-weken" {...props} />;
+const LinkToTwelveWeeks = props => <Link to="/12-weeks" {...props} />;
 
 const Offer = ({ classes }) => (
   <Grid container justify="center">
