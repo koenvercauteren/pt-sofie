@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'http://localhost:9000',
+    siteUrl: 'https://www.sofiedb.be',
   },
   plugins: [
     // Google Analytics
