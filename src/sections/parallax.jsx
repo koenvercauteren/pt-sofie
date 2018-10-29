@@ -7,6 +7,7 @@ import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import { goToAnchor } from 'react-scrollable-anchor';
 import ArrowDownardIcon from '@material-ui/icons/ArrowDownward';
+import { FormattedMessage, injectIntl } from 'react-intl';
 
 import ANCHORS from '../globals/anchors';
 import backgroundImage from '../assets/img/background-image-landing-page.jpg';
@@ -28,7 +29,10 @@ class Parallax extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const {
+      classes,
+      intl: { formatMessage },
+    } = this.props;
 
     return (
       <Grid container justify="center">
@@ -41,10 +45,15 @@ class Parallax extends React.Component {
           >
             <div className={classes.titleContainer}>
               <Typography id="title" className={classes.title} variant="title">
-                Een gezonde geest in<br />
-                een gezond lichaam
+                <FormattedMessage id="parallax_title_one" />
+                <br />
+                <FormattedMessage id="parallax_title_two" />
               </Typography>
-              <Button onClick={() => goToAnchor(ANCHORS.OFFER)} className={classes.button} text="BEKIJK HET AANBOD">
+              <Button
+                onClick={() => goToAnchor(ANCHORS.OFFER)}
+                className={classes.button}
+                text={formatMessage({ id: 'parallax_button' })}
+              >
                 <ArrowDownardIcon className={classes.leftIcon} />
               </Button>
             </div>
@@ -57,6 +66,9 @@ class Parallax extends React.Component {
 
 Parallax.propTypes = {
   classes: PropTypes.object.isRequired,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
-export default withStyles(styles)(Parallax);
+export default injectIntl(withStyles(styles)(Parallax));

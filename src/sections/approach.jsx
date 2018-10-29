@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { FormattedMessage, injectIntl } from 'react-intl';
 
 import styles from '../styles/sections/approach.styles';
 
@@ -19,23 +20,19 @@ const Approach = props => {
           <div className={classes.wrapper}>
             <div className={classes.container}>
               <Typography gutterBottom variant="display2" color="inherit" className={classes.title}>
-                Aanpak
+                <FormattedMessage id="approach_title" />
               </Typography>
 
               <Typography gutterBottom variant="subheading" color="inherit">
-                Je weg vinden binnen een fitness is niet gemakkelijk. Voor je aan je gezonde levensstijl begint moet je
-                jezelf enkele vragen stellen: Waarom doe ik dit en welke doelen wil ik behalen. Zodra jij de antwoorden
-                weet kunnen we aan de slag met voedingsadvies en een trainingsschema.
+                <FormattedMessage id="approach_content_one" />
               </Typography>
 
               <Typography gutterBottom variant="subheading" color="inherit">
-                Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te
-                bereiken. Of je nu snel wil afvallen of spieren kweken, conditie wil verbeteren of spiermassa opbouwen,
-                alles kan.
+                <FormattedMessage id="approach_content_two" />
               </Typography>
 
               <Typography className={classes.footer} variant="subheading" color="inherit">
-                Why start tomorrow when you can start today?
+                <FormattedMessage id="approach_content_three" />
               </Typography>
             </div>
           </div>
@@ -49,4 +46,4 @@ Approach.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Approach);
+export default injectIntl(withStyles(styles)(Approach));

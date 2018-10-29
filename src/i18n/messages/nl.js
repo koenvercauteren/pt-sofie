@@ -12,4 +12,13 @@ module.exports = {
   key_four_title: 'Toewijding',
   key_four_content:
     'Alles hangt af van je motivatie en toewijding maar dankzij persoonlijke begeleiding en tussentijds motiveren en telefonisch contact sta je er allesbehalve alleen voor.',
+  parallax_title_one: 'Een gezonde geest in',
+  parallax_title_two: 'een gezond lichaam',
+  parallax_button: 'Bekijk het aanbod',
+  approach_title: 'Aanpak',
+  approach_content_one:
+    'Je weg vinden binnen een fitness is niet gemakkelijk. Voor je aan je gezonde levensstijl begint moet je jezelf enkele vragen stellen: Waarom doe ik dit en welke doelen wil ik behalen. Zodra jij de antwoorden weet kunnen we aan de slag met voedingsadvies en een trainingsschema.',
+  approach_content_two:
+    'Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te bereiken. Of je nu snel wil afvallen of spieren kweken, conditie wil verbeteren of spiermassa opbouwen, alles kan.',
+  approach_content_three: 'Why start tomorrow when you can start today?',
 };
