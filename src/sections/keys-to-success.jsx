@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { FormattedMessage, injectIntl } from 'react-intl';
 
 import keysToSuccessImage from '../assets/img/girl-stretching.jpeg';
 import keysToSuccessImage2 from '../assets/img/guy-running-city.jpg';
@@ -24,7 +25,7 @@ const KeysToSuccess = props => {
       <Grid item xs={11} md={10} className={classes.keysToSuccess}>
         <ScrollableAnchor id="keys-to-success">
           <Typography variant="display2" className={classes.title}>
-            Sleutels tot succes
+            <FormattedMessage id="keys_to_success_title" />
           </Typography>
         </ScrollableAnchor>
 
@@ -34,11 +35,10 @@ const KeysToSuccess = props => {
               <CardMedia className={classes.media} image={keysToSuccessImage} title="Girl Stretching" />
               <CardContent className={classes.content}>
                 <Typography gutterBottom variant="headline">
-                  Levensstijl
+                  <FormattedMessage id="key_one_title" />
                 </Typography>
                 <Typography variant="subheading">
-                  Als personal trainer werken we samen aan een gezonde geest in een gezond lichaam. We kijken naar welke
-                  kleine veranderingen je kan doorvoeren om je levensstijl te verbeteren.
+                  <FormattedMessage id="key_one_content" />
                 </Typography>
               </CardContent>
             </Card>
@@ -49,11 +49,10 @@ const KeysToSuccess = props => {
               <CardMedia className={classes.media} image={keysToSuccessImage2} title="Girl Stretching" />
               <CardContent className={classes.content}>
                 <Typography gutterBottom variant="headline">
-                  Begeleiding
+                  <FormattedMessage id="key_two_title" />
                 </Typography>
                 <Typography variant="subheading">
-                  Ben je reeds vertrouwd met trainen en/of weet je niet hoe je moet beginnen? Er is professionele
-                  begeleiding voor beginners en gevorderden. Samen werken we aan je conditie en beach body.
+                  <FormattedMessage id="key_two_content" />
                 </Typography>
               </CardContent>
             </Card>
@@ -64,12 +63,10 @@ const KeysToSuccess = props => {
               <CardMedia className={classes.media} image={keysToSuccessImage3} title="Girl Stretching" />
               <CardContent className={classes.content}>
                 <Typography gutterBottom variant="headline">
-                  Planning
+                  <FormattedMessage id="key_three_title" />
                 </Typography>
                 <Typography variant="subheading">
-                  Door op maat gemaakte schema’s zorgen we ervoor dat je op een efficiënte en doeltreffende manier je
-                  resultaten behaalt. Op basis hiervan kunnen we het plan ook dynamisch aanpassen om zo je grenzen te
-                  verleggen.
+                  <FormattedMessage id="key_three_content" />
                 </Typography>
               </CardContent>
             </Card>
@@ -80,11 +77,10 @@ const KeysToSuccess = props => {
               <CardMedia className={classes.media} image={keysToSuccessImage4} title="Girl Stretching" />
               <CardContent className={classes.content}>
                 <Typography gutterBottom variant="headline">
-                  Toewijding
+                  <FormattedMessage id="key_four_title" />
                 </Typography>
                 <Typography variant="subheading">
-                  Alles hangt af van je motivatie en toewijding maar dankzij persoonlijke begeleiding en tussentijds
-                  motiveren en telefonisch contact sta je er allesbehalve alleen voor.
+                  <FormattedMessage id="key_four_content" />
                 </Typography>
               </CardContent>
             </Card>
@@ -99,4 +95,4 @@ KeysToSuccess.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(KeysToSuccess);
+export default injectIntl(withStyles(styles)(KeysToSuccess));

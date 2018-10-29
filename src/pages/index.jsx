@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { injectIntl } from 'react-intl';
 import { withStyles } from '@material-ui/core/styles';
 
 import HeaderMenu from '../components/header-menu';
@@ -46,4 +45,4 @@ IndexPage.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default injectIntl(withStyles(styles)(IndexPage));
+export default withStyles(styles)(IndexPage);

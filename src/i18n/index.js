@@ -14,7 +14,7 @@ module.exports = {
     const locale = localStorage.getItem('locale');
     if (!locale || !LANGS) localStorage.setItem('locale', DEFAULT_LOCALE);
 
-    const currentLocale = LANGS.filter(lang => lang.startsWith(locale));
-    return currentLocale[0] || DEFAULT_LOCALE;
+    const currentLocale = LANGS.find(lang => lang.startsWith(locale));
+    return currentLocale;
   },
 };
