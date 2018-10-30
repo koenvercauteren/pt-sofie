@@ -17,6 +17,7 @@ import StarIcon from '@material-ui/icons/Star';
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import WhatsHotIcon from '@material-ui/icons/Whatshot';
 import PersonIcon from '@material-ui/icons/Person';
+import { FormattedMessage, injectIntl } from 'react-intl';
 
 import styles from '../styles/sections/offer.styles';
 import Button from '../components/button';
@@ -26,12 +27,12 @@ const LinkToFourWeeks = props => <Link to="/4-weeks" {...props} />;
 
 const LinkToTwelveWeeks = props => <Link to="/12-weeks" {...props} />;
 
-const Offer = ({ classes }) => (
+const Offer = ({ classes, intl: { formatMessage } }) => (
   <Grid container justify="center">
     <Grid item xs={11} md={10} className={classes.offer}>
       <ScrollableAnchor id="offer">
         <Typography variant="display2" className={classes.title}>
-          Aanbod
+          <FormattedMessage id="offer_title" />
         </Typography>
       </ScrollableAnchor>
 
@@ -40,11 +41,11 @@ const Offer = ({ classes }) => (
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>Intake</span>
+                <FormattedMessage id="offer_intake_title" />
                 <PersonIcon className={classes.cardIcon} />
               </Typography>
               <Typography gutterBottom variant="subheading">
-                GRATIS
+                <FormattedMessage id="offer_intake_price" />
               </Typography>
 
               <Divider />
@@ -53,21 +54,25 @@ const Offer = ({ classes }) => (
                 <div className={classes.cardBulletList}>
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Concretiseren van doelstellingen</span>
+                    <FormattedMessage id="offer_intake_star_one" />
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Medisch en fysiek verleden bespreken</span>
+                    <FormattedMessage id="offer_intake_star_two" />
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Uitleg methodiek</span>
+                    <FormattedMessage id="offer_intake_star_three" />
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="AFSPRAAK" onClick={() => goToAnchor(ANCHORS.CONTACT)} />
+                <Button
+                  className={classes.button}
+                  text={formatMessage({ id: 'offer_button_meet' })}
+                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                />
               </div>
             </CardContent>
           </Card>
@@ -77,13 +82,13 @@ const Offer = ({ classes }) => (
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>Kickstart</span>
+                <FormattedMessage id="offer_kickstart_title" />
                 <FitnessCenterIcon className={classes.cardIcon} />
               </Typography>
 
               <div className={classes.pricing}>
                 <Typography gutterBottom variant="subheading">
-                  € 14.99
+                  <FormattedMessage id="offer_kickstart_price" />
                 </Typography>
               </div>
 
@@ -93,26 +98,30 @@ const Offer = ({ classes }) => (
                 <div className={classes.cardBulletList}>
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>60 minuten</span>
+                    <FormattedMessage id="offer_kickstart_star_one" />
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Introductie sessie</span>
+                    <FormattedMessage id="offer_kickstart_star_two" />
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Full body workout</span>
+                    <FormattedMessage id="offer_kickstart_star_three" />
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Tips &amp; Tricks</span>
+                    <FormattedMessage id="offer_kickstart_star_four" />
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="AFSPRAAK" onClick={() => goToAnchor(ANCHORS.CONTACT)} />
+                <Button
+                  className={classes.button}
+                  text={formatMessage({ id: 'offer_button_meet' })}
+                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                />
               </div>
             </CardContent>
           </Card>
@@ -122,7 +131,7 @@ const Offer = ({ classes }) => (
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>4 weken</span>
+                <FormattedMessage id="offer_4weeks_title" />
                 <ScrollAnimation animateIn="wobble" initiallyVisible>
                   <WhatsHotIcon className={classes.cardIcon} />
                 </ScrollAnimation>
@@ -130,10 +139,10 @@ const Offer = ({ classes }) => (
 
               <div className={classes.pricing}>
                 <Typography gutterBottom variant="subheading">
-                  € 350
+                  <FormattedMessage id="offer_4weeks_price" />
                 </Typography>
                 <Typography className={classes.normalPrice} variant="subheading">
-                  € 400
+                  <FormattedMessage id="offer_4weeks_previous_price" />
                 </Typography>
               </div>
 
@@ -143,26 +152,30 @@ const Offer = ({ classes }) => (
                 <div className={classes.cardBulletList}>
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>75 minuten</span>
+                    <FormattedMessage id="offer_4weeks_star_one" />
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Twee trainingen per week</span>
+                    <FormattedMessage id="offer_4weeks_star_two" />
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Dynamisch trainingsplan</span>
+                    <FormattedMessage id="offer_4weeks_star_three" />
                   </Typography>
 
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Voedingsadvies</span>
+                    <FormattedMessage id="offer_4weeks_star_four" />
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="ONTDEK MEER" component={LinkToFourWeeks} />
+                <Button
+                  className={classes.button}
+                  text={formatMessage({ id: 'offer_button_discover' })}
+                  component={LinkToFourWeeks}
+                />
               </div>
             </CardContent>
           </Card>
@@ -172,7 +185,7 @@ const Offer = ({ classes }) => (
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
-                <span>12 weken</span>
+                <FormattedMessage id="offer_12weeks_title" />
                 <ScrollAnimation animateIn="wobble" initiallyVisible>
                   <WhatsHotIcon className={classes.cardIcon} />
                 </ScrollAnimation>
@@ -180,10 +193,10 @@ const Offer = ({ classes }) => (
 
               <div className={classes.pricing}>
                 <Typography gutterBottom variant="subheading">
-                  € 1000
+                  <FormattedMessage id="offer_12weeks_price" />
                 </Typography>
                 <Typography className={classes.normalPrice} variant="subheading">
-                  € 1200
+                  <FormattedMessage id="offer_12weeks_previous_price" />
                 </Typography>
               </div>
 
@@ -193,23 +206,30 @@ const Offer = ({ classes }) => (
                 <div className={classes.cardBulletList}>
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>75 minuten</span>
+                    <FormattedMessage id="offer_12weeks_star_one" />
                   </Typography>
+
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Twee trainingen per week</span>
+                    <FormattedMessage id="offer_12weeks_star_two" />
                   </Typography>
+
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Dynamisch trainingsplan</span>
+                    <FormattedMessage id="offer_12weeks_star_three" />
                   </Typography>
+
                   <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
                     <StarIcon className={classes.cardBulletIcon} />
-                    <span>Voedingsadvies</span>
+                    <FormattedMessage id="offer_12weeks_star_four" />
                   </Typography>
                 </div>
 
-                <Button className={classes.button} text="ONTDEK MEER" component={LinkToTwelveWeeks} />
+                <Button
+                  className={classes.button}
+                  text={formatMessage({ id: 'offer_button_discover' })}
+                  component={LinkToTwelveWeeks}
+                />
               </div>
             </CardContent>
           </Card>
@@ -221,6 +241,9 @@ const Offer = ({ classes }) => (
 
 Offer.propTypes = {
   classes: PropTypes.object.isRequired,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
-export default withStyles(styles)(Offer);
+export default injectIntl(withStyles(styles)(Offer));
