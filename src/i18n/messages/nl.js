@@ -62,4 +62,9 @@ module.exports = {
   location_content:
     'Alle binnensessies zullen doorgaan in Basic-Fit Oudaan in Antwerpen. Hiervoor heb je een abonnement bij Basic-Fit nodig. Indien je nog geen lid bent, kan je je hieronder inschrijven.',
   location_button: 'SCHRIJF JE IN',
+  contact_title: 'Contact',
+  contact_label_name: 'Naam',
+  contact_label_email: 'E-mail',
+  contact_label_message: 'Bericht',
+  contact_button: 'VERZEND',
 };

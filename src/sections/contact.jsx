@@ -8,6 +8,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import SendIcon from '@material-ui/icons/Send';
+import { FormattedMessage, injectIntl } from 'react-intl';
 
 import styles from '../styles/sections/contact.styles';
 import Button from '../components/button';
@@ -57,7 +58,10 @@ class Contact extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
+    const {
+      classes,
+      intl: { formatMessage },
+    } = this.props;
 
     return (
       <Grid container justify="center" className={classes.container}>
@@ -66,7 +70,7 @@ class Contact extends React.Component {
             <CardContent className={classes.content}>
               <ScrollableAnchor id="contact">
                 <Typography variant="display2" className={classes.title}>
-                  Contact
+                  <FormattedMessage id="contact_title" />
                 </Typography>
               </ScrollableAnchor>
               <form
@@ -82,7 +86,7 @@ class Contact extends React.Component {
                   required
                   id="name"
                   name="name"
-                  label="Naam"
+                  label={formatMessage({ id: 'contact_label_name' })}
                   className={classes.textField}
                   margin="normal"
                   onChange={this.handleChange}
@@ -91,7 +95,7 @@ class Contact extends React.Component {
                   required
                   id="email"
                   name="email"
-                  label="E-mail"
+                  label={formatMessage({ id: 'contact_label_email' })}
                   className={classes.textField}
                   margin="normal"
                   onChange={this.handleChange}
@@ -102,12 +106,17 @@ class Contact extends React.Component {
                   rowsMax="4"
                   id="message"
                   name="message"
-                  label="Bericht"
+                  label={formatMessage({ id: 'contact_label_message' })}
                   className={classes.textField}
                   margin="normal"
                   onChange={this.handleChange}
                 />
-                <Button disabled={this.state.submitState} type="submit" className={classes.button} text="VERZEND">
+                <Button
+                  disabled={this.state.submitState}
+                  type="submit"
+                  className={classes.button}
+                  text={formatMessage({ id: 'contact_button' })}
+                >
                   <SendIcon className={classes.leftIcon} />
                 </Button>
               </form>
@@ -148,6 +157,9 @@ class Contact extends React.Component {
 
 Contact.propTypes = {
   classes: PropTypes.object.isRequired,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
-export default withStyles(styles)(Contact);
+export default injectIntl(withStyles(styles)(Contact));
