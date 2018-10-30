@@ -49,4 +49,13 @@ module.exports = {
   offer_12weeks_star_two: 'Twee trainingen per week',
   offer_12weeks_star_three: 'Dynamisch trainingsplan',
   offer_12weeks_star_four: 'Voedingsadvies',
+  who_title: 'Wie',
+  who_label_one: 'NAAM',
+  who_label_one_content_one: 'Sofie de Backer',
+  who_label_two: 'INTERESSES',
+  who_label_two_content_one: 'Lezen',
+  who_label_two_content_two: 'Koken',
+  who_label_two_content_three: 'Gezondheid',
+  who_label_three: 'LEEFTIJD',
+  who_label_three_content_one: '26',
 };

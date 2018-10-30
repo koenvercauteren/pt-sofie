@@ -89,7 +89,7 @@ const styles = theme => ({
     },
     '&:before': {
       width: '100%',
-      minHeight: '600px',
+      minHeight: '700px',
       content: '""',
       position: 'absolute',
       webkitTransform: 'skewY(8deg)',
