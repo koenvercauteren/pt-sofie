@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
+import { FormattedMessage, injectIntl } from 'react-intl';
 
 import styles from '../styles/sections/location.styles';
 import Button from '../components/button';
@@ -24,25 +25,27 @@ class Location extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const {
+      classes,
+      intl: { formatMessage },
+    } = this.props;
 
     return (
       <Grid container justify="center" className={classes.container}>
         <Grid item xs={11} md={10} className={classes.location}>
           <ScrollableAnchor id="location">
             <Typography variant="display2" className={classes.title}>
-              Locatie
+              <FormattedMessage id="location_title" />
             </Typography>
           </ScrollableAnchor>
 
           <Typography gutterBottom variant="subheading" className={classes.body}>
-            Alle binnensessies zullen doorgaan in Basic-Fit Oudaan in Antwerpen. Hiervoor heb je een abonnement bij
-            Basic-Fit nodig. Indien je nog geen lid bent, kan je je hieronder inschrijven.
+            <FormattedMessage id="location_content" />
           </Typography>
 
           <Button
             className={classes.button}
-            text="SCHRIJF JE IN"
+            text={formatMessage({ id: 'location_button' })}
             onClick={() => {
               this.state.window.open('https://www.basic-fit.com/nl-be/fitnessclubs/antwerpen-oudaan', '_blank');
             }}
@@ -57,6 +60,9 @@ class Location extends React.Component {
 
 Location.propTypes = {
   classes: PropTypes.object.isRequired,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
-export default withStyles(styles)(Location);
+export default injectIntl(withStyles(styles)(Location));

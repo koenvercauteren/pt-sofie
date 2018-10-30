@@ -58,4 +58,8 @@ module.exports = {
   who_label_two_content_three: 'Gezondheid',
   who_label_three: 'LEEFTIJD',
   who_label_three_content_one: '26',
+  location_title: 'Locatie',
+  location_content:
+    'Alle binnensessies zullen doorgaan in Basic-Fit Oudaan in Antwerpen. Hiervoor heb je een abonnement bij Basic-Fit nodig. Indien je nog geen lid bent, kan je je hieronder inschrijven.',
+  location_button: 'SCHRIJF JE IN',
 };
