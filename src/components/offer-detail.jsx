@@ -13,6 +13,7 @@ import Link from 'gatsby-link';
 import ArrowBackIcon from '@material-ui/icons/KeyboardArrowLeft';
 import ArrowBackIcon2 from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/KeyboardArrowRight';
+import { FormattedMessage, injectIntl } from 'react-intl';
 
 const styles = theme => ({
   button: {
@@ -133,7 +134,7 @@ class OfferDetail extends React.Component {
                       <ArrowBackIcon />
                     </IconButton>
                     <Button variant="contained" color="primary" onClick={this.handleNext} className={classes.button}>
-                      Volgende
+                      <FormattedMessage id="offer_detail_button_next" />
                       <ArrowForwardIcon className={classes.rightIcon} />
                     </Button>
                   </div>
@@ -146,12 +147,11 @@ class OfferDetail extends React.Component {
         {activeStep === steps.length && (
           <Paper square elevation={0} className={classes.resetContainer}>
             <Typography>
-              Als je interesse hebt in dit plan en je wilt alle verdere informatie, klik dan op onderstaande knop om
-              contact op te nemen.
+              <FormattedMessage id="offer_detail_ending" />
             </Typography>
             <Button variant="contained" color="primary" component={LinkToContact} className={classes.button}>
               <ArrowBackIcon className={classes.leftIcon} />
-              CONTACT
+              <FormattedMessage id="offer_detail_button_contact" />
             </Button>
           </Paper>
         )}
@@ -167,4 +167,4 @@ OfferDetail.propTypes = {
   getSteps: PropTypes.func.isRequired,
 };
 
-export default withStyles(styles)(OfferDetail);
+export default injectIntl(withStyles(styles)(OfferDetail));

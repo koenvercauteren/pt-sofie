@@ -67,4 +67,32 @@ module.exports = {
   contact_label_email: 'E-mail',
   contact_label_message: 'Bericht',
   contact_button: 'VERZEND',
+  offer_detail_title: 'Personal training',
+  offer_detail_ending:
+    'Als je interesse hebt in dit plan en je wilt alle verdere informatie, klik dan op onderstaande knop om contact op te nemen.',
+  offer_detail_button_next: 'VOLGENDE',
+  offer_detail_button_contact: 'CONTACT',
+  offer_detail_step_one: 'Voor wie is het?',
+  offer_detail_step_one_content:
+    'Personal training is ideaal voor iedereen die op een serieuze maar leuke manier aan zichzelf wil werken. Je krijgt persoonlijke begeleiding op je eigen tempo met een trainingschema op maat.',
+  offer_detail_step_two: 'Kickstart',
+  offer_detail_step_two_content:
+    'We gaan aan de slag met een testsessie om na te gaan hoe ver je al staat op vlak van kracht en/of conditie. Je persoonlijk plan kan dan opgemaakt worden.',
+  offer_detail_step_three: 'Persoonlijke doelen',
+  offer_detail_step_three_content:
+    'Een personal trainer kijkt naar je lichaam en houdt rekening met je specifieke doelen. Tijdens onze workout van 75 minuten sta ik je bij van begin tot einde. We starten met een goede opwarming om zo aan onze sessie te kunnen beginnen. Na de training maken we tijd voor stretching en sta je al één stap dichter bij je doel.',
+  offer_detail_step_four: 'Verbeter je sportiviteit',
+  offer_detail_step_four_content:
+    'Door middel van plyometrics, verandering van richting en creatieve conditionering, zullen we je sportiviteit naar een hoger niveau tillen.',
+  offer_detail_step_five: 'Verstevig je lichaam',
+  offer_detail_step_five_content:
+    'Ongeacht je doel, zal je plan zo opgebouwd zijn om je gezond en blessure vrij te houden. We zullen streven naar een structurele balans zodat je altijd het beste uit jezelf kan halen.',
+  offer_detail_step_six: 'Variëteit',
+  offer_detail_step_six_content:
+    'Van week tot week zal je verschillende middelen gebruiken om je doel te bereiken. We zullen het tempo aanpassen, werken aan spieruithoudingsvermogen en kracht. Je grenzen zullen verlegd worden.',
+  offer_detail_step_seven: 'Verdeel de kost',
+  offer_detail_step_seven_content: 'Kies voor groep training en sport voordeliger met vrienden en familie.',
+  offer_detail_step_eight: 'Lange termijn',
+  offer_detail_step_eight_content:
+    'Voor 3 maanden sta je onder begeleiding en wordt je opgevolgd op verschillende vlakken, door regelmaat en consistentie ben je zeker van je resultaat.',
 };
