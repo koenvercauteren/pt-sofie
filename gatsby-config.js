@@ -21,5 +21,6 @@ module.exports = {
 
     // other
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-netlify', // make sure to put last in the array
   ],
 };
