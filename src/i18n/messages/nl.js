@@ -5,7 +5,7 @@ module.exports = {
     'Als personal trainer werken we samen aan een gezonde geest in een gezond lichaam. We kijken naar welke kleine veranderingen je kan doorvoeren om je levensstijl te verbeteren.',
   key_two_title: 'Begeleiding',
   key_two_content:
-    'Ben je reeds vertrouwd met trainen en/of weet je niet hoe je moet beginnen? Er is professionele begeleiding voor beginners en gevorderden. Samen werken we aan je conditie en beach body.',
+    'Ben je reeds vertrouwd met trainen of weet je niet hoe je moet beginnen? Er is professionele begeleiding voor beginners en gevorderden. Samen werken we aan je conditie en beach body.',
   key_three_title: 'Planning',
   key_three_content:
     'Door op maat gemaakte schema’s zorgen we ervoor dat je op een efficiënte en doeltreffende manier je resultaten behaalt. Op basis hiervan kunnen we het plan ook dynamisch aanpassen om zo je grenzen te verleggen.',
@@ -35,9 +35,9 @@ module.exports = {
   offer_kickstart_star_two: 'Introductie sessie',
   offer_kickstart_star_three: 'Full body workout',
   offer_kickstart_star_four: 'Tips & Tricks',
-  offer_4weeks_title: '4 weken',
-  offer_4weeks_price: '€ 350',
-  offer_4weeks_previous_price: '400',
+  offer_4weeks_title: '6 weken',
+  offer_4weeks_price: '€ 550',
+  offer_4weeks_previous_price: '600s',
   offer_4weeks_star_one: '75 minuten',
   offer_4weeks_star_two: 'Twee trainingen per week',
   offer_4weeks_star_three: 'Dynamisch trainingsplan',

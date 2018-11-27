@@ -61,7 +61,7 @@ class FourWeeksPage extends React.Component {
 
     return (
       <Grid container justify="center" className={classes.approachContainer}>
-        <SeoTags url="https://www.sofiedb.be/4-weeks" />
+        <SeoTags url="https://www.sofiedb.be/6-weeks" />
         <Grid item xs={11} md={6} className={classes.approachGridItem}>
           <OfferDetail
             title={formatMessage({ id: 'offer_detail_title' })}
