@@ -37,7 +37,7 @@ module.exports = {
   offer_kickstart_star_four: 'Tips & Tricks',
   offer_4weeks_title: '6 weken',
   offer_4weeks_price: '€ 550',
-  offer_4weeks_previous_price: '600s',
+  offer_4weeks_previous_price: '600',
   offer_4weeks_star_one: '75 minuten',
   offer_4weeks_star_two: 'Twee trainingen per week',
   offer_4weeks_star_three: 'Dynamisch trainingsplan',
