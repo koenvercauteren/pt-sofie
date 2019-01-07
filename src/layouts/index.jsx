@@ -50,7 +50,6 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props;
     const { locale } = this.state;
-
     return (
       <IntlProvider locale={locale} messages={i18n.messages[locale]}>
         <MuiThemeProvider theme={theme}>{children()}</MuiThemeProvider>
