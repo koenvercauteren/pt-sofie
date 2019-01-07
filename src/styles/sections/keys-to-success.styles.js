@@ -5,9 +5,10 @@ const styles = theme => ({
     '&:before': {
       content: '""',
       position: 'absolute',
+      top: 400,
       left: 0,
       width: '100%',
-      height: '1400px',
+      height: '3000px',
       webkitTransform: 'skewY(-8deg)',
       transform: 'skewY(-8deg)',
       background: '#fafafa',
@@ -44,9 +45,6 @@ const styles = theme => ({
     [theme.breakpoints.up('md')]: {
       height: '150px',
     },
-    // [theme.breakpoints.up('lg')]: {
-    //   height: '250px',
-    // },
   },
 });
 

@@ -7,11 +7,11 @@ const styles = theme => ({
       content: '""',
       position: 'absolute',
       right: 0,
-      top: '75px',
       backgroundImage: `url(${gplaypattern})`,
       backgroundRepeat: 'repeat',
       width: '100%',
-      height: '600px',
+      height: '800px',
+      zIndex: 1,
     },
   },
   location: {

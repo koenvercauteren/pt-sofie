@@ -28,7 +28,7 @@ const LinkToFourWeeks = props => <Link to="/6-weeks" {...props} />;
 const LinkToTwelveWeeks = props => <Link to="/12-weeks" {...props} />;
 
 const Offer = ({ classes, intl: { formatMessage } }) => (
-  <Grid container justify="center">
+  <Grid container justify="center" className={classes.container}>
     <Grid item xs={11} md={10} className={classes.offer}>
       <ScrollableAnchor id="offer">
         <Typography variant="display2" className={classes.title}>

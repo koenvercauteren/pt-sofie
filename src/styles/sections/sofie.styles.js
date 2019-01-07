@@ -3,15 +3,11 @@ import nasmImage from '../../assets/img/nasm-certified-logo.png';
 const styles = theme => ({
   container: {
     position: 'relative',
-    '&:before': {
-      content: '""',
-      position: 'absolute',
-      right: 0,
-      top: '75px',
-      background: 'linear-gradient(#fff, #fafafa)',
-      width: '100%',
-      height: '600px',
-    },
+    width: '100%',
+    height: '600px',
+    background: 'linear-gradient(#fff, #fafafa)',
+    zIndex: 1,
+    paddingBottom: '150px',
   },
   sofie: {
     maxWidth: '1040px',

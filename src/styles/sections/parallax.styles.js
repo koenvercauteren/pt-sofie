@@ -1,6 +1,8 @@
+import backgroundImage from '../../assets/img/background-image-landing-page.jpg';
+
 const styles = theme => ({
   titleContainer: {
-    height: 590,
+    height: 390,
     justifyContent: 'center',
     display: 'flex',
     flexDirection: 'column',
@@ -20,15 +22,25 @@ const styles = theme => ({
     [theme.breakpoints.down('xs')]: {
       fontSize: '30px',
     },
+    zIndex: 1,
   },
-  background: {
-    minHeight: '1100px',
-    width: '100% !important',
-    height: 'auto !important',
-    objectFit: 'cover',
+  parallaxContainer: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '70%',
+    [theme.breakpoints.up('xl')]: {
+      height: '77%',
+    },
+    zIndex: -5,
   },
   parallax: {
-    overflow: 'visible !important',
+    backgroundImage: `url('${backgroundImage}')`,
+    minHeight: '100%',
+    backgroundPosition: 'center top',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
   },
   leftIcon: {
     marginRight: theme.spacing.unit,

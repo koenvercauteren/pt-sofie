@@ -1,18 +1,10 @@
 const styles = theme => ({
   container: {
     position: 'relative',
+    overflow: 'hidden',
+    paddingBottom: '150px',
+    background: '#fafafa',
     zIndex: 1,
-    '&:before': {
-      content: '""',
-      position: 'absolute',
-      left: 0,
-      width: '100%',
-      height: '750px',
-      webkitTransform: 'skewY(-8deg)',
-      transform: 'skewY(-8deg)',
-      background: '#fafafa',
-      zIndex: -1,
-    },
   },
   contact: {
     marginTop: '150px',

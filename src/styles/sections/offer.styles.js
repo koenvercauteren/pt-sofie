@@ -1,4 +1,8 @@
 const styles = theme => ({
+  container: {
+    background: '#fafafa',
+    paddingBottom: '150px',
+  },
   offer: {
     maxWidth: '1040px',
     zIndex: 1,
