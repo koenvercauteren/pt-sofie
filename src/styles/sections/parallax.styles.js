@@ -6,6 +6,7 @@ const styles = theme => ({
     justifyContent: 'center',
     display: 'flex',
     flexDirection: 'column',
+    paddingTop: '150px',
   },
   button: {
     height: 55,
@@ -13,7 +14,6 @@ const styles = theme => ({
     padding: '0 50px',
   },
   title: {
-    paddingTop: '100px',
     color: '#fff',
     textShadow: '1px 1px #525f7f',
     fontWeight: 300,
@@ -29,10 +29,7 @@ const styles = theme => ({
     top: 0,
     left: 0,
     width: '100%',
-    height: '70%',
-    [theme.breakpoints.up('xl')]: {
-      height: '77%',
-    },
+    height: '100%',
     zIndex: -5,
   },
   parallax: {

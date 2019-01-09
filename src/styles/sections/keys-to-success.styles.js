@@ -1,11 +1,18 @@
 const styles = theme => ({
   keysToSuccess: {
     maxWidth: '1040px',
+    marginTop: '50px',
+    [theme.breakpoints.up('lg')]: {
+      marginTop: '100px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      marginTop: '150px',
+    },
     zIndex: 1,
     '&:before': {
       content: '""',
       position: 'absolute',
-      top: 400,
+      top: 600,
       left: 0,
       width: '100%',
       height: '3000px',
