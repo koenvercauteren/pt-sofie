@@ -102,7 +102,7 @@ class HeaderMenu extends React.Component {
                       alt="instagram-link"
                       className={classes.instagram}
                       onClick={() => {
-                        this.state.window.open('https://www.instagram.com/debacker.sofie/', '_blank');
+                        this.state.window.open('https://www.instagram.com/sofiedebacker.pt/', '_blank');
                       }}
                     />
                   </div>
