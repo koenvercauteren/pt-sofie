@@ -118,7 +118,7 @@ class Contact extends React.Component {
                   margin="normal"
                   onChange={this.handleChange}
                 />
-                <ReCAPTCHA sitekey={RECAPTCHA_KEY} onChange={this.handleRecaptcha} />
+                {RECAPTCHA_KEY && <ReCAPTCHA sitekey={RECAPTCHA_KEY} onChange={this.handleRecaptcha} />}
                 <Button
                   disabled={this.state.submitState}
                   type="submit"
