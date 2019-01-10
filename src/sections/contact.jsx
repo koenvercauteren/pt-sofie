@@ -35,6 +35,7 @@ class Contact extends React.Component {
   }
 
   handleSubmit = e => {
+    console.log(this.state);
     e.preventDefault();
     fetch('/', {
       method: 'POST',
@@ -87,6 +88,7 @@ class Contact extends React.Component {
                 method="POST"
                 data-netlify="true"
                 data-netlify-recaptcha="true"
+                data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
               >
                 <TextField
