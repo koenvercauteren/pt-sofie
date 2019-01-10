@@ -111,6 +111,7 @@ class Contact extends React.Component {
                   margin="normal"
                   onChange={this.handleChange}
                 />
+                <div netlify-recaptcha />
                 <Button
                   disabled={this.state.submitState}
                   type="submit"
