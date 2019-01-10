@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import favicon from '../assets/favicon.png';
 import sofie from '../assets/img/sofie.jpg';
 
-const GOOGLE_VERIFICATION = process.env.GOOGLE_SITE_VERIFICATION;
-const FB_ID = process.env.FB_APP_ID;
+const GOOGLE_VERIFICATION = process.env.GATSBY_GOOGLE_SITE_VERIFICATION;
+const FB_ID = process.env.GATSBY_FB_APP_ID;
 
 const SeoTags = props => {
   const { description, image, title, url } = props;
