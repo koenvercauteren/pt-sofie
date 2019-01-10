@@ -15,7 +15,7 @@ import styles from '../styles/sections/contact.styles';
 import Button from '../components/button';
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
-
+console.log(process.env);
 function encode(data) {
   return Object.keys(data)
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
