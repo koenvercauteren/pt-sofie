@@ -41,6 +41,9 @@ const styles = theme => ({
   textField: {
     width: '250px',
   },
+  lastTextfield: {
+    marginBottom: 32,
+  },
   card: {
     width: '400px',
     [theme.breakpoints.down('xs')]: {

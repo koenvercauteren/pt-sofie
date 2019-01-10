@@ -17,6 +17,7 @@
     "gatsby-plugin-sitemap": "^1.2.25",
     "intl": "^1.2.5",
     "react-animate-on-scroll": "^2.1.5",
+    "react-google-recaptcha": "^1.0.5",
     "react-helmet": "^5.2.0",
     "react-intl": "^2.4.0",
     "react-reveal": "^1.2.2",

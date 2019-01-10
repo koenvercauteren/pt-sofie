@@ -9,9 +9,12 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import SendIcon from '@material-ui/icons/Send';
 import { FormattedMessage, injectIntl } from 'react-intl';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import styles from '../styles/sections/contact.styles';
 import Button from '../components/button';
+
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
 function encode(data) {
   return Object.keys(data)
@@ -27,10 +30,12 @@ class Contact extends React.Component {
       name: null,
       email: null,
       message: null,
+      'g-recaptcha-response': null,
     };
   }
 
   handleSubmit = e => {
+    e.preventDefault();
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -42,11 +47,14 @@ class Contact extends React.Component {
       .catch(() => {
         this.setState({ submitState: 'failed' });
       });
-    e.preventDefault();
   };
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleRecaptcha = value => {
+    this.setState({ 'g-recaptcha-response': value });
   };
 
   handleClose = (event, reason) => {
@@ -78,10 +86,9 @@ class Contact extends React.Component {
                 name="contact"
                 method="POST"
                 data-netlify="true"
-                data-netlify-honeypot="bot-field"
+                data-netlify-recaptcha="true"
                 onSubmit={this.handleSubmit}
               >
-                <input hidden name="bot-field" onChange={this.handleChange} />
                 <TextField
                   required
                   id="name"
@@ -107,10 +114,11 @@ class Contact extends React.Component {
                   id="message"
                   name="message"
                   label={formatMessage({ id: 'contact_label_message' })}
-                  className={classes.textField}
+                  className={`${classes.textField} ${classes.lastTextfield}`}
                   margin="normal"
                   onChange={this.handleChange}
                 />
+                <ReCAPTCHA sitekey={RECAPTCHA_KEY} onChange={this.handleRecaptcha} />
                 <Button
                   disabled={this.state.submitState}
                   type="submit"

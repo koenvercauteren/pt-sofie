@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 import favicon from '../assets/favicon.png';
 import sofie from '../assets/img/sofie.jpg';
 
+const GOOGLE_VERIFICATION = process.env.GOOGLE_SITE_VERIFICATION;
+const FB_ID = process.env.FB_APP_ID;
+
 const SeoTags = props => {
   const { description, image, title, url } = props;
   const schemaOrgJSONLD = {
@@ -31,7 +34,7 @@ const SeoTags = props => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
-      <meta property="fb:app_id" content="1675606539207665" />
+      <meta property="fb:app_id" content={FB_ID} />
 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary" />
@@ -41,7 +44,7 @@ const SeoTags = props => {
       <meta name="twitter:image" content={image} />
 
       {/* Google Search Console */}
-      <meta name="google-site-verification" content="ML291WRN7vPy_tTLianVGdxTZGEpdjkThcjvxki5764" />
+      <meta name="google-site-verification" content={GOOGLE_VERIFICATION} />
 
       {/* Font Style */}
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
