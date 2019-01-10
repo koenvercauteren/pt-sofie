@@ -14,7 +14,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import styles from '../styles/sections/contact.styles';
 import Button from '../components/button';
 
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
+const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY;
 console.log(process.env);
 function encode(data) {
   return Object.keys(data)
