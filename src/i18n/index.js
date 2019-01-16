@@ -10,6 +10,7 @@ module.exports = {
     en: enMessages,
   },
   defaultLocale: DEFAULT_LOCALE,
+  languages: LANGS,
   getCurrentLangKey: () => {
     let locale = localStorage.getItem('locale');
     if (!locale) {
