@@ -2,7 +2,7 @@
 
 ## SETUP
 
-- [ ] Google Analytics
+- [x] Google Analytics
 - SEO
   - [x] Sitemap generation
   - [x] Schema.org JSONLD (Google Rich Snippets)
@@ -14,5 +14,6 @@
 - [x] Jest
 - [x] Intl
 - Material Design
-  - [x] Material Kit
   - [x] Material UI
+- [ ] Translations
+- [ ] SEO content of extra pages fixed

@@ -11,7 +11,7 @@ module.exports = {
     'Door op maat gemaakte schema’s zorgen we ervoor dat je op een efficiënte en doeltreffende manier je resultaten behaalt. Op basis hiervan kunnen we het plan ook dynamisch aanpassen om zo je grenzen te verleggen.',
   key_four_title: 'Toewijding',
   key_four_content:
-    'Alles hangt af van je motivatie en toewijding maar dankzij persoonlijke begeleiding en tussentijds motiveren en telefonisch contact sta je er allesbehalve alleen voor.',
+    'Alles hangt af van je motivatie en toewijding maar dankzij persoonlijke begeleiding, tussentijds motiveren en telefonisch contact sta je er allesbehalve alleen voor.',
   parallax_title_one: 'Een gezonde geest in',
   parallax_title_two: 'een gezond lichaam',
   parallax_button: 'Bekijk het aanbod',
@@ -19,7 +19,7 @@ module.exports = {
   approach_content_one:
     'Je weg vinden binnen een fitness is niet gemakkelijk. Voor je aan je gezonde levensstijl begint moet je jezelf enkele vragen stellen: Waarom doe ik dit en welke doelen wil ik behalen. Zodra jij de antwoorden weet kunnen we aan de slag met voedingsadvies en een trainingsschema.',
   approach_content_two:
-    'Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te bereiken. Of je nu snel wil afvallen of spieren kweken, conditie wil verbeteren of spiermassa opbouwen, alles kan.',
+    'Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te bereiken. Of je nu snel wil afvallen, spiermassa opbouwen of conditie wil verbeteren, alles kan.',
   approach_content_three: 'Why start tomorrow when you can start today?',
   offer_title: 'Aanbod',
   offer_button_meet: 'AFSPRAAK',
@@ -81,7 +81,7 @@ module.exports = {
   offer_detail_step_three: 'Persoonlijke doelen',
   offer_detail_step_three_content:
     'Een personal trainer kijkt naar je lichaam en houdt rekening met je specifieke doelen. Tijdens onze workout van 75 minuten sta ik je bij van begin tot einde. We starten met een goede opwarming om zo aan onze sessie te kunnen beginnen. Na de training maken we tijd voor stretching en sta je al één stap dichter bij je doel.',
-  offer_detail_step_four: 'Verbeter je sportiviteit',
+  offer_detail_step_four: 'Verbeter je atletisch vermogen',
   offer_detail_step_four_content:
     'Door middel van plyometrics, verandering van richting en creatieve conditionering, zullen we je sportiviteit naar een hoger niveau tillen.',
   offer_detail_step_five: 'Verstevig je lichaam',
