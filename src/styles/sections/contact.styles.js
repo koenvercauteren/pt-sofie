@@ -39,7 +39,7 @@ const styles = theme => ({
     alignItems: 'center',
   },
   textField: {
-    width: '250px',
+    width: '300px',
   },
   lastTextfield: {
     marginBottom: 32,
