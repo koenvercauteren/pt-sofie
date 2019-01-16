@@ -14,7 +14,7 @@ import Button from '../components/button';
 
 const fadeTitle = () => {
   const title = window.document.getElementById('title');
-  if (title) title.style.opacity = 1 - window.scrollY / 250;
+  if (title && window.scrollY < 270) title.style.opacity = 1 - window.scrollY / 250;
 };
 
 class Parallax extends React.Component {

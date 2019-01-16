@@ -19,7 +19,7 @@ module.exports = {
     'At regular intervals we will look at which changes we can make in order to achieve optimal results. Whether you want to lose weight, gain muscle or improve your condition, everything is possible.',
   approach_content_three: 'Why start tomorrow when you can start today?',
   offer_title: 'Offer',
-  offer_button_meet: 'APPOINTMENT',
+  offer_button_meet: 'CONTACT',
   offer_button_discover: 'DISCOVER MORE',
   offer_intake_title: 'Intake',
   offer_intake_price: 'FREE',
