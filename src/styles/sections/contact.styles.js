@@ -27,10 +27,16 @@ const styles = theme => ({
     textAlign: 'center',
   },
   button: {
-    width: '250px',
+    width: '300px',
     height: 55,
     fontSize: '16px',
     padding: '0 50px',
+  },
+  callButton: {
+    background: '#48B667',
+    '&:hover': {
+      background: '#48B667',
+    },
   },
   form: {
     display: 'flex',

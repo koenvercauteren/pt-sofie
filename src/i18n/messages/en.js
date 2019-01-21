@@ -64,6 +64,7 @@ module.exports = {
   contact_label_email: 'E-mail',
   contact_label_message: 'Message',
   contact_button: 'SEND',
+  contact_button_two: 'CLICK TO CALL',
   offer_detail_title: 'Personal training',
   offer_detail_ending: `If you're interested in this option and would like to have forther information, you can contact me by clicking on the button bellow.`,
   offer_detail_button_next: 'NEXT',

@@ -51,7 +51,7 @@ const styles = theme => ({
       webkitTransformOrigin: '100% 0',
       transformOrigin: '100% 0',
       width: '50%',
-      background: '#4880E2',
+      background: '#48B6BF',
       zIndex: '-1',
       [theme.breakpoints.down('xs')]: {
         width: '100%',

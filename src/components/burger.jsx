@@ -32,7 +32,7 @@ class Burger extends React.Component {
     const { items, classes } = this.props;
 
     return (
-      <div>
+      <React.Fragment>
         <IconButton
           color="inherit"
           aria-label="Menu"
@@ -49,7 +49,7 @@ class Burger extends React.Component {
             </MenuItem>
           ))}
         </Menu>
-      </div>
+      </React.Fragment>
     );
   }
 }

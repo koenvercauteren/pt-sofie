@@ -67,6 +67,7 @@ module.exports = {
   contact_label_email: 'E-mail',
   contact_label_message: 'Bericht',
   contact_button: 'VERZEND',
+  contact_button_two: 'OPBELLEN',
   offer_detail_title: 'Personal training',
   offer_detail_ending:
     'Als je interesse hebt in dit plan en je wilt alle verdere informatie, klik dan op onderstaande knop om contact op te nemen.',

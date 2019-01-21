@@ -8,74 +8,59 @@ import Grid from '@material-ui/core/Grid';
 import styles from '../styles/pages/index.styles';
 import OfferDetail from '../components/offer-detail';
 import SeoTags from '../components/seo-tags';
+import LanguageSwitcher from '../components/language-switcher';
 
-class TwelveWeeksPage extends React.Component {
-  constructor(props) {
-    super(props);
+const TwelveWeeksPage = props => {
+  const {
+    classes,
+    intl: { formatMessage },
+  } = props;
 
-    this.state = {};
+  const steps = [
+    {
+      summary: formatMessage({ id: 'offer_detail_step_one' }),
+      details: formatMessage({ id: 'offer_detail_step_one_content' }),
+    },
+    {
+      summary: formatMessage({ id: 'offer_detail_step_two' }),
+      details: formatMessage({ id: 'offer_detail_step_two_content' }),
+    },
+    {
+      summary: formatMessage({ id: 'offer_detail_step_three' }),
+      details: formatMessage({ id: 'offer_detail_step_three_content' }),
+    },
+    {
+      summary: formatMessage({ id: 'offer_detail_step_four' }),
+      details: formatMessage({ id: 'offer_detail_step_four_content' }),
+    },
+    {
+      summary: formatMessage({ id: 'offer_detail_step_five' }),
+      details: formatMessage({ id: 'offer_detail_step_five_content' }),
+    },
+    {
+      summary: formatMessage({ id: 'offer_detail_step_six' }),
+      details: formatMessage({ id: 'offer_detail_step_six_content' }),
+    },
+    {
+      summary: formatMessage({ id: 'offer_detail_step_seven' }),
+      details: formatMessage({ id: 'offer_detail_step_seven_content' }),
+    },
+    {
+      summary: formatMessage({ id: 'offer_detail_step_eight' }),
+      details: formatMessage({ id: 'offer_detail_step_eight_content' }),
+    },
+  ];
 
-    this.getStepContent = this.getStepContent.bind(this);
-  }
-
-  getStepContent(step) {
-    const {
-      intl: { formatMessage },
-    } = this.props;
-
-    switch (step) {
-      case 0:
-        return formatMessage({ id: 'offer_detail_step_one_content' });
-      case 1:
-        return formatMessage({ id: 'offer_detail_step_two_content' });
-      case 2:
-        return formatMessage({ id: 'offer_detail_step_three_content' });
-      case 3:
-        return formatMessage({ id: 'offer_detail_step_four_content' });
-      case 4:
-        return formatMessage({ id: 'offer_detail_step_five_content' });
-      case 5:
-        return formatMessage({ id: 'offer_detail_step_six_content' });
-      case 6:
-        return formatMessage({ id: 'offer_detail_step_seven_content' });
-      case 7:
-        return formatMessage({ id: 'offer_detail_step_eight_content' });
-      default:
-        return '';
-    }
-  }
-
-  render() {
-    const {
-      classes,
-      intl: { formatMessage },
-    } = this.props;
-
-    const getSteps = () => [
-      formatMessage({ id: 'offer_detail_step_one' }),
-      formatMessage({ id: 'offer_detail_step_two' }),
-      formatMessage({ id: 'offer_detail_step_three' }),
-      formatMessage({ id: 'offer_detail_step_four' }),
-      formatMessage({ id: 'offer_detail_step_five' }),
-      formatMessage({ id: 'offer_detail_step_six' }),
-      formatMessage({ id: 'offer_detail_step_seven' }),
-      formatMessage({ id: 'offer_detail_step_eight' }),
-    ];
-
-    return (
-      <Grid container justify="center" className={classes.approachContainer}>
-        <SeoTags url="https://www.sofiedb.be/12-weeks" />
-        <Grid item xs={11} md={6} className={classes.approachGridItem}>
-          <OfferDetail
-            title={formatMessage({ id: 'offer_detail_title' })}
-            getStepContent={this.getStepContent}
-            getSteps={getSteps}
-          />
-        </Grid>
+  return (
+    <Grid container justify="center" className={classes.approachContainer}>
+      <SeoTags url="https://www.sofiedb.be/12-weeks" />
+      <Grid item xs={11} md={6} className={classes.approachGridItem}>
+        <OfferDetail title={formatMessage({ id: 'offer_detail_title' })} steps={steps} />
       </Grid>
-    );
-  }
-}
+      <LanguageSwitcher />
+    </Grid>
+  );
+};
 
 TwelveWeeksPage.propTypes = {
   classes: PropTypes.object.isRequired,

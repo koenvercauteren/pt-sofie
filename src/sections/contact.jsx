@@ -7,6 +7,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
+import PhoneIcon from '@material-ui/icons/Phone';
 import SendIcon from '@material-ui/icons/Send';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -127,6 +128,15 @@ class Contact extends React.Component {
                   text={formatMessage({ id: 'contact_button' })}
                 >
                   <SendIcon className={classes.leftIcon} />
+                </Button>
+                <Button
+                  disabled={this.state.submitState}
+                  type="button"
+                  className={`${classes.button} ${classes.callButton}`}
+                  text={formatMessage({ id: 'contact_button_two' })}
+                  href="tel:+32485197045"
+                >
+                  <PhoneIcon className={classes.leftIcon} />
                 </Button>
               </form>
             </CardContent>
