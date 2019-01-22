@@ -39,12 +39,8 @@ class Layout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      locale: 'en',
+      locale: i18n.getCurrentLangKey(),
     };
-  }
-
-  componentDidMount() {
-    this.setState({ locale: i18n.getCurrentLangKey() });
   }
 
   render() {
