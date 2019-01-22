@@ -1,4 +1,10 @@
 module.exports = {
+  menu_keys: 'Sleutels',
+  menu_approach: 'Aanpak',
+  menu_offer: 'Aanbod',
+  menu_who: 'Wie',
+  menu_location: 'Locatie',
+  menu_contact: 'Contact',
   keys_to_success_title: 'Sleutels tot succes',
   key_one_title: 'Levensstijl',
   key_one_content:

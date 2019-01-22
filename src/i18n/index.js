@@ -1,7 +1,7 @@
 import enMessages from './messages/en';
 import nlMessages from './messages/nl';
 
-const DEFAULT_LOCALE = 'nl';
+const DEFAULT_LOCALE = 'en';
 const LANGS = ['en', 'nl'];
 
 module.exports = {
@@ -19,6 +19,6 @@ module.exports = {
     }
 
     const currentLocale = LANGS.find(lang => lang.startsWith(locale));
-    return currentLocale;
+    return currentLocale || DEFAULT_LOCALE;
   },
 };

@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import { goToTop, goToAnchor } from 'react-scrollable-anchor';
+import { FormattedMessage } from 'react-intl';
 
 import ANCHORS from '../globals/anchors';
 import Logo from '../assets/img/logo.png';
@@ -77,22 +78,22 @@ class HeaderMenu extends React.Component {
                 <div className={classes.buttonGroup}>
                   <Hidden xsDown>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.KEYSTOSUCCESS)}>
-                      Sleutels
+                      <FormattedMessage id="menu_keys" />
                     </Button>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.APPROACH)}>
-                      Aanpak
+                      <FormattedMessage id="menu_approach" />
                     </Button>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.OFFER)}>
-                      Aanbod
+                      <FormattedMessage id="menu_offer" />
                     </Button>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.WHO)}>
-                      Wie
+                      <FormattedMessage id="menu_who" />
                     </Button>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.LOCATION)}>
-                      Locatie
+                      <FormattedMessage id="menu_location" />
                     </Button>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.CONTACT)}>
-                      Contact
+                      <FormattedMessage id="menu_contact" />
                     </Button>
                   </Hidden>
 

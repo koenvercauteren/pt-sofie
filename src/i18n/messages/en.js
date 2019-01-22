@@ -1,4 +1,10 @@
 module.exports = {
+  menu_keys: 'Keys',
+  menu_approach: 'Approach',
+  menu_offer: 'Offer',
+  menu_who: 'Who',
+  menu_location: 'Location',
+  menu_contact: 'Contact',
   keys_to_success_title: 'Keys to success',
   key_one_title: 'Lifestyle',
   key_one_content:
@@ -57,7 +63,7 @@ module.exports = {
   who_label_three_content_one: '26',
   location_title: 'Location',
   location_content:
-    'All the indoor sessions will take place at Basic-Fit Oudaan, Antwerp. For this, you will need a membership. You can subscribe by clicking on the button bellow.',
+    'All the indoor sessions will take place at Basic-Fit Oudaan, Antwerp. For this, you will need a membership. You can subscribe by clicking on the button below.',
   location_button: 'SUBSCRIBE',
   contact_title: 'Contact',
   contact_label_name: 'Name',
@@ -66,7 +72,7 @@ module.exports = {
   contact_button: 'SEND',
   contact_button_two: 'CLICK TO CALL',
   offer_detail_title: 'Personal training',
-  offer_detail_ending: `If you're interested in this option and would like to have forther information, you can contact me by clicking on the button bellow.`,
+  offer_detail_ending: `If you're interested in this option and would like to have forther information, you can contact me by clicking on the button below.`,
   offer_detail_button_next: 'NEXT',
   offer_detail_button_contact: 'CONTACT',
   offer_detail_step_one: 'Who is it for?',
