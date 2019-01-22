@@ -13,7 +13,7 @@ module.exports = {
   key_two_content: `Are you already familiar in the gym or you don't know where and how to start? There is professional guidance for beginners and intermediates. Let's work on your overall condition or beach body.`,
   key_three_title: 'Planning',
   key_three_content:
-    'Using tailor made mealplans and workout routines, we will ensure you achieve your goals in an efficient way. Afterwards we will dynamically adjust your workouts to extend your boundaries.',
+    'Using tailor-made mealplans and workout routines, we will ensure you achieve your goals in an efficient way. Afterwards we will dynamically adjust your workouts to extend your boundaries.',
   key_four_title: 'Dedication',
   key_four_content: `Everything depends on your motivation and dedication but thanks to personal guidance, constant motivation and online contact you're anything but alone in this.`,
   parallax_title_one: 'A healthy mind in',
@@ -77,7 +77,7 @@ module.exports = {
   offer_detail_button_contact: 'CONTACT',
   offer_detail_step_one: 'Who is it for?',
   offer_detail_step_one_content:
-    'Personal training is suited for everyone who wants to work on themselves in a fun but efficient way. You will get personal guidance at your own pace with a tailor made workout routine.',
+    'Personal training is suited for everyone who wants to work on themselves in a fun but efficient way. You will get personal guidance at your own pace with a tailor-made workout routine.',
   offer_detail_step_two: 'Kickstart',
   offer_detail_step_two_content:
     'We will start with a test session to determine how far you already are in terms of strength and condition. After this, your personal plan can be made.',
