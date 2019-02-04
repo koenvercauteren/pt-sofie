@@ -11,14 +11,4 @@ module.exports = {
   },
   defaultLocale: DEFAULT_LOCALE,
   languages: LANGS,
-  getCurrentLangKey: () => {
-    let locale = localStorage.getItem('locale');
-    if (!locale) {
-      locale = DEFAULT_LOCALE;
-      localStorage.setItem('locale', DEFAULT_LOCALE);
-    }
-
-    const currentLocale = LANGS.find(lang => lang.startsWith(locale));
-    return currentLocale || DEFAULT_LOCALE;
-  },
 };

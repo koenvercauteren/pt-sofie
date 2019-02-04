@@ -39,15 +39,31 @@ class Layout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      locale: i18n.getCurrentLangKey(),
+      localStorage: undefined,
     };
+  }
+
+  componentDidMount() {
+    this.setState({ localStorage }); // eslint-disable-line no-restricted-globals
   }
 
   render() {
     const { children } = this.props;
-    const { locale } = this.state;
+    const { localStorage } = this.state;
+    let locale;
+
+    if (localStorage) {
+      locale = localStorage.getItem('locale');
+      if (!locale) {
+        locale = i18n.DEFAULT_LOCALE;
+        localStorage.setItem('locale', locale);
+      }
+    }
+
+    const currentLocale = i18n.languages.find(lang => lang.startsWith(locale)) || i18n.defaultLocale;
+
     return (
-      <IntlProvider locale={locale} messages={i18n.messages[locale]}>
+      <IntlProvider locale={currentLocale} messages={i18n.messages[currentLocale]}>
         <MuiThemeProvider theme={theme}>{children()}</MuiThemeProvider>
       </IntlProvider>
     );

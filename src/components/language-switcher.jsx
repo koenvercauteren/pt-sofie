@@ -21,20 +21,14 @@ const styles = {
 class LanguageSwitcher extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       location: undefined,
+      localStorage: undefined,
     };
   }
 
   componentDidMount() {
-    this.setState({ location }); // eslint-disable-line no-restricted-globals
-  }
-
-  switchLanguage() {
-    const locale = localStorage.getItem('locale');
-    localStorage.setItem('locale', i18n.languages.find(l => l !== locale));
-    this.state.location.reload();
+    this.setState({ location, localStorage }); // eslint-disable-line no-restricted-globals
   }
 
   render() {
@@ -44,7 +38,10 @@ class LanguageSwitcher extends React.Component {
         variant="fab"
         className={classes.switcher}
         onClick={() => {
-          this.switchLanguage();
+          const { localStorage, location } = this.state;
+          const locale = localStorage.getItem('locale');
+          localStorage.setItem('locale', i18n.languages.find(l => l !== locale) || i18n.DEFAULT_LOCALE);
+          location.reload();
         }}
       >
         <LanguageIcon />

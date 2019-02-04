@@ -14,8 +14,6 @@ module.exports = {
     browser: true,
   },
   rules: {
-    // complexity: [2, 6],
-    'max-statements': [2, 9],
     'max-statements-per-line': [2, { max: 1 }],
     'max-nested-callbacks': [2, 3],
     'max-depth': [2, { max: 3 }],
