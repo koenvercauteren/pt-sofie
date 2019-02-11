@@ -3,6 +3,10 @@
   "description": "Personal Trainer - Sofie de Backer",
   "version": "1.0.0",
   "author": "Koen Vercauteren <knvercauteren@gmail.com>",
+  "engines": {
+    "node": "10.15.1",
+    "npm": "^6.4.1"
+  },
   "dependencies": {
     "@material-ui/core": "^1.2.3",
     "@material-ui/icons": "^1.1.0",

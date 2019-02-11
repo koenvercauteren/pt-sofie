@@ -20,12 +20,9 @@ const styles = theme => ({
     textAlign: 'center',
     marginTop: '150px',
     color: 'rgba(0, 0, 0, 0.75)',
+    marginBottom: '50px',
     [theme.breakpoints.down('xs')]: {
       fontSize: '30px',
-      marginBottom: '50px',
-    },
-    [theme.breakpoints.up('sm')]: {
-      marginBottom: '150px',
     },
   },
   body: {
