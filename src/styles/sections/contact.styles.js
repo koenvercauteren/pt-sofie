@@ -16,6 +16,8 @@ const styles = theme => ({
     alignItems: 'center',
   },
   title: {
+    letterSpacing: 10,
+    fontWeight: 600,
     textAlign: 'center',
     marginBottom: '30px',
     color: 'rgba(0, 0, 0, 0.75)',

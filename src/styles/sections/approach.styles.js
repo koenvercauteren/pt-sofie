@@ -25,6 +25,8 @@ const styles = theme => ({
     },
   },
   title: {
+    fontWeight: 600,
+    letterSpacing: 10,
     [theme.breakpoints.down('xs')]: {
       fontSize: '30px',
     },

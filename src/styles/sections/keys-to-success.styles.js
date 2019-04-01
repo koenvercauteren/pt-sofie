@@ -24,6 +24,8 @@ const styles = theme => ({
     },
   },
   title: {
+    letterSpacing: 10,
+    fontWeight: 600,
     textAlign: 'center',
     marginTop: '150px',
     marginBottom: '50px',

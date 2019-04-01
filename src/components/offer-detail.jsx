@@ -23,6 +23,8 @@ const styles = theme => ({
     padding: theme.spacing.unit * 3,
   },
   title: {
+    letterSpacing: 10,
+    fontWeight: 600,
     textAlign: 'center',
     marginTop: '50px',
     marginBottom: '50px',

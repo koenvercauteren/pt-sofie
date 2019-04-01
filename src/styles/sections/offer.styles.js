@@ -8,6 +8,8 @@ const styles = theme => ({
     zIndex: 1,
   },
   title: {
+    fontWeight: 600,
+    letterSpacing: 10,
     textAlign: 'center',
     marginTop: '150px',
     marginBottom: '50px',

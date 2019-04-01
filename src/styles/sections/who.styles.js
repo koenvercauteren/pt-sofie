@@ -17,6 +17,8 @@ const styles = theme => ({
     justifyContent: 'center',
   },
   title: {
+    fontWeight: 600,
+    letterSpacing: 10,
     textAlign: 'center',
     marginTop: '150px',
     color: 'rgba(0, 0, 0, 0.75)',
