@@ -102,4 +102,5 @@ module.exports = {
   offer_detail_step_eight: 'Lange termijn',
   offer_detail_step_eight_content:
     'Voor 3 maanden sta je onder begeleiding en wordt je opgevolgd op verschillende vlakken, door regelmaat en consistentie ben je zeker van je resultaat.',
+  switch_language: 'English',
 };

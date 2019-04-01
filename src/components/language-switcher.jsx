@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { Button } from '@material-ui/core';
 import LanguageIcon from '@material-ui/icons/Language';
 import { withStyles } from '@material-ui/core/styles';
+import Tooltip from '@material-ui/core/Tooltip';
+import { injectIntl } from 'react-intl';
 
 import i18n from '../i18n';
 
@@ -32,26 +34,34 @@ class LanguageSwitcher extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const {
+      classes,
+      intl: { formatMessage },
+    } = this.props;
     return (
-      <Button
-        variant="fab"
-        className={classes.switcher}
-        onClick={() => {
-          const { localStorage, location } = this.state;
-          const locale = localStorage.getItem('locale');
-          localStorage.setItem('locale', i18n.languages.find(l => l !== locale) || i18n.DEFAULT_LOCALE);
-          location.reload();
-        }}
-      >
-        <LanguageIcon />
-      </Button>
+      <Tooltip title={formatMessage({ id: 'switch_language' })}>
+        <Button
+          variant="fab"
+          className={classes.switcher}
+          onClick={() => {
+            const { localStorage, location } = this.state;
+            const locale = localStorage.getItem('locale');
+            localStorage.setItem('locale', i18n.languages.find(l => l !== locale) || i18n.DEFAULT_LOCALE);
+            location.reload();
+          }}
+        >
+          <LanguageIcon />
+        </Button>
+      </Tooltip>
     );
   }
 }
 
 LanguageSwitcher.propTypes = {
   classes: PropTypes.object.isRequired,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
-export default withStyles(styles)(LanguageSwitcher);
+export default injectIntl(withStyles(styles)(LanguageSwitcher));
