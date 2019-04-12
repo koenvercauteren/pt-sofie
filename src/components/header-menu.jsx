@@ -7,7 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import { goToTop, goToAnchor } from 'react-scrollable-anchor';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, injectIntl } from 'react-intl';
 
 import ANCHORS from '../globals/anchors';
 import Logo from '../assets/img/logo.png';
@@ -63,7 +63,10 @@ class HeaderMenu extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const {
+      classes,
+      intl: { formatMessage },
+    } = this.props;
 
     return (
       <div className={classes.root}>
@@ -111,12 +114,12 @@ class HeaderMenu extends React.Component {
                   <Hidden smUp>
                     <Burger
                       items={[
-                        { name: 'Sleutels', anchor: ANCHORS.KEYSTOSUCCESS },
-                        { name: 'Aanpak', anchor: ANCHORS.APPROACH },
-                        { name: 'Aanbod', anchor: ANCHORS.OFFER },
-                        { name: 'Wie', anchor: ANCHORS.WHO },
-                        { name: 'Locatie', anchor: ANCHORS.LOCATION },
-                        { name: 'Contact', anchor: ANCHORS.CONTACT },
+                        { name: formatMessage({ id: 'menu_keys' }).toUpperCase(), anchor: ANCHORS.KEYSTOSUCCESS },
+                        { name: formatMessage({ id: 'menu_approach' }).toUpperCase(), anchor: ANCHORS.APPROACH },
+                        { name: formatMessage({ id: 'menu_offer' }).toUpperCase(), anchor: ANCHORS.OFFER },
+                        { name: formatMessage({ id: 'menu_who' }).toUpperCase(), anchor: ANCHORS.WHO },
+                        { name: formatMessage({ id: 'menu_location' }).toUpperCase(), anchor: ANCHORS.LOCATION },
+                        { name: formatMessage({ id: 'menu_contact' }).toUpperCase(), anchor: ANCHORS.CONTACT },
                       ]}
                     />
                   </Hidden>
@@ -132,6 +135,9 @@ class HeaderMenu extends React.Component {
 
 HeaderMenu.propTypes = {
   classes: PropTypes.object.isRequired,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
-export default withStyles(styles)(HeaderMenu);
+export default injectIntl(withStyles(styles)(HeaderMenu));
