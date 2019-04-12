@@ -50,6 +50,7 @@ const SeoTags = props => {
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 
       <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+      <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" />
     </Helmet>
   );
 };

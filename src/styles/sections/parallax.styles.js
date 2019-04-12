@@ -17,12 +17,13 @@ const styles = theme => ({
     color: '#fff',
     textShadow: '1px 1px #525f7f',
     fontWeight: 300,
-    fontSize: '40px',
     textAlign: 'center',
+    fontSize: '3rem',
     [theme.breakpoints.down('xs')]: {
-      fontSize: '30px',
+      fontSize: '2rem',
     },
     zIndex: 1,
+    fontFamily: 'Permanent Marker',
   },
   parallaxContainer: {
     position: 'fixed',
