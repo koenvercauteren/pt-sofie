@@ -55,7 +55,7 @@ const TwelveWeeksPage = props => {
     <Grid container justify="center" className={classes.approachContainer}>
       <SeoTags url="https://www.sofiedb.be/12-weeks" />
       <Grid item xs={11} md={6} className={classes.approachGridItem}>
-        <OfferDetail title={formatMessage({ id: 'offer_detail_title' })} steps={steps} />
+        <OfferDetail title={formatMessage({ id: 'offer_detail_title_12' })} steps={steps} />
       </Grid>
       <LanguageSwitcher />
     </Grid>

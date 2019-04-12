@@ -1,7 +1,18 @@
 const styles = theme => ({
   container: {
-    background: '#fafafa',
     paddingBottom: '150px',
+    position: 'relative',
+    '&:before': {
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '1800px',
+      webkitTransform: 'skewY(-8deg)',
+      transform: 'skewY(-8deg)',
+      background: '#fafafa',
+    },
   },
   offer: {
     maxWidth: '1040px',
@@ -14,9 +25,7 @@ const styles = theme => ({
     marginTop: '150px',
     marginBottom: '50px',
     color: 'rgba(0, 0, 0, 0.75)',
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '30px',
-    },
+    fontSize: '2rem',
   },
   button: {
     width: '100%',

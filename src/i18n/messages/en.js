@@ -1,6 +1,7 @@
 module.exports = {
   menu_keys: 'Keys',
   menu_approach: 'Approach',
+  menu_bootcamp: 'Bootcamp',
   menu_offer: 'Offer',
   menu_who: 'Who',
   menu_location: 'Location',
@@ -24,6 +25,12 @@ module.exports = {
   approach_content_two:
     'At regular intervals we will look at which changes we can make in order to achieve optimal results. Whether you want to lose weight, gain muscle or improve your condition, everything is possible.',
   approach_content_three: 'Why start tomorrow when you can start today?',
+  bootcamp_title: 'BOOTCAMP',
+  bootcamp_content_one:
+    'Je weg vinden binnen een fitness is niet gemakkelijk. Voor je aan je gezonde levensstijl begint moet je jezelf enkele vragen stellen: Waarom doe ik dit en welke doelen wil ik behalen. Zodra jij de antwoorden weet kunnen we aan de slag met voedingsadvies en een trainingsschema.',
+  bootcamp_content_two:
+    'Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te bereiken. Of je nu snel wil afvallen, spiermassa opbouwen of conditie wil verbeteren, alles kan.',
+  bootcamp_content_three: 'Why start tomorrow when you can start today?',
   offer_title: 'OFFER',
   offer_button_meet: 'CONTACT',
   offer_button_discover: 'DISCOVER MORE',
@@ -71,8 +78,9 @@ module.exports = {
   contact_label_message: 'Message',
   contact_button: 'SEND',
   contact_button_two: 'CLICK TO CALL',
-  offer_detail_title: 'PERSONAL TRAINING',
-  offer_detail_ending: `If you're interested in this option and would like to have forther information, you can contact me by clicking on the button below.`,
+  offer_detail_title_6: '6 WEEKS',
+  offer_detail_title_12: '12 WEEKS',
+  offer_detail_ending: `If you're interested in this option and would like to have further information, you can contact me by clicking on the button below.`,
   offer_detail_button_next: 'NEXT',
   offer_detail_button_contact: 'CONTACT',
   offer_detail_step_one: 'Who is it for?',

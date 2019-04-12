@@ -30,8 +30,9 @@ const styles = theme => ({
     marginBottom: '50px',
     position: 'relative',
     color: 'rgba(0, 0, 0, 0.75)',
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '30px',
+    fontSize: '2rem',
+    '& span': {
+      width: 10,
     },
   },
   buttonBack: {
@@ -52,7 +53,7 @@ const OfferDetail = ({ classes, title, steps }) => (
       <IconButton color="primary" className={classes.buttonBack} component={LinkToHome}>
         <ArrowBackIcon2 />
       </IconButton>
-      {title}
+      <span>{title}</span>
     </Typography>
 
     {steps.map((step, index) => (

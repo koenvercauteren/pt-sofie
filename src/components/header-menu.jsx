@@ -27,6 +27,9 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'flex-end',
     width: '100%',
+    '& button': {
+      minWidth: 'auto',
+    },
   },
   grid: {
     maxWidth: '1040px',
@@ -79,7 +82,7 @@ class HeaderMenu extends React.Component {
                 </Button>
 
                 <div className={classes.buttonGroup}>
-                  <Hidden xsDown>
+                  <Hidden smDown>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.KEYSTOSUCCESS)}>
                       <FormattedMessage id="menu_keys" />
                     </Button>
@@ -88,6 +91,9 @@ class HeaderMenu extends React.Component {
                     </Button>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.OFFER)}>
                       <FormattedMessage id="menu_offer" />
+                    </Button>
+                    <Button color="inherit" onClick={() => goToAnchor(ANCHORS.BOOTCAMP)}>
+                      <FormattedMessage id="menu_bootcamp" />
                     </Button>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.WHO)}>
                       <FormattedMessage id="menu_who" />
@@ -111,12 +117,13 @@ class HeaderMenu extends React.Component {
                     />
                   </div>
 
-                  <Hidden smUp>
+                  <Hidden mdUp>
                     <Burger
                       items={[
                         { name: formatMessage({ id: 'menu_keys' }).toUpperCase(), anchor: ANCHORS.KEYSTOSUCCESS },
                         { name: formatMessage({ id: 'menu_approach' }).toUpperCase(), anchor: ANCHORS.APPROACH },
                         { name: formatMessage({ id: 'menu_offer' }).toUpperCase(), anchor: ANCHORS.OFFER },
+                        { name: formatMessage({ id: 'menu_bootcamp' }).toUpperCase(), anchor: ANCHORS.BOOTCAMP },
                         { name: formatMessage({ id: 'menu_who' }).toUpperCase(), anchor: ANCHORS.WHO },
                         { name: formatMessage({ id: 'menu_location' }).toUpperCase(), anchor: ANCHORS.LOCATION },
                         { name: formatMessage({ id: 'menu_contact' }).toUpperCase(), anchor: ANCHORS.CONTACT },

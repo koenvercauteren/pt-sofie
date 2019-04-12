@@ -4,10 +4,19 @@ const styles = theme => ({
   container: {
     position: 'relative',
     width: '100%',
-    height: '600px',
-    background: 'linear-gradient(#fff, #fafafa)',
     zIndex: 1,
     paddingBottom: '150px',
+    '&:before': {
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '1800px',
+      webkitTransform: 'skewY(-8deg)',
+      transform: 'skewY(-8deg)',
+      background: '#fafafa',
+    },
   },
   sofie: {
     maxWidth: '1040px',
@@ -23,9 +32,7 @@ const styles = theme => ({
     marginTop: '150px',
     color: 'rgba(0, 0, 0, 0.75)',
     marginBottom: '50px',
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '30px',
-    },
+    fontSize: '2rem',
   },
   body: {
     textAlign: 'center',

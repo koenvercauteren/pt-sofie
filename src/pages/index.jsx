@@ -7,6 +7,7 @@ import HeaderMenu from '../components/header-menu';
 import Parallax from '../sections/parallax';
 import KeysToSuccess from '../sections/keys-to-success';
 import Approach from '../sections/approach';
+import Bootcamp from '../sections/bootcamp';
 import Offer from '../sections/offer';
 import Who from '../sections/who';
 import Location from '../sections/location';
@@ -34,6 +35,7 @@ class IndexPage extends React.Component {
         <KeysToSuccess />
         <Approach />
         <Offer />
+        <Bootcamp />
         <Who />
         <Location />
         <Contact />

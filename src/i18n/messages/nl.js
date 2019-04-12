@@ -1,11 +1,12 @@
 module.exports = {
   menu_keys: 'Sleutels',
   menu_approach: 'Aanpak',
+  menu_bootcamp: 'Bootcamp',
   menu_offer: 'Aanbod',
   menu_who: 'Wie',
   menu_location: 'Locatie',
   menu_contact: 'Contact',
-  keys_to_success_title: 'SLEUTEL TOT SUCCESS',
+  keys_to_success_title: 'SLEUTELS TOT SUCCESS',
   key_one_title: 'Levensstijl',
   key_one_content:
     'Als personal trainer werken we samen aan een gezonde geest in een gezond lichaam. We kijken naar welke kleine veranderingen je kan doorvoeren om je levensstijl te verbeteren.',
@@ -27,6 +28,12 @@ module.exports = {
   approach_content_two:
     'Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te bereiken. Of je nu snel wil afvallen, spiermassa opbouwen of conditie wil verbeteren, alles kan.',
   approach_content_three: 'Why start tomorrow when you can start today?',
+  bootcamp_title: 'BOOTCAMP',
+  bootcamp_content_one:
+    'Je weg vinden binnen een fitness is niet gemakkelijk. Voor je aan je gezonde levensstijl begint moet je jezelf enkele vragen stellen: Waarom doe ik dit en welke doelen wil ik behalen. Zodra jij de antwoorden weet kunnen we aan de slag met voedingsadvies en een trainingsschema.',
+  bootcamp_content_two:
+    'Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te bereiken. Of je nu snel wil afvallen, spiermassa opbouwen of conditie wil verbeteren, alles kan.',
+  bootcamp_content_three: 'Why start tomorrow when you can start today?',
   offer_title: 'AANBOD',
   offer_button_meet: 'AFSPRAAK',
   offer_button_discover: 'ONTDEK MEER',
@@ -74,7 +81,8 @@ module.exports = {
   contact_label_message: 'Bericht',
   contact_button: 'VERZEND',
   contact_button_two: 'OPBELLEN',
-  offer_detail_title: 'PERSONAL TRAINING',
+  offer_detail_title_6: '6 WEKEN',
+  offer_detail_title_12: '12 WEKEN',
   offer_detail_ending:
     'Als je interesse hebt in dit plan en je wilt alle verdere informatie, klik dan op onderstaande knop om contact op te nemen.',
   offer_detail_button_next: 'VOLGENDE',

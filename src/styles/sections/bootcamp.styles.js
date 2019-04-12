@@ -1,12 +1,15 @@
-import approachImage from '../../assets/img/multiple-girls-stretching.jpeg';
+import bootcampImage from '../../assets/img/group-session-girls.jpg';
 
 const styles = theme => ({
   wrapper: {
     display: 'flex',
-    justifyContent: 'flex-end',
-    paddingLeft: '130px',
+    justifyContent: 'flex-start',
+    textAlign: 'right',
+    paddingRight: '130px',
+    webkitTransform: 'skewY(8deg)',
+    transform: 'skewY(8deg)',
     [theme.breakpoints.down('xs')]: {
-      paddingLeft: '24px',
+      paddingRight: '24px',
     },
   },
   footer: {
@@ -14,11 +17,9 @@ const styles = theme => ({
   },
   container: {
     paddingTop: '16px',
-    paddingRight: '32px',
+    paddingLeft: '32px',
     width: '50%',
     color: '#fafafa',
-    webkitTransform: 'skewY(8deg)',
-    transform: 'skewY(8deg)',
     [theme.breakpoints.down('xs')]: {
       width: '100%',
     },
@@ -28,7 +29,7 @@ const styles = theme => ({
     letterSpacing: 10,
     fontSize: '2rem',
   },
-  approachContainer: {
+  bootcampContainer: {
     [theme.breakpoints.down('sm')]: {
       height: '600px',
     },
@@ -38,7 +39,6 @@ const styles = theme => ({
     [theme.breakpoints.up('lg')]: {
       height: '450px',
     },
-    marginTop: '150px',
     position: 'relative',
     zIndex: 1,
     webkitTransform: 'skewY(-8deg)',
@@ -46,14 +46,13 @@ const styles = theme => ({
     '&:before': {
       content: '""',
       position: 'absolute',
-      right: 0,
+      left: 0,
       webkitTransformOrigin: '100% 0',
       transformOrigin: '100% 0',
       width: '100%',
-      background: 'linear-gradient(90deg, transparent, #48B6BF 50%)',
+      background: 'linear-gradient(90deg, #4880E2 50%, transparent)',
       [theme.breakpoints.down('xs')]: {
-        width: '100%',
-        background: '#48B6BF',
+        background: '#4880E2',
       },
       [theme.breakpoints.down('sm')]: {
         height: '600px',
@@ -66,17 +65,16 @@ const styles = theme => ({
       },
     },
   },
-  approachGridItem: {
+  bootcampGridItem: {
     maxWidth: '1040px',
     display: 'flex',
     alignItems: 'center',
   },
-  approachImage: {
+  bootcampImage: {
     position: 'absolute',
-    left: 0,
+    right: 0,
     width: '50%',
     overflow: 'hidden',
-    zIndex: '-1',
     [theme.breakpoints.down('xs')]: {
       display: 'none',
     },
@@ -98,9 +96,10 @@ const styles = theme => ({
       transform: 'skewY(8deg)',
       webkitTransformOrigin: '100% 0',
       transformOrigin: '100% 0%',
-      background: `url('${approachImage}') no-repeat`,
-      backgroundPosition: 'right top',
+      background: `url('${bootcampImage}') no-repeat`,
+      backgroundPosition: 'center top',
       backgroundSize: 'cover',
+      zIndex: '-1',
     },
   },
 });

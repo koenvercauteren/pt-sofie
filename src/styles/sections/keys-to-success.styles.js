@@ -15,7 +15,7 @@ const styles = theme => ({
       top: 600,
       left: 0,
       width: '100%',
-      height: '3000px',
+      height: '2300px',
       webkitTransform: 'skewY(-8deg)',
       transform: 'skewY(-8deg)',
       background: '#fafafa',
@@ -30,9 +30,7 @@ const styles = theme => ({
     marginTop: '150px',
     marginBottom: '50px',
     color: 'rgba(0, 0, 0, 0.75)',
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '30px',
-    },
+    fontSize: '2rem',
   },
   card: {
     zIndex: 1,

@@ -28,9 +28,7 @@ const styles = theme => ({
     marginTop: '150px',
     marginBottom: '50px',
     color: 'rgba(0, 0, 0, 0.75)',
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '30px',
-    },
+    fontSize: '2rem',
   },
   body: {
     textAlign: 'center',
