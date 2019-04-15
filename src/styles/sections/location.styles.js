@@ -1,6 +1,6 @@
 import gplaypattern from '../../assets/img/gplaypattern.png';
 
-const styles = theme => ({
+const styles = () => ({
   container: {
     position: 'relative',
     '&:before': {
