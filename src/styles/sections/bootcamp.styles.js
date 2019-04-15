@@ -12,9 +12,6 @@ const styles = theme => ({
       paddingRight: '24px',
     },
   },
-  footer: {
-    fontWeight: '500',
-  },
   container: {
     paddingTop: '16px',
     paddingLeft: '32px',
@@ -28,6 +25,19 @@ const styles = theme => ({
     fontWeight: 600,
     letterSpacing: 10,
     fontSize: '2rem',
+  },
+  pricing: {
+    fontSize: 13,
+    fontWeight: 500,
+    textTransform: 'uppercase',
+  },
+  button: {
+    background: '#48B6BF',
+    transition: 'all .3s',
+    '&:hover': {
+      background: '#fff',
+      color: '#48B6BF !important',
+    },
   },
   bootcampContainer: {
     [theme.breakpoints.down('sm')]: {
@@ -101,6 +111,9 @@ const styles = theme => ({
       backgroundSize: 'cover',
       zIndex: '-1',
     },
+  },
+  leftIcon: {
+    marginRight: theme.spacing.unit,
   },
 });
 

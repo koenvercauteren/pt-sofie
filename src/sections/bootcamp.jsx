@@ -4,13 +4,19 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
+import ScrollableAnchor, { goToAnchor } from 'react-scrollable-anchor';
 import { FormattedMessage, injectIntl } from 'react-intl';
 
 import styles from '../styles/sections/bootcamp.styles';
+import Button from '../components/button';
+import ANCHORS from '../globals/anchors';
 
 const Bootcamp = props => {
-  const { classes } = props;
+  const {
+    classes,
+    intl: { formatMessage },
+  } = props;
 
   return (
     <Grid container justify="center" className={classes.bootcampContainer}>
@@ -26,13 +32,25 @@ const Bootcamp = props => {
                 <FormattedMessage id="bootcamp_content_one" />
               </Typography>
 
-              <Typography gutterBottom variant="subheading" color="inherit">
-                <FormattedMessage id="bootcamp_content_two" />
+              <Typography className={classes.pricing} gutterBottom variant="subheading" color="inherit">
+                <span dangerouslySetInnerHTML={{ __html: formatMessage({ id: 'bootcamp_content_two' }) }} />
+                <br />
+                <span dangerouslySetInnerHTML={{ __html: formatMessage({ id: 'bootcamp_content_three' }) }} />
               </Typography>
 
-              <Typography className={classes.footer} variant="subheading" color="inherit">
-                <FormattedMessage id="bootcamp_content_three" />
+              <Typography gutterBottom variant="subheading" color="inherit" />
+
+              <Typography variant="subheading" color="inherit">
+                <FormattedMessage id="bootcamp_content_four" />
               </Typography>
+
+              <Button
+                className={classes.button}
+                text={formatMessage({ id: 'bootcamp_button' })}
+                onClick={() => goToAnchor(ANCHORS.CONTACT)}
+              >
+                <AssignmentTurnedInIcon className={classes.leftIcon} />
+              </Button>
             </div>
           </div>
         </Grid>
@@ -44,6 +62,9 @@ const Bootcamp = props => {
 
 Bootcamp.propTypes = {
   classes: PropTypes.object.isRequired,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
 export default injectIntl(withStyles(styles)(Bootcamp));

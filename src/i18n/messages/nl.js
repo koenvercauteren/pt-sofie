@@ -30,10 +30,11 @@ module.exports = {
   approach_content_three: 'Why start tomorrow when you can start today?',
   bootcamp_title: 'BOOTCAMP',
   bootcamp_content_one:
-    'Je weg vinden binnen een fitness is niet gemakkelijk. Voor je aan je gezonde levensstijl begint moet je jezelf enkele vragen stellen: Waarom doe ik dit en welke doelen wil ik behalen. Zodra jij de antwoorden weet kunnen we aan de slag met voedingsadvies en een trainingsschema.',
-  bootcamp_content_two:
-    'Samen kijken we op regelmatige basis welke veranderingen we kunnen doorvoeren om optimale resultaten te bereiken. Of je nu snel wil afvallen, spiermassa opbouwen of conditie wil verbeteren, alles kan.',
-  bootcamp_content_three: 'Why start tomorrow when you can start today?',
+    'Bootcamp is er voor iedereen die liever in groep sport op een afwisselende en aangename manier. Je daagt elkaar uit en wordt gemotiveerd om samen die extra stap te zetten.',
+  bootcamp_content_two: '10 beurtenkaart: <b>€100</b>',
+  bootcamp_content_three: 'Enkele sessie: <b>€12,5</b>',
+  bootcamp_content_four: 'Klik op onderstaande knop om contact op te nemen.',
+  bootcamp_button: 'SCHRIJF JE IN',
   offer_title: 'AANBOD',
   offer_button_meet: 'AFSPRAAK',
   offer_button_discover: 'ONTDEK MEER',
@@ -74,7 +75,7 @@ module.exports = {
   location_title: 'LOCATIE',
   location_content:
     'Alle binnensessies zullen doorgaan in Basic-Fit Oudaan in Antwerpen. Hiervoor heb je een abonnement bij Basic-Fit nodig. Indien je nog geen lid bent, kan je je hieronder inschrijven.',
-  location_button: 'SCHRIJF JE IN',
+  location_button: 'LID WORDEN',
   contact_title: 'CONTACT',
   contact_label_name: 'Naam',
   contact_label_email: 'E-mail',

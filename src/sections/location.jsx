@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import { FormattedMessage, injectIntl } from 'react-intl';
 
 import styles from '../styles/sections/location.styles';
@@ -49,9 +48,7 @@ class Location extends React.Component {
             onClick={() => {
               this.state.window.open('https://www.basic-fit.com/nl-be/fitnessclubs/antwerpen-oudaan', '_blank');
             }}
-          >
-            <AssignmentTurnedInIcon className={classes.leftIcon} />
-          </Button>
+          />
         </Grid>
       </Grid>
     );
