@@ -1,4 +1,4 @@
-import bootcampImage from '../../assets/img/group-session-girls.jpg';
+import bootcampImage from '../../assets/img/kick-boxing.jpg';
 
 const styles = theme => ({
   wrapper: {
