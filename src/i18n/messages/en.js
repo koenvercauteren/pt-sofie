@@ -27,7 +27,7 @@ module.exports = {
   approach_content_three: 'Why start tomorrow when you can start today?',
   bootcamp_title: 'BOOTCAMP',
   bootcamp_content_one:
-    'Bootcamp is for everyone who prefers group training in a varied and pleasant way. You challenge each other and you are motivated to take that extra step together.',
+    'Bootcamp is for everyone who prefers group training in a varied and pleasant way. You challenge each other and you are motivated to take that extra step together. Meet 15 minutes before the start @ BASIC-FIT.',
   bootcamp_content_two: '10 sessions combo: <b>€100</b>',
   bootcamp_content_three: 'single session: <b>€12,5</b>',
   bootcamp_content_four: 'You can contact me by clicking on the button below.',
