@@ -1,18 +1,6 @@
 const styles = theme => ({
   container: {
     paddingBottom: '150px',
-    position: 'relative',
-    '&:before': {
-      content: '""',
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '1800px',
-      webkitTransform: 'skewY(-8deg)',
-      transform: 'skewY(-8deg)',
-      background: '#fafafa',
-    },
   },
   offer: {
     maxWidth: '1040px',
