@@ -4,6 +4,7 @@ module.exports = {
   menu_bootcamp: 'Bootcamp',
   menu_offer: 'Offer',
   menu_who: 'Trainer',
+  menu_reviews: 'Reviews',
   menu_location: 'Location',
   menu_contact: 'Contact',
   keys_to_success_title: 'KEYS TO SUCCESS',
@@ -69,6 +70,8 @@ module.exports = {
   who_label_two_content_three: 'Health',
   who_label_three: 'AGE',
   who_label_three_content_one: '26',
+  reviews_title: 'REVIEWS',
+  reviews_read_more: 'Read more',
   location_title: 'LOCATION',
   location_content:
     'All the indoor sessions will take place at Basic-Fit Oudaan, Antwerp. For this, you will need a membership. You can subscribe by clicking on the button below.',

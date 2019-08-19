@@ -98,6 +98,9 @@ class HeaderMenu extends React.Component {
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.WHO)}>
                       <FormattedMessage id="menu_who" />
                     </Button>
+                    <Button color="inherit" onClick={() => goToAnchor(ANCHORS.REVIEWS)}>
+                      <FormattedMessage id="menu_reviews" />
+                    </Button>
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.LOCATION)}>
                       <FormattedMessage id="menu_location" />
                     </Button>
@@ -125,6 +128,7 @@ class HeaderMenu extends React.Component {
                         { name: formatMessage({ id: 'menu_offer' }).toUpperCase(), anchor: ANCHORS.OFFER },
                         { name: formatMessage({ id: 'menu_bootcamp' }).toUpperCase(), anchor: ANCHORS.BOOTCAMP },
                         { name: formatMessage({ id: 'menu_who' }).toUpperCase(), anchor: ANCHORS.WHO },
+                        { name: formatMessage({ id: 'menu_reviews' }).toUpperCase(), anchor: ANCHORS.REVIEWS },
                         { name: formatMessage({ id: 'menu_location' }).toUpperCase(), anchor: ANCHORS.LOCATION },
                         { name: formatMessage({ id: 'menu_contact' }).toUpperCase(), anchor: ANCHORS.CONTACT },
                       ]}

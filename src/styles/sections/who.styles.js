@@ -6,6 +6,18 @@ const styles = theme => ({
     width: '100%',
     zIndex: 1,
     paddingBottom: '150px',
+    '&:before': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        webkitTransform: 'skewY(-8deg)',
+        transform: 'skewY(-8deg)',
+        background: '#fff',
+        zIndex: -1,
+      },
   },
   sofie: {
     maxWidth: '1040px',

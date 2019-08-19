@@ -5,5 +5,6 @@ export default {
   BOOTCAMP: 'bootcamp',
   LOCATION: 'location',
   WHO: 'who',
+  REVIEWS: 'reviews',
   CONTACT: 'contact',
 };

@@ -12,6 +12,7 @@ import Offer from '../sections/offer';
 import Who from '../sections/who';
 import Location from '../sections/location';
 import Contact from '../sections/contact';
+import Reviews from '../sections/reviews';
 
 import styles from '../styles/pages/index.styles';
 import SeoTags from '../components/seo-tags';
@@ -37,6 +38,7 @@ class IndexPage extends React.Component {
         <Offer />
         <Bootcamp />
         <Who />
+        <Reviews />
         <Location />
         <Contact />
         <LanguageSwitcher />
