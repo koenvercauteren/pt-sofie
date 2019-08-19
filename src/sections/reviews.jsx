@@ -70,22 +70,22 @@ class Reviews extends React.Component {
                         isOpen: true,
                         dialogTitle: 'Oana B.',
                         dialogText: `
-                            I had the pleasure of working with Sofie recently, when I needed a training schedule to accomodate my returning to the gym after a long break prompted by a shoulder inflamation which had bothered me for quite a while.
+                            I had the pleasure of working with Sofie recently, when I needed a training schedule to accomodate my returning to the gym after a long break prompted by a shoulder inflamation which had bothered me for quite a while.
                             <br />
                             <br />
                             My experience has been very positive, and I highly recommend Sofie for anyone in need of a personalized training schedule, or simply additional advice in regards to exercising in an efficient manner.
                             <br />
                             <br />
-                            Sofie displays solid knowledge of her area of expertise, she is able to find interesting alternatives to traditional exercises and explain / demonstrate them very well, and she adjusts the training schedule to her client’s personal needs.
+                            Sofie displays solid knowledge of her area of expertise, she is able to find interesting alternatives to traditional exercises and explain / demonstrate them very well, and she adjusts the training schedule to her client’s personal needs.
                             <br />
                             <br />
-                            She pays attention to detail and listens to the client’s specific requirements, doing her best to find the best fit in terms of type and intensity of exercise, in order to maximize the result, while keeping a good balance with each individual’s level of fitness.
+                            She pays attention to detail and listens to the client’s specific requirements, doing her best to find the best fit in terms of type and intensity of exercise, in order to maximize the result, while keeping a good balance with each individual’s level of fitness.
                             <br />
                             <br />
                             She will challenge and push you to go further, without forcing you beyind a limit which might otherwise discourage you.
                             <br />
                             <br />
-                            Moreover, Sofie has a pleasant personality – she is friendly, cheerful, flexible and reactive, and the interaction with her in regards to planning sessions, or rescheduling when needed, has been very smooth and professional.
+                            Moreover, Sofie has a pleasant personality – she is friendly, cheerful, flexible and reactive, and the interaction with her in regards to planning sessions, or rescheduling when needed, has been very smooth and professional.
                         `,
                       })
                     }
@@ -103,7 +103,7 @@ class Reviews extends React.Component {
                     <div className={classes.quoteContainer}>
                       <QuoteIcon className={classes.quoteBefore} />
                       <Typography className={classes.quote} gutterBottom variant="headline">
-                        Ik ben voor het eerst sporten leuk beginnen vinden.
+                        Ik ben voor het eerst sporten leuk beginnen vinden
                       </Typography>
 
                       <Typography className={classes.cardHeadline} variant="headline">
@@ -150,7 +150,7 @@ class Reviews extends React.Component {
                     <div className={classes.quoteContainer}>
                       <QuoteIcon className={classes.quoteBefore} />
                       <Typography className={classes.quote} gutterBottom variant="headline">
-                        Ze staat constant paraat om me tips te geven.
+                        Ze staat constant paraat om me tips te geven
                       </Typography>
 
                       <Typography className={classes.cardHeadline} variant="headline">
