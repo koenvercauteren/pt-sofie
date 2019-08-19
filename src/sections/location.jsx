@@ -46,7 +46,7 @@ class Location extends React.Component {
             className={classes.button}
             text={formatMessage({ id: 'location_button' })}
             onClick={() => {
-              this.state.window.open('https://www.basic-fit.com/nl-be/fitnessclubs/antwerpen-oudaan', '_blank');
+              this.state.window.open('https://www.basic-fit.com/nl-be/subscription/membership', '_blank');
             }}
           />
         </Grid>

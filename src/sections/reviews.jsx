@@ -13,8 +13,9 @@ import { FormattedMessage, injectIntl } from 'react-intl';
 import CustomDialog from '../components/dialog-slide';
 import Button from '../components/button';
 import styles from '../styles/sections/reviews.styles';
-import sofieImage from '../assets/img/sofie.jpg';
 import ingeImage from '../assets/img/inge.jpg';
+import oanaImage from '../assets/img/oana.jpg';
+import nomiImage from '../assets/img/nomi.jpg';
 
 class Reviews extends React.Component {
   constructor(props) {
@@ -47,7 +48,7 @@ class Reviews extends React.Component {
               <Card className={classes.card}>
                 <CardContent className={classes.content}>
                   <div className={classes.contentContainer}>
-                    <img className={classes.image} src={sofieImage} alt="personal-trainer-sofie" />
+                    <img className={classes.image} src={oanaImage} alt="review-oana" />
 
                     <div className={classes.quoteContainer}>
                       <QuoteIcon className={classes.quoteBefore} />
@@ -97,7 +98,7 @@ class Reviews extends React.Component {
               <Card className={classes.card}>
                 <CardContent className={classes.content}>
                   <div className={classes.contentContainer}>
-                    <img className={classes.image} src={sofieImage} alt="personal-trainer-sofie" />
+                    <img className={classes.image} src={nomiImage} alt="review-nomi" />
 
                     <div className={classes.quoteContainer}>
                       <QuoteIcon className={classes.quoteBefore} />
@@ -144,7 +145,7 @@ class Reviews extends React.Component {
               <Card className={classes.card}>
                 <CardContent className={classes.content}>
                   <div className={classes.contentContainer}>
-                    <img className={classes.image} src={ingeImage} alt="personal-trainer-sofie" />
+                    <img className={classes.image} src={ingeImage} alt="review-inge" />
 
                     <div className={classes.quoteContainer}>
                       <QuoteIcon className={classes.quoteBefore} />
