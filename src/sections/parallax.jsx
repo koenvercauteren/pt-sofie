@@ -12,28 +12,18 @@ import ANCHORS from '../globals/anchors';
 import styles from '../styles/sections/parallax.styles';
 import Button from '../components/button';
 
+const fadeTitle = () => {
+  const title = window.document.getElementById('title');
+  if (title && window.scrollY < 270) title.style.opacity = 1 - window.scrollY / 250;
+};
+
 class Parallax extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      window: undefined,
-    };
-  }
-
   componentDidMount() {
-    this.setState({ window }, () => {
-      this.state.window.addEventListener('scroll', this.fadeTitle);
-    });
+    window.addEventListener('scroll', fadeTitle);
   }
 
   componentWillUnmount() {
-    this.state.window.removeEventListener('scroll', this.fadeTitle);
-  }
-
-  fadeTitle() {
-    const title = this.state.window.document.getElementById('title');
-    if (title && this.state.window.scrollY < 270) title.style.opacity = 1 - this.state.window.scrollY / 250;
+    window.removeEventListener('scroll', fadeTitle);
   }
 
   render() {
