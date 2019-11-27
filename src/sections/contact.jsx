@@ -7,7 +7,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
-import PhoneIcon from '@material-ui/icons/Phone';
+// import PhoneIcon from '@material-ui/icons/Phone';
 import SendIcon from '@material-ui/icons/Send';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -27,12 +27,17 @@ class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      window: undefined,
       submitState: null,
       name: null,
       email: null,
       message: null,
       'g-recaptcha-response': null,
     };
+  }
+
+  componentDidMount() {
+    this.setState({ window });
   }
 
   handleSubmit = e => {
@@ -43,6 +48,9 @@ class Contact extends React.Component {
       body: encode({ 'form-name': 'contact', ...this.state }),
     })
       .then(() => {
+        this.state.window.gtag('event', 'conversion', {
+          send_to: 'AW-769883402/mXxuCNfIhZUBEIr6je8C',
+        });
         this.setState({ submitState: 'success' });
       })
       .catch(() => {
@@ -122,14 +130,14 @@ class Contact extends React.Component {
                 />
                 {RECAPTCHA_KEY && <ReCAPTCHA sitekey={RECAPTCHA_KEY} onChange={this.handleRecaptcha} />}
                 <Button
-                  disabled={this.state.submitState}
+                  disabled={Boolean(this.state.submitState)}
                   type="submit"
                   className={classes.button}
                   text={formatMessage({ id: 'contact_button' })}
                 >
                   <SendIcon className={classes.leftIcon} />
                 </Button>
-                <Button
+                {/* <Button
                   disabled={this.state.submitState}
                   type="button"
                   className={`${classes.button} ${classes.callButton}`}
@@ -137,7 +145,7 @@ class Contact extends React.Component {
                   href="tel:+32485197045"
                 >
                   <PhoneIcon className={classes.leftIcon} />
-                </Button>
+                </Button> */}
               </form>
             </CardContent>
           </Card>

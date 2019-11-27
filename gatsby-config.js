@@ -3,12 +3,11 @@ module.exports = {
     siteUrl: 'https://www.sofiedb.be',
   },
   plugins: [
-    // Google Analytics
+    // gtag
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingId: 'UA-117941537-1',
-        head: false,
+        trackingIds: ['AW-769883402'],
       },
     },
 
