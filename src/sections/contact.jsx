@@ -161,8 +161,8 @@ class Contact extends React.Component {
           message={
             // eslint-disable-next-line react/jsx-wrap-multilines
             <span>
-              {this.state.submitState === 'success' && 'Bericht verzonden'}
-              {this.state.submitState === 'failed' && 'Er is iets misgelopen'}
+              {this.state.submitState === 'success' && formatMessage({ id: 'submit_success' })}
+              {this.state.submitState === 'failed' && formatMessage({ id: 'submit_failed' })}
             </span>
           }
           action={[

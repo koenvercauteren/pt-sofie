@@ -72,12 +72,12 @@ module.exports = {
   who_label_two_content_two: 'Koken',
   who_label_two_content_three: 'Gezondheid',
   who_label_three: 'LEEFTIJD',
-  who_label_three_content_one: '26',
+  who_label_three_content_one: '27',
   location_title: 'LOCATIE',
   reviews_title: 'REVIEWS',
   reviews_read_more: 'Lees meer',
   location_content:
-    'Alle binnensessies zullen doorgaan in Basic-Fit Oudaan in Antwerpen. Hiervoor heb je een abonnement bij Basic-Fit nodig. Indien je nog geen lid bent, kan je je hieronder inschrijven.',
+    'Alle binnensessies zullen doorgaan in Basic-Fit Eiermarkt in Antwerpen. Hiervoor heb je een abonnement bij Basic-Fit nodig. Indien je nog geen lid bent, kan je je hieronder inschrijven.',
   location_button: 'LID WORDEN',
   contact_title: 'CONTACT',
   contact_label_name: 'Naam',
@@ -115,4 +115,6 @@ module.exports = {
   offer_detail_step_eight_content:
     'Voor 3 maanden sta je onder begeleiding en wordt je opgevolgd op verschillende vlakken, door regelmaat en consistentie ben je zeker van je resultaat.',
   switch_language: 'English',
+  submit_success: 'Bericht verzonden',
+  submit_failed: 'Er is iets misgelopen',
 };

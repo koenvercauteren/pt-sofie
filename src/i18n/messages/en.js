@@ -69,12 +69,12 @@ module.exports = {
   who_label_two_content_two: 'Cooking',
   who_label_two_content_three: 'Health',
   who_label_three: 'AGE',
-  who_label_three_content_one: '26',
+  who_label_three_content_one: '27',
   reviews_title: 'REVIEWS',
   reviews_read_more: 'Read more',
   location_title: 'LOCATION',
   location_content:
-    'All the indoor sessions will take place at Basic-Fit Oudaan, Antwerp. For this, you will need a membership. You can subscribe by clicking on the button below.',
+    'All the indoor sessions will take place at Basic-Fit Eiermarkt, Antwerp. For this, you will need a membership. You can subscribe by clicking on the button below.',
   location_button: 'BECOME MEMBER',
   contact_title: 'CONTACT',
   contact_label_name: 'Name',
@@ -109,4 +109,6 @@ module.exports = {
   offer_detail_step_eight: 'Long term',
   offer_detail_step_eight_content: `During a 3-month period you will be under guidance and followed up on different levels. Thanks to regularity and consistency you are sure to achieve the goals you've set for yourself.`,
   switch_language: 'Dutch',
+  submit_success: 'Message sent',
+  submit_failed: 'Something went wrong',
 };
