@@ -55,6 +55,7 @@ module.exports = {
   offer_1session_star_four: 'Form',
   offer_student_title: 'Students',
   offer_student_price: '€ 250',
+  offer_student_previous_price: '€ 275',
   offer_student_star_one: '30 minutes',
   offer_student_star_two: '10 + 1 sessions',
   offer_student_star_three: 'Independent warmup and stretching',
