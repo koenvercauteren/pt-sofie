@@ -62,9 +62,6 @@ const styles = theme => ({
       height: '230px',
     },
     [theme.breakpoints.up('md')]: {
-      height: '330px',
-    },
-    [theme.breakpoints.up('lg')]: {
       height: '260px',
     },
   },

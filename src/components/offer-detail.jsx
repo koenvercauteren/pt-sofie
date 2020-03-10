@@ -57,7 +57,7 @@ const OfferDetail = ({ classes, title, steps }) => (
     </Typography>
 
     {steps.map((step, index) => (
-      <Expansion enabled={index === 0 && true} summary={step.summary} details={step.details} />
+      <Expansion key={step.summary} enabled={index === 0} summary={step.summary} details={step.details} />
     ))}
 
     <Paper square elevation={0} className={classes.goToContact}>

@@ -16,12 +16,14 @@ import 'animate.css/animate.min.css';
 import StarIcon from '@material-ui/icons/Star';
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import WhatsHotIcon from '@material-ui/icons/Whatshot';
+import SchoolIcon from '@material-ui/icons/School';
 import PersonIcon from '@material-ui/icons/Person';
 import { FormattedMessage, injectIntl } from 'react-intl';
 
 import styles from '../styles/sections/offer.styles';
 import Button from '../components/button';
 import ANCHORS from '../globals/anchors';
+import WeightLifterIcon from '../assets/svg/weight-lifter';
 
 const LinkToFourWeeks = props => <Link to="/6-weeks" {...props} />;
 
@@ -37,7 +39,7 @@ const Offer = ({ classes, intl: { formatMessage } }) => (
       </ScrollableAnchor>
 
       <Grid container justify="space-between">
-        <Grid className={classes.gridItem} item xs={12} sm={6} md={3}>
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={4}>
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
@@ -78,12 +80,12 @@ const Offer = ({ classes, intl: { formatMessage } }) => (
           </Card>
         </Grid>
 
-        <Grid className={classes.gridItem} item xs={12} sm={6} md={3}>
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={4}>
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
                 <FormattedMessage id="offer_kickstart_title" />
-                <FitnessCenterIcon className={classes.cardIcon} />
+                <WeightLifterIcon className={classes.cardIcon} />
               </Typography>
 
               <div className={classes.pricing}>
@@ -127,7 +129,108 @@ const Offer = ({ classes, intl: { formatMessage } }) => (
           </Card>
         </Grid>
 
-        <Grid className={classes.gridItem} item xs={12} sm={6} md={3}>
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={4}>
+          <Card className={classes.card}>
+            <CardContent className={classes.content}>
+              <Typography className={classes.cardHeadline} gutterBottom variant="headline">
+                <FormattedMessage id="offer_1session_title" />
+                <FitnessCenterIcon className={classes.cardIcon} />
+              </Typography>
+
+              <div className={classes.pricing}>
+                <Typography gutterBottom variant="subheading">
+                  <FormattedMessage id="offer_1session_price" />
+                </Typography>
+              </div>
+
+              <Divider />
+
+              <div className={classes.listContainer}>
+                <div className={classes.cardBulletList}>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <FormattedMessage id="offer_1session_star_one" />
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <FormattedMessage id="offer_1session_star_two" />
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <FormattedMessage id="offer_1session_star_three" />
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <FormattedMessage id="offer_1session_star_four" />
+                  </Typography>
+                </div>
+
+                <Button
+                  className={classes.button}
+                  text={formatMessage({ id: 'offer_button_meet' })}
+                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                />
+              </div>
+            </CardContent>
+          </Card>
+        </Grid>
+
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={4}>
+          <Card className={classes.card}>
+            <CardContent className={classes.content}>
+              <Typography className={classes.cardHeadline} gutterBottom variant="headline">
+                <FormattedMessage id="offer_student_title" />
+                <SchoolIcon className={classes.cardIcon} />
+              </Typography>
+
+              <div className={classes.pricing}>
+                <Typography gutterBottom variant="subheading">
+                  <FormattedMessage id="offer_student_price" />
+                </Typography>
+                <Typography className={classes.normalPrice} variant="subheading">
+                  <FormattedMessage id="offer_student_previous_price" />
+                </Typography>
+              </div>
+
+              <Divider />
+
+              <div className={classes.listContainer}>
+                <div className={classes.cardBulletList}>
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <FormattedMessage id="offer_student_star_one" />
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <FormattedMessage id="offer_student_star_two" />
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <FormattedMessage id="offer_student_star_three" />
+                  </Typography>
+
+                  <Typography className={classes.cardBulletItem} gutterBottom variant="subheading">
+                    <StarIcon className={classes.cardBulletIcon} />
+                    <FormattedMessage id="offer_student_star_four" />
+                  </Typography>
+                </div>
+
+                <Button
+                  className={classes.button}
+                  text={formatMessage({ id: 'offer_button_meet' })}
+                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                />
+              </div>
+            </CardContent>
+          </Card>
+        </Grid>
+
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={4}>
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
@@ -181,7 +284,7 @@ const Offer = ({ classes, intl: { formatMessage } }) => (
           </Card>
         </Grid>
 
-        <Grid className={classes.gridItem} item xs={12} sm={6} md={3}>
+        <Grid className={classes.gridItem} item xs={12} sm={6} md={4}>
           <Card className={classes.card}>
             <CardContent className={classes.content}>
               <Typography className={classes.cardHeadline} gutterBottom variant="headline">
