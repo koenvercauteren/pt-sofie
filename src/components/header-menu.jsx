@@ -10,7 +10,7 @@ import { goToTop, goToAnchor } from 'react-scrollable-anchor';
 import { FormattedMessage, injectIntl } from 'react-intl';
 
 import ANCHORS from '../globals/anchors';
-import Logo from '../assets/img/logo.png';
+import Logo from '../assets/img/SDB.png';
 import InstagramLogo from '../assets/img/instagram-logo.png';
 
 import Burger from './burger';
@@ -50,6 +50,10 @@ const styles = theme => ({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  logo: {
+    width: '74.27px',
+    height: 50,
+  },
 });
 
 class HeaderMenu extends React.Component {
@@ -78,7 +82,7 @@ class HeaderMenu extends React.Component {
             <Grid item xs={11} md={10} className={classes.grid}>
               <Toolbar disableGutters>
                 <Button color="inherit" onClick={() => goToTop()}>
-                  <img src={Logo} alt="logo-sdb" />
+                  <img src={Logo} alt="logo-sdb" className={classes.logo} />
                 </Button>
 
                 <div className={classes.buttonGroup}>
