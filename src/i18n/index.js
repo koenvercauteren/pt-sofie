@@ -1,7 +1,7 @@
 import enMessages from './messages/en';
 import nlMessages from './messages/nl';
 
-const DEFAULT_LOCALE = 'en';
+const DEFAULT_LOCALE = 'nl';
 const LANGS = ['en', 'nl'];
 
 module.exports = {

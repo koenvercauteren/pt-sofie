@@ -8,7 +8,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import { FormattedMessage, injectIntl } from 'react-intl';
 
 import styles from '../styles/sections/who.styles';
-import sofieImage from '../assets/img/sofie.jpg';
+import sofieImage from '../assets/img/sofie3.jpg';
 
 const Who = ({ classes }) => (
   <Grid container justify="center" className={classes.container}>

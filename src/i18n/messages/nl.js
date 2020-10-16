@@ -85,7 +85,7 @@ module.exports = {
   who_label_two_content_two: 'Koken',
   who_label_two_content_three: 'Gezondheid',
   who_label_three: 'LEEFTIJD',
-  who_label_three_content_one: '27',
+  who_label_three_content_one: '28',
   location_title: 'LOCATIE',
   reviews_title: 'REVIEWS',
   reviews_read_more: 'Lees meer',
