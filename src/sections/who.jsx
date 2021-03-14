@@ -51,7 +51,6 @@ const Who = ({ classes }) => (
 
         <div className={classes.imageContainer}>
           <img className={classes.image} src={sofieImage} alt="personal-trainer-sofie" />
-          <div className={classes.nasm} />
         </div>
       </div>
     </Grid>

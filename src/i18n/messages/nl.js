@@ -62,7 +62,7 @@ module.exports = {
   offer_student_star_one: '30 minuten',
   offer_student_star_two: '10 + 1 beurten',
   offer_student_star_three: 'Zelfstandige opwarming en stretching',
-  offer_student_star_four: '20% korting op andere pakketen',
+  offer_student_star_four: '10% korting op andere pakketen',
   offer_4weeks_title: '6 weken',
   offer_4weeks_price: '€ 600',
   offer_4weeks_previous_price: '€ 710',

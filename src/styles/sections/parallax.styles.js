@@ -1,4 +1,4 @@
-import backgroundImage from '../../assets/img/background-image-landing-page.jpg';
+import backgroundImage from '../../assets/img/background-image-landing-page-2.jpeg';
 
 const styles = theme => ({
   titleContainer: {

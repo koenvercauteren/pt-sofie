@@ -59,7 +59,7 @@ module.exports = {
   offer_student_star_one: '30 minutes',
   offer_student_star_two: '10 + 1 sessions',
   offer_student_star_three: 'Independent warmup and stretching',
-  offer_student_star_four: 'Cannot be combined with a student discount',
+  offer_student_star_four: '10% discount on other packages',
   offer_4weeks_title: '6 weeks',
   offer_4weeks_price: '€ 600',
   offer_4weeks_previous_price: '710',

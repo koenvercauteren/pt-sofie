@@ -12,7 +12,7 @@ import { FormattedMessage, injectIntl } from 'react-intl';
 
 import keysToSuccessImage from '../assets/img/girl-stretching.jpeg';
 import keysToSuccessImage2 from '../assets/img/guy-running-city.jpg';
-import keysToSuccessImage3 from '../assets/img/guy-running-track.jpg';
+import keysToSuccessImage3 from '../assets/img/girl-on-bench.jpeg';
 import keysToSuccessImage4 from '../assets/img/girl-preparing-food.jpg';
 
 import styles from '../styles/sections/keys-to-success.styles';
