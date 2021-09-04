@@ -52,7 +52,7 @@ const styles = theme => ({
   image: {
     borderRadius: '50%',
     border: '3px solid #48B6BF',
-    marginLeft: '16px',
+    // marginLeft: '16px',
     [theme.breakpoints.down('xs')]: {
       width: '175px',
       height: '175px',

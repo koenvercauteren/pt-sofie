@@ -20,34 +20,34 @@ const Who = ({ classes }) => (
       </ScrollableAnchor>
 
       <div className={classes.content}>
-        <div>
-          <Typography variant="body2">
-            <FormattedMessage id="who_label_one" />
-          </Typography>
-          <Typography gutterBottom variant="body1">
-            <FormattedMessage id="who_label_one_content_one" />
-          </Typography>
+            {/* <div>
+            <Typography variant="body2">
+                <FormattedMessage id="who_label_one" />
+            </Typography>
+            <Typography gutterBottom variant="body1">
+                <FormattedMessage id="who_label_one_content_one" />
+            </Typography>
 
-          <Typography variant="body2">
-            <FormattedMessage id="who_label_two" />
-          </Typography>
-          <Typography variant="body1">
-            <FormattedMessage id="who_label_two_content_one" />
-          </Typography>
-          <Typography variant="body1">
-            <FormattedMessage id="who_label_two_content_two" />
-          </Typography>
-          <Typography gutterBottom variant="body1">
-            <FormattedMessage id="who_label_two_content_three" />
-          </Typography>
+            <Typography variant="body2">
+                <FormattedMessage id="who_label_two" />
+            </Typography>
+            <Typography variant="body1">
+                <FormattedMessage id="who_label_two_content_one" />
+            </Typography>
+            <Typography variant="body1">
+                <FormattedMessage id="who_label_two_content_two" />
+            </Typography>
+            <Typography gutterBottom variant="body1">
+                <FormattedMessage id="who_label_two_content_three" />
+            </Typography>
 
-          <Typography variant="body2">
-            <FormattedMessage id="who_label_three" />
-          </Typography>
-          <Typography gutterBottom variant="body1">
-            <FormattedMessage id="who_label_three_content_one" />
-          </Typography>
-        </div>
+            <Typography variant="body2">
+                <FormattedMessage id="who_label_three" />
+            </Typography>
+            <Typography gutterBottom variant="body1">
+                <FormattedMessage id="who_label_three_content_one" />
+            </Typography>
+            </div> */}
 
         <div className={classes.imageContainer}>
           <img className={classes.image} src={sofieImage} alt="personal-trainer-sofie" />

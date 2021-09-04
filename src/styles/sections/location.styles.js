@@ -30,8 +30,19 @@ const styles = () => ({
     color: 'rgba(0, 0, 0, 0.75)',
     fontSize: '2rem',
   },
+  bodyContainer: {
+    display: 'flex',
+    marginBottom: '150px',
+  },
   body: {
-    textAlign: 'center',
+    width: '50%',
+    display: 'flex',
+    flexDirection: 'column',
+    marginLeft: 15,
+    '&:first-child': {
+        textAlign: 'right',
+        marginRight: 15
+    }
   },
   button: {
     height: 55,
