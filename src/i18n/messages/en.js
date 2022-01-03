@@ -130,4 +130,5 @@ module.exports = {
   switch_language: 'Nederlands',
   submit_success: 'Message sent',
   submit_failed: 'Something went wrong',
+  text_me: 'SMS'
 };

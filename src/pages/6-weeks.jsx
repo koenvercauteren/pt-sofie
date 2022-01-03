@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import styles from '../styles/pages/index.styles';
 import OfferDetail from '../components/offer-detail';
 import SeoTags from '../components/seo-tags';
-import LanguageSwitcher from '../components/language-switcher';
+import TextMe from '../components/text-me';
 
 const FourWeeksPage = props => {
   const {
@@ -53,7 +53,7 @@ const FourWeeksPage = props => {
       <Grid item xs={11} md={6} className={classes.approachGridItem}>
         <OfferDetail title={formatMessage({ id: 'offer_detail_title_6' })} steps={steps} />
       </Grid>
-      <LanguageSwitcher />
+      <TextMe />
     </Grid>
   );
 };

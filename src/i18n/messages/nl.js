@@ -136,4 +136,5 @@ module.exports = {
   switch_language: 'English',
   submit_success: 'Bericht verzonden',
   submit_failed: 'Er is iets misgelopen',
+  text_me: 'SMS'
 };

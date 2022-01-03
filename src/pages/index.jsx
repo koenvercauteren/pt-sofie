@@ -16,7 +16,7 @@ import Reviews from '../sections/reviews';
 
 import styles from '../styles/pages/index.styles';
 import SeoTags from '../components/seo-tags';
-import LanguageSwitcher from '../components/language-switcher';
+import TextMe from '../components/text-me';
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class IndexPage extends React.Component {
         <Reviews />
         <Location />
         {/* <Contact /> */}
-        <LanguageSwitcher />
+        <TextMe />
       </div>
     );
   }
