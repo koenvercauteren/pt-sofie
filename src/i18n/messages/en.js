@@ -125,7 +125,7 @@ module.exports = {
   offer_detail_step_seven_content: 'Choose small group training and work out cheaper together with friends or family.',
   offer_detail_step_eight: 'Long term',
   offer_detail_step_eight_content: `During a 3-month period you will be under guidance and followed up on different levels. Thanks to regularity and consistency you are sure to achieve the goals you've set for yourself.`,
-  switch_language: 'Dutch',
+  switch_language: 'Nederlands',
   submit_success: 'Message sent',
   submit_failed: 'Something went wrong',
 };

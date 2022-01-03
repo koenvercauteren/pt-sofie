@@ -10,7 +10,7 @@ const styles = () => ({
       backgroundImage: `url(${gplaypattern})`,
       backgroundRepeat: 'repeat',
       width: '100%',
-      height: '800px',
+      height: '500px',
       zIndex: 1,
     },
   },

@@ -8,10 +8,12 @@ import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import { goToTop, goToAnchor } from 'react-scrollable-anchor';
 import { FormattedMessage, injectIntl } from 'react-intl';
+import LanguageIcon from '@material-ui/icons/Language';
 
 import ANCHORS from '../globals/anchors';
 import Logo from '../assets/img/Logo-white-website.png';
 import InstagramLogo from '../assets/img/instagram-logo.png';
+import i18n from '../i18n';
 
 import Burger from './burger';
 
@@ -50,6 +52,9 @@ const styles = theme => ({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  languageIcon: {
+    marginRight: 8
+  }
 });
 
 class HeaderMenu extends React.Component {
@@ -58,11 +63,13 @@ class HeaderMenu extends React.Component {
 
     this.state = {
       window: undefined,
+      location: undefined,
+      localStorage: undefined,
     };
   }
 
   componentDidMount() {
-    this.setState({ window });
+    this.setState({ window, location, localStorage }); // eslint-disable-line no-restricted-globals
   }
 
   render() {
@@ -70,6 +77,13 @@ class HeaderMenu extends React.Component {
       classes,
       intl: { formatMessage },
     } = this.props;
+    const { localStorage, location } = this.state;
+
+    function languageClick () {
+        const locale = localStorage.getItem('locale');
+        localStorage.setItem('locale', i18n.languages.find(l => l !== locale) || i18n.DEFAULT_LOCALE);
+        location.reload();
+    }
 
     return (
       <div className={classes.root}>
@@ -104,9 +118,16 @@ class HeaderMenu extends React.Component {
                     <Button color="inherit" onClick={() => goToAnchor(ANCHORS.LOCATION)}>
                       <FormattedMessage id="menu_location" />
                     </Button>
-                    <Button color="inherit" onClick={() => goToAnchor(ANCHORS.CONTACT)}>
-                      <FormattedMessage id="menu_contact" />
+                    <Button
+                      color="inherit"
+                      onClick={languageClick}
+                    >
+                      <LanguageIcon className={classes.languageIcon} />
+                      <FormattedMessage id="switch_language" />
                     </Button>
+                    {/* <Button color="inherit" onClick={() => goToAnchor(ANCHORS.CONTACT)}>
+                      <FormattedMessage id="menu_contact" />
+                    </Button> */}
                   </Hidden>
 
                   <div className={classes.instagramWrapper}>
@@ -123,14 +144,18 @@ class HeaderMenu extends React.Component {
                   <Hidden mdUp>
                     <Burger
                       items={[
-                        { name: formatMessage({ id: 'menu_keys' }).toUpperCase(), anchor: ANCHORS.KEYSTOSUCCESS },
-                        { name: formatMessage({ id: 'menu_approach' }).toUpperCase(), anchor: ANCHORS.APPROACH },
-                        { name: formatMessage({ id: 'menu_offer' }).toUpperCase(), anchor: ANCHORS.OFFER },
-                        { name: formatMessage({ id: 'menu_bootcamp' }).toUpperCase(), anchor: ANCHORS.BOOTCAMP },
-                        { name: formatMessage({ id: 'menu_who' }).toUpperCase(), anchor: ANCHORS.WHO },
-                        { name: formatMessage({ id: 'menu_reviews' }).toUpperCase(), anchor: ANCHORS.REVIEWS },
-                        { name: formatMessage({ id: 'menu_location' }).toUpperCase(), anchor: ANCHORS.LOCATION },
-                        { name: formatMessage({ id: 'menu_contact' }).toUpperCase(), anchor: ANCHORS.CONTACT },
+                        { name: formatMessage({ id: 'menu_keys' }).toUpperCase(), onClick: () => goToAnchor(ANCHORS.KEYSTOSUCCESS)},
+                        { name: formatMessage({ id: 'menu_approach' }).toUpperCase(), onClick: () => goToAnchor(ANCHORS.APPROACH) },
+                        { name: formatMessage({ id: 'menu_offer' }).toUpperCase(), onClick: () => goToAnchor(ANCHORS.OFFER) },
+                        { name: formatMessage({ id: 'menu_bootcamp' }).toUpperCase(), onClick: () => goToAnchor(ANCHORS.BOOTCAMP)},
+                        { name: formatMessage({ id: 'menu_who' }).toUpperCase(), onClick: () => goToAnchor(ANCHORS.WHO) },
+                        { name: formatMessage({ id: 'menu_reviews' }).toUpperCase(), onClick: () => goToAnchor(ANCHORS.REVIEWS) },
+                        { name: formatMessage({ id: 'menu_location' }).toUpperCase(), onClick: () => goToAnchor(ANCHORS.LOCATION) },
+                        {
+                            name: formatMessage({ id: 'switch_language' }).toUpperCase(),
+                            onClick: languageClick
+                        }
+                        // { name: formatMessage({ id: 'menu_contact' }).toUpperCase(), anchor: ANCHORS.CONTACT },
                       ]}
                     />
                   </Hidden>

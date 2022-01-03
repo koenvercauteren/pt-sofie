@@ -11,7 +11,7 @@ import Bootcamp from '../sections/bootcamp';
 import Offer from '../sections/offer';
 import Who from '../sections/who';
 import Location from '../sections/location';
-import Contact from '../sections/contact';
+// import Contact from '../sections/contact';
 import Reviews from '../sections/reviews';
 
 import styles from '../styles/pages/index.styles';
@@ -40,7 +40,7 @@ class IndexPage extends React.Component {
         <Who />
         <Reviews />
         <Location />
-        <Contact />
+        {/* <Contact /> */}
         <LanguageSwitcher />
       </div>
     );

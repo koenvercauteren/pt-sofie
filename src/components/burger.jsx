@@ -5,12 +5,16 @@ import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
-import { goToAnchor } from 'react-scrollable-anchor';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import LanguageIcon from '@material-ui/icons/Language';
 
 const styles = {
   menuItem: {
     minWidth: '150px',
   },
+  languageIcon: {
+    marginLeft: 8
+  }
 };
 
 class Burger extends React.Component {
@@ -23,7 +27,7 @@ class Burger extends React.Component {
   };
 
   handleClose = goTo => {
-    goToAnchor(goTo);
+    goTo();
     this.setState({ anchorEl: null });
   };
 
@@ -43,9 +47,14 @@ class Burger extends React.Component {
           <MenuIcon />
         </IconButton>
         <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={this.handleClose}>
-          {items.map(item => (
-            <MenuItem key={item.name} onClick={() => this.handleClose(item.anchor)} className={classes.menuItem}>
+          {items.map((item, index) => (
+            <MenuItem key={item.name} onClick={() => this.handleClose(item.onClick)} className={classes.menuItem}>
               {item.name}
+              {index === items.length - 1 && (
+                <ListItemIcon className={classes.languageIcon}>
+                  <LanguageIcon />
+                </ListItemIcon>
+              )}
             </MenuItem>
           ))}
         </Menu>
