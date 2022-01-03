@@ -73,7 +73,7 @@ const Offer = ({ classes, intl: { formatMessage } }) => (
                 <Button
                   className={classes.button}
                   text={formatMessage({ id: 'offer_button_meet' })}
-                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                  onClick={() => goToAnchor(ANCHORS.LOCATION)}
                 />
               </div>
             </CardContent>
@@ -122,7 +122,7 @@ const Offer = ({ classes, intl: { formatMessage } }) => (
                 <Button
                   className={classes.button}
                   text={formatMessage({ id: 'offer_button_meet' })}
-                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                  onClick={() => goToAnchor(ANCHORS.LOCATION)}
                 />
               </div>
             </CardContent>
@@ -171,7 +171,7 @@ const Offer = ({ classes, intl: { formatMessage } }) => (
                 <Button
                   className={classes.button}
                   text={formatMessage({ id: 'offer_button_meet' })}
-                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                  onClick={() => goToAnchor(ANCHORS.LOCATION)}
                 />
               </div>
             </CardContent>
@@ -223,7 +223,7 @@ const Offer = ({ classes, intl: { formatMessage } }) => (
                 <Button
                   className={classes.button}
                   text={formatMessage({ id: 'offer_button_meet' })}
-                  onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                  onClick={() => goToAnchor(ANCHORS.LOCATION)}
                 />
               </div>
             </CardContent>

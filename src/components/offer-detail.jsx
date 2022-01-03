@@ -44,7 +44,7 @@ const styles = theme => ({
   },
 });
 
-const LinkToContact = props => <Link to="/#contact" {...props} />;
+const LinkToLocation = props => <Link to="/#location" {...props} />;
 const LinkToHome = props => <Link to="/" {...props} />;
 
 const OfferDetail = ({ classes, title, steps }) => (
@@ -64,7 +64,7 @@ const OfferDetail = ({ classes, title, steps }) => (
       <Typography>
         <FormattedMessage id="offer_detail_ending" />
       </Typography>
-      <Button variant="contained" color="primary" component={LinkToContact} className={classes.button}>
+      <Button variant="contained" color="primary" component={LinkToLocation} className={classes.button}>
         <ArrowBackIcon className={classes.leftIcon} />
         <FormattedMessage id="offer_detail_button_contact" />
       </Button>

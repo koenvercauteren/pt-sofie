@@ -34,10 +34,10 @@ module.exports = {
     'Bootcamp is er voor iedereen die liever in groep sport op een afwisselende en aangename manier. Je daagt elkaar uit en wordt gemotiveerd om samen die extra stap te zetten.',
   bootcamp_content_two: '10 beurtenkaart: <b>€100</b>',
   bootcamp_content_three: 'Enkele sessie: <b>€12,5</b>',
-  bootcamp_content_four: 'Klik op onderstaande knop om contact op te nemen.',
-  bootcamp_button: 'SCHRIJF JE IN',
+  bootcamp_content_four: 'Klik op de SMS knop of stuur me een mailtje.',
+  bootcamp_button: 'CONTACT INFO',
   offer_title: 'AANBOD',
-  offer_button_meet: 'AFSPRAAK',
+  offer_button_meet: 'CONTACT INFO',
   offer_button_discover: 'ONTDEK MEER',
   offer_intake_title: 'Intake',
   offer_intake_price: 'GRATIS',
@@ -107,9 +107,9 @@ module.exports = {
   offer_detail_title_6: '6 WEKEN',
   offer_detail_title_12: '12 WEKEN',
   offer_detail_ending:
-    'Als je interesse hebt in dit plan en je wilt alle verdere informatie, klik dan op onderstaande knop om contact op te nemen.',
+    'Als je interesse hebt in dit plan en je wilt alle verdere informatie, klik dan op de SMS knop of stuur me een mailtje.',
   offer_detail_button_next: 'VOLGENDE',
-  offer_detail_button_contact: 'CONTACT',
+  offer_detail_button_contact: 'CONTACT INFO',
   offer_detail_step_one: 'Voor wie is het?',
   offer_detail_step_one_content:
     'Personal training is ideaal voor iedereen die op een serieuze maar leuke manier aan zichzelf wil werken. Je krijgt persoonlijke begeleiding op je eigen tempo met een trainingschema op maat.',
@@ -133,7 +133,7 @@ module.exports = {
   offer_detail_step_eight: 'Lange termijn',
   offer_detail_step_eight_content:
     'Voor 3 maanden sta je onder begeleiding en wordt je opgevolgd op verschillende vlakken, door regelmaat en consistentie ben je zeker van je resultaat.',
-  switch_language: 'English',
+  switch_language: 'EN',
   submit_success: 'Bericht verzonden',
   submit_failed: 'Er is iets misgelopen',
   text_me: 'SMS'

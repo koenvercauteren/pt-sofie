@@ -47,7 +47,7 @@ const Bootcamp = props => {
               <Button
                 className={classes.button}
                 text={formatMessage({ id: 'bootcamp_button' })}
-                onClick={() => goToAnchor(ANCHORS.CONTACT)}
+                onClick={() => goToAnchor(ANCHORS.LOCATION)}
               >
                 <AssignmentTurnedInIcon className={classes.leftIcon} />
               </Button>
