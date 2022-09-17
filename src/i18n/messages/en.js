@@ -69,7 +69,7 @@ module.exports = {
   offer_4weeks_star_four: 'Nutritional advice',
   offer_12weeks_title: '12 weeks',
   offer_12weeks_price: '€ 1275',
-  offer_12weeks_previous_price: '€ 1420',
+  offer_12weeks_previous_price: '€ 1540',
   offer_12weeks_star_one: '75 minutes',
   offer_12weeks_star_two: 'Two sessions a week',
   offer_12weeks_star_three: 'Dynamic training schedule',
