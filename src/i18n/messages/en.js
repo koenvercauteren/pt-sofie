@@ -61,7 +61,7 @@ module.exports = {
   offer_student_star_three: 'Independent warmup and stretching',
   offer_student_star_four: '10% discount on other packages',
   offer_4weeks_title: '6 weeks',
-  offer_4weeks_price: '€ 660',
+  offer_4weeks_price: '€ 720',
   offer_4weeks_previous_price: '780',
   offer_4weeks_star_one: '75 minutes',
   offer_4weeks_star_two: 'Two sessions a week',

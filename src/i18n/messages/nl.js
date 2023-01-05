@@ -64,7 +64,7 @@ module.exports = {
   offer_student_star_three: 'Zelfstandige opwarming en stretching',
   offer_student_star_four: '10% korting op andere pakketen',
   offer_4weeks_title: '6 weken',
-  offer_4weeks_price: '€ 660',
+  offer_4weeks_price: '€ 720',
   offer_4weeks_previous_price: '€ 780',
   offer_4weeks_star_one: '75 minuten',
   offer_4weeks_star_two: 'Twee trainingen per week',
